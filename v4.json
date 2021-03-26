@@ -1,7 +1,7 @@
 {
   "swagger" : "2.0",
   "host": "api.bol.com",
-  "schemes": ["https"], 
+  "schemes": ["https"],
   "info" : {
     "description" : "The bol.com API for Retailers.",
     "version" : "4.0",
@@ -47,8 +47,8 @@
         "summary" : "Get all commissions and reductions by EAN in bulk",
         "description" : "Gets all commissions and possible reductions by EAN, price, and optionally condition.",
         "operationId" : "get-commissions",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "body",
@@ -85,7 +85,7 @@
         "summary" : "Get all commissions and reductions by EAN per single EAN",
         "description" : "Commissions can be filtered by condition, which defaults to NEW. We will calculate the commission amount from the EAN and price.",
         "operationId" : "get-commission",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "ean",
           "in" : "path",
@@ -137,8 +137,8 @@
         "summary" : "Post product content",
         "description" : "Create content for existing products or new products.",
         "operationId" : "post-product-content",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "body",
@@ -169,7 +169,7 @@
         "summary" : "Get validation report",
         "description" : "Retrieve a validation report of the product content upload based on the upload id.",
         "operationId" : "get-validation-report",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "uploadId",
           "in" : "path",
@@ -199,7 +199,7 @@
         "summary" : "Get inbound shipment list",
         "description" : "A paginated list of all inbound shipments.",
         "operationId" : "get-inbounds",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "reference",
           "in" : "query",
@@ -267,8 +267,8 @@
         "summary" : "Post inbound shipment",
         "description" : "Create a new inbound shipment.",
         "operationId" : "post-inbound",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "body",
@@ -299,7 +299,7 @@
         "summary" : "Get delivery windows for new inbound shipments",
         "description" : "Retrieve a list of available delivery windows when creating a new inbound shipment.",
         "operationId" : "get-delivery-windows",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "delivery-date",
           "in" : "query",
@@ -340,7 +340,7 @@
         "summary" : "Get inbound transporters list",
         "description" : "Get all available transporters that carry out transports for inbound shipments.",
         "operationId" : "get-inbound-transporters",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "responses" : {
           "200" : {
             "description" : "Ok: Successfully processed the request.",
@@ -357,7 +357,7 @@
         "summary" : "Get inbound product labels by EAN",
         "description" : "Get inbound product labels by EAN.",
         "operationId" : "get-product-labels",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
         "produces" : [ "application/vnd.retailer.v4+pdf" ],
         "parameters" : [ {
           "in" : "body",
@@ -399,7 +399,7 @@
         "summary" : "Get inbound by inbound id",
         "description" : "Get inbound details by inbound id.",
         "operationId" : "get-inbound",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "inbound-id",
           "in" : "path",
@@ -521,7 +521,7 @@
         "summary" : "Get offer insights",
         "description" : "Gets offer insights.",
         "operationId" : "get-offer-insights",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "offer-id",
           "in" : "query",
@@ -576,7 +576,7 @@
         "summary" : "Get performance indicators",
         "description" : "Gets the measurements for your performance indicators per week.",
         "operationId" : "get-performance-indicator",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "name",
           "in" : "query",
@@ -617,7 +617,7 @@
         "summary" : "Get sales forecast",
         "description" : "Gets sales forecast.",
         "operationId" : "get-sales-forecast",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "offer-id",
           "in" : "query",
@@ -654,7 +654,7 @@
         "summary" : "Get LVB/FBB inventory",
         "description" : "The inventory endpoint is a specific LVB/FBB endpoint. It provides a paginated list containing your fulfilment by bol.com inventory. This endpoint does not provide information about your own stock.",
         "operationId" : "get-inventory",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "page",
           "in" : "query",
@@ -722,7 +722,7 @@
         "summary" : "Get all invoices",
         "description" : "Gets a list of invoices, by default from the past 4 weeks. The optional period-start-date and period-end-date-date parameters can be used together to retrieve invoices from a specific date range in the past, the period can be no longer than 31 days. Invoices and their specifications can be downloaded separately in different media formats with the ‘GET an invoice by id’ and the ‘GET an invoice specification by id’ calls. The available media types differ per invoice and are listed per invoice within the response. Note: the media types listed in the response must be given in our standard API format.",
         "operationId" : "get-invoices",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "period-start-date",
           "in" : "query",
@@ -764,7 +764,7 @@
         "summary" : "Get an invoice by invoice id",
         "description" : "Gets an invoice by invoice id. The available media types differ per invoice and are listed within the response from the ‘GET all invoices’ call. Note: the media types listed in the response must be given in our standard API format.",
         "operationId" : "get-invoice",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml", "application/vnd.retailer.v4+pdf" ],
+        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+pdf" ],
         "parameters" : [ {
           "name" : "invoice-id",
           "in" : "path",
@@ -799,7 +799,7 @@
         "summary" : "Get an invoice specification by invoice id",
         "description" : "Gets an invoice specification for an invoice with a paginated list of its transactions. The available media types differ per invoice specification and are listed within the response from the ‘GET all invoices’ call. Note, the media types listed in the response must be given in our standard API format.",
         "operationId" : "get-invoice-specification",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml", "application/vnd.retailer.v4+pdf", "application/vnd.retailer.v4+openxmlformats-officedocument.spreadsheetml.sheet" ],
+        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+pdf", "application/vnd.retailer.v4+openxmlformats-officedocument.spreadsheetml.sheet" ],
         "parameters" : [ {
           "name" : "invoice-id",
           "in" : "path",
@@ -842,8 +842,8 @@
         "summary" : "Create a new offer",
         "description" : "Creates a new offer, and adds it to the catalog. After creation, status information can be retrieved to review if the offer is valid and published to the shop.",
         "operationId" : "post-offer",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "body",
@@ -874,8 +874,8 @@
         "summary" : "Request an offer export file",
         "description" : "Request an offer export file containing all offers.",
         "operationId" : "post-offer-export",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "body",
@@ -939,8 +939,8 @@
         "summary" : "BETA: Request an unpublished offer report",
         "description" : "Request an unpublished offer report containing all unpublished offers and reasons.",
         "operationId" : "post-unpublished-offer-report",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "body",
@@ -1004,7 +1004,7 @@
         "summary" : "Retrieve an offer by its offer id",
         "description" : "Retrieve an offer by using the offer id provided to you when creating or listing your offers.",
         "operationId" : "get-offer",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "offer-id",
           "in" : "path",
@@ -1032,8 +1032,8 @@
         "summary" : "Update an offer",
         "description" : "Use this endpoint to send an offer update. This endpoint returns a process status.",
         "operationId" : "put-offer",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "offer-id",
           "in" : "path",
@@ -1068,7 +1068,7 @@
         "summary" : "Delete offer by id",
         "description" : "Delete an offer by id.",
         "operationId" : "delete-offer",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "offer-id",
           "in" : "path",
@@ -1098,8 +1098,8 @@
         "summary" : "Update price(s) for offer by id",
         "description" : "Update price(s) for offer by id.",
         "operationId" : "update-offer-price",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "offer-id",
           "in" : "path",
@@ -1136,8 +1136,8 @@
         "summary" : "Update stock for offer by id",
         "description" : "Update stock for offer by id.",
         "operationId" : "update-offer-stock",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "offer-id",
           "in" : "path",
@@ -1174,7 +1174,7 @@
         "summary" : "Get open orders",
         "description" : "Gets a paginated list of all open orders sorted by date in descending order.",
         "operationId" : "get-orders",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "page",
           "in" : "query",
@@ -1209,8 +1209,8 @@
         "summary" : "Cancel an order item by an order item id",
         "description" : "This endpoint can be used to either confirm a cancellation request by the customer or to cancel an order item you yourself are unable to fulfil.",
         "operationId" : "cancel-order-item",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "body",
@@ -1241,8 +1241,8 @@
         "summary" : "Ship order item",
         "description" : "Ship a single order item within a customer order by providing shipping information. In case you purchased a shipping label you can add the shippingLabelId to this message; in that case the transport element must be left empty. If you ship the item(s) using your own transporter method you must omit the shippingLabelId entirely.",
         "operationId" : "ship-order-item",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "body",
@@ -1273,7 +1273,7 @@
         "summary" : "Get an open order by order id",
         "description" : "Gets an open order by order id.",
         "operationId" : "get-order",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "order-id",
           "in" : "path",
@@ -1303,7 +1303,7 @@
         "summary" : "BETA: Retrieve retail price information for an EAN.",
         "description" : "Currently this endpoint only supports the allowable retail price and can support the following use cases:<br /><br />\n                    1) EANs that have been unpublished due to price related reasons can be checked against this endpoint.<br />\n                    2) Requesting the allowable retail price for EANs that are not yet in your assortment can help inform price setting.",
         "operationId" : "get-retail-price",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "ean",
           "in" : "path",
@@ -1340,7 +1340,7 @@
         "summary" : "Gets the status of an asynchronous process by entity id and event type for a retailer",
         "description" : "Retrieve a list of process statuses, which shows information regarding previously executed PUT/POST/DELETE requests in descending order. You need to supply an entity id and event type. Please note: process status instances are only retained for a limited period of time after completion. Outside of this period, deleted process statuses will no longer be returned. Please handle this accordingly, by stopping any active polling for these statuses.",
         "operationId" : "get-process-status-entity-id",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "entity-id",
           "in" : "query",
@@ -1386,8 +1386,8 @@
         "summary" : "Gets the status of multiple asynchronous processes by an array of process status id's for a retailer",
         "description" : "Retrieve a list of process statuses, which shows information regarding previously executed PUT/POST/DELETE requests. No more than 1000 process status id's can be sent in a single request.Please note: process status instances are only retained for a limited period of time after completion. Outside of this period, deleted process statuses will no longer be returned. Please handle this accordingly, by stopping any active polling for these statuses.",
         "operationId" : "get-process-status-bulk",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "body",
@@ -1418,7 +1418,7 @@
         "summary" : "Get the status of an asynchronous process by id",
         "description" : "Retrieve a specific process-status, which shows information regarding a previously executed PUT/POST/DELETE request. All PUT/POST/DELETE requests on the other endpoints will supply a process-status-id in the related response. You can use this id to retrieve a status by using the endpoint below. Please note: process status instances are only retained for a limited period of time after completion. Outside of this period, a 404 will be returned for missing process statuses. Please handle this accordingly, by stopping any active polling for these statuses.",
         "operationId" : "get-process-status",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "process-status-id",
           "in" : "path",
@@ -1449,7 +1449,7 @@
         "summary" : "Get returns",
         "description" : "Get a paginated list of multi-item returns, which are sorted by date in descending order.",
         "operationId" : "get-returns",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "page",
           "in" : "query",
@@ -1494,7 +1494,7 @@
         "summary" : "Create return",
         "description" : "Create a return, and automatically handle it with the provided handling result. When successfully created, the resulting return id is provided in the process status.",
         "operationId" : "create-return",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "body",
@@ -1525,7 +1525,7 @@
         "summary" : "Get a return by return id",
         "description" : "Retrieve a return based on the return id.",
         "operationId" : "get-return",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "return-id",
           "in" : "path",
@@ -1556,8 +1556,8 @@
         "summary" : "Handle a return",
         "description" : "Allows the user to handle a return. This can be to either handle an open return, or change the handlingResult of an already handled return. The latter is only possible in limited scenarios, please check the returns documentation for a complete list.",
         "operationId" : "handle-return",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "rma-id",
           "in" : "path",
@@ -1596,7 +1596,7 @@
         "summary" : "Get shipment list",
         "description" : "A paginated list to retrieve all your shipments up to 3 months old. The shipments will be sorted by date in descending order.",
         "operationId" : "get-shipments",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "page",
           "in" : "query",
@@ -1642,7 +1642,7 @@
         "summary" : "Get a shipment by shipment id",
         "description" : "Retrieve a single shipment by its corresponding id.",
         "operationId" : "get-shipment",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "shipment-id",
           "in" : "path",
@@ -1673,8 +1673,8 @@
         "summary" : "Create a shipping label",
         "description" : "Create a shipping label with a shipping label offer id retrieved from get delivery options.",
         "operationId" : "post-shipping-label",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "body",
@@ -1705,8 +1705,8 @@
         "summary" : "Get delivery options for a shippable configuration of a number of order items within an order.",
         "description" : "Retrieves all available delivery options based on the supplied configuration of order items that has to be shipped.",
         "operationId" : "get-delivery-options",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "body",
@@ -1784,7 +1784,7 @@
         "summary" : "BETA: Get push notification subscriptions",
         "description" : "Retrieve a list of all configured and active push notification subscriptions.",
         "operationId" : "get-push-notification-subscriptions",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "responses" : {
           "200" : {
             "description" : "Ok: Successfully processed the request.",
@@ -1805,8 +1805,8 @@
         "summary" : "BETA: Create push notification subscription",
         "description" : "Create a push notification subscription for one (or more) of the available resources. The configured URL has to support https scheme.",
         "operationId" : "post-push-notification-subscription",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "in" : "body",
           "name" : "body",
@@ -1837,7 +1837,7 @@
         "summary" : "BETA: Retrieve public keys for push notification signature validation.",
         "description" : "Retrieve a list of public keys that should be used to validate the signature header for push notifications received from bol.com",
         "operationId" : "get-subscription-keys",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "responses" : {
           "200" : {
             "description" : "Ok: Successfully processed the request.",
@@ -1854,8 +1854,8 @@
         "summary" : "BETA: Send test push notification for subscriptions",
         "description" : "Send a test push notification to all subscriptions for the provided event.",
         "operationId" : "post-test-push-notification",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "responses" : {
           "202" : {
             "description" : "Accepted: Successfully scheduled the request for processing.",
@@ -1878,7 +1878,7 @@
         "summary" : "BETA: Get push notification subscription by id",
         "description" : "Retrieve a configured and active push notification subscription with the provided id.",
         "operationId" : "get-push-notification-subscription",
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "subscription-id",
           "in" : "path",
@@ -1914,8 +1914,8 @@
         "summary" : "BETA: Update push notification subscription",
         "description" : "Update an existing push notification subscription with the supplied id. The configured URL has to support https scheme.",
         "operationId" : "put-push-notification-subscription",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "subscription-id",
           "in" : "path",
@@ -1952,8 +1952,8 @@
         "summary" : "BETA: Delete push notification subscription",
         "description" : "Delete a push notification subscription with the provided id.",
         "operationId" : "delete-push-notification-subscription",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "subscription-id",
           "in" : "path",
@@ -1985,8 +1985,8 @@
         "summary" : "Add transport information by transport id",
         "description" : "Add information to an existing transport. The transport id is part of the shipment. You can retrieve the transport id through the GET shipment list request.",
         "operationId" : "add-transport-information-by-transport-id",
-        "consumes" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
-        "produces" : [ "application/vnd.retailer.v4+json", "application/vnd.retailer.v4+xml" ],
+        "consumes" : [ "application/vnd.retailer.v4+json" ],
+        "produces" : [ "application/vnd.retailer.v4+json" ],
         "parameters" : [ {
           "name" : "transport-id",
           "in" : "path",

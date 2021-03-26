@@ -58,7 +58,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`, `application/vnd.retailer.v4+xml`
+- **Accept**: `application/vnd.retailer.v4+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -113,8 +113,8 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v4+json`, `application/vnd.retailer.v4+xml`
-- **Accept**: `application/vnd.retailer.v4+json`, `application/vnd.retailer.v4+xml`
+- **Content-Type**: `application/vnd.retailer.v4+json`
+- **Accept**: `application/vnd.retailer.v4+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

@@ -347,11 +347,11 @@ class InvoicesApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/vnd.retailer.v4+json', 'application/vnd.retailer.v4+xml', 'application/vnd.retailer.v4+pdf']
+                ['application/vnd.retailer.v4+json', 'application/vnd.retailer.v4+pdf']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/vnd.retailer.v4+json', 'application/vnd.retailer.v4+xml', 'application/vnd.retailer.v4+pdf'],
+                ['application/vnd.retailer.v4+json', 'application/vnd.retailer.v4+pdf'],
                 []
             );
         }
@@ -650,11 +650,11 @@ class InvoicesApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/vnd.retailer.v4+json', 'application/vnd.retailer.v4+xml', 'application/vnd.retailer.v4+pdf', 'application/vnd.retailer.v4+openxmlformats-officedocument.spreadsheetml.sheet']
+                ['application/vnd.retailer.v4+json', 'application/vnd.retailer.v4+pdf', 'application/vnd.retailer.v4+openxmlformats-officedocument.spreadsheetml.sheet']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/vnd.retailer.v4+json', 'application/vnd.retailer.v4+xml', 'application/vnd.retailer.v4+pdf', 'application/vnd.retailer.v4+openxmlformats-officedocument.spreadsheetml.sheet'],
+                ['application/vnd.retailer.v4+json', 'application/vnd.retailer.v4+pdf', 'application/vnd.retailer.v4+openxmlformats-officedocument.spreadsheetml.sheet'],
                 []
             );
         }
@@ -942,11 +942,11 @@ class InvoicesApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/vnd.retailer.v4+json', 'application/vnd.retailer.v4+xml']
+                ['application/vnd.retailer.v4+json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/vnd.retailer.v4+json', 'application/vnd.retailer.v4+xml'],
+                ['application/vnd.retailer.v4+json'],
                 []
             );
         }

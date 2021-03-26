@@ -4,7 +4,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  Bolcom\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,18 +26,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Bolcom\Client\Test\Api;
+namespace BolApi\Client\Test\Api;
 
-use \Bolcom\Client\Configuration;
-use \Bolcom\Client\ApiException;
-use \Bolcom\Client\ObjectSerializer;
+use \BolApi\Client\Configuration;
+use \BolApi\Client\ApiException;
+use \BolApi\Client\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * SubscriptionsApiTest Class Doc Comment
  *
  * @category Class
- * @package  Bolcom\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

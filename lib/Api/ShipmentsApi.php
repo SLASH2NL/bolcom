@@ -347,11 +347,11 @@ class ShipmentsApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/vnd.retailer.v4+json', 'application/vnd.retailer.v4+xml']
+                ['application/vnd.retailer.v4+json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/vnd.retailer.v4+json', 'application/vnd.retailer.v4+xml'],
+                ['application/vnd.retailer.v4+json'],
                 []
             );
         }
@@ -651,11 +651,11 @@ class ShipmentsApi
 
         if ($multipart) {
             $headers = $this->headerSelector->selectHeadersForMultipart(
-                ['application/vnd.retailer.v4+json', 'application/vnd.retailer.v4+xml']
+                ['application/vnd.retailer.v4+json']
             );
         } else {
             $headers = $this->headerSelector->selectHeaders(
-                ['application/vnd.retailer.v4+json', 'application/vnd.retailer.v4+xml'],
+                ['application/vnd.retailer.v4+json'],
                 []
             );
         }

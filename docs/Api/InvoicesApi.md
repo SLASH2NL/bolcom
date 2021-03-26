@@ -59,7 +59,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`, `application/vnd.retailer.v4+xml`, `application/vnd.retailer.v4+pdf`
+- **Accept**: `application/vnd.retailer.v4+json`, `application/vnd.retailer.v4+pdf`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -117,7 +117,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`, `application/vnd.retailer.v4+xml`, `application/vnd.retailer.v4+pdf`, `application/vnd.retailer.v4+openxmlformats-officedocument.spreadsheetml.sheet`
+- **Accept**: `application/vnd.retailer.v4+json`, `application/vnd.retailer.v4+pdf`, `application/vnd.retailer.v4+openxmlformats-officedocument.spreadsheetml.sheet`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -175,7 +175,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`, `application/vnd.retailer.v4+xml`
+- **Accept**: `application/vnd.retailer.v4+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  Bolcom\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace Bolcom\Client\Test\Model;
+namespace BolApi\Client\Test\Model;
 
 use PHPUnit\Framework\TestCase;
 
@@ -36,7 +36,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @category    Class
  * @description Describes a problem that occurred interacting with the API.
- * @package     Bolcom\Client
+ * @package     BolApi\Client
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */

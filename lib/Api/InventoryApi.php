@@ -4,7 +4,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace BolApi\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use BolApi\Client\ApiException;
+use BolApi\Client\Configuration;
+use BolApi\Client\HeaderSelector;
+use BolApi\Client\ObjectSerializer;
 
 /**
  * InventoryApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -126,9 +126,9 @@ class InventoryApi
      * @param  string $state Filter inventory by stock type. (optional)
      * @param  string $query Filter inventory by EAN or product title. (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\InventoryResponse|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\InventoryResponse|\BolApi\Client\Model\Problem
      */
     public function getInventory($page = 1, $quantity = null, $stock = null, $state = null, $query = null)
     {
@@ -147,9 +147,9 @@ class InventoryApi
      * @param  string $state Filter inventory by stock type. (optional)
      * @param  string $query Filter inventory by EAN or product title. (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\InventoryResponse|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\InventoryResponse|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInventoryWithHttpInfo($page = 1, $quantity = null, $stock = null, $state = null, $query = null)
     {
@@ -186,32 +186,32 @@ class InventoryApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\InventoryResponse' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\InventoryResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\InventoryResponse', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\InventoryResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\InventoryResponse';
+            $returnType = '\BolApi\Client\Model\InventoryResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -230,7 +230,7 @@ class InventoryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\InventoryResponse',
+                        '\BolApi\Client\Model\InventoryResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -238,7 +238,7 @@ class InventoryApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -288,7 +288,7 @@ class InventoryApi
      */
     public function getInventoryAsyncWithHttpInfo($page = 1, $quantity = null, $stock = null, $state = null, $query = null)
     {
-        $returnType = '\OpenAPI\Client\Model\InventoryResponse';
+        $returnType = '\BolApi\Client\Model\InventoryResponse';
         $request = $this->getInventoryRequest($page, $quantity, $stock, $state, $query);
 
         return $this->client

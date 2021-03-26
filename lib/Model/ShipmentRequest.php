@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ShipmentRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,10 +60,10 @@ class ShipmentRequest implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'order_items' => '\OpenAPI\Client\Model\OrderItem[]',
+        'order_items' => '\BolApi\Client\Model\OrderItem[]',
         'shipment_reference' => 'string',
         'shipping_label_id' => 'string',
-        'transport' => '\OpenAPI\Client\Model\TransportInstruction'
+        'transport' => '\BolApi\Client\Model\TransportInstruction'
     ];
 
     /**
@@ -249,7 +249,7 @@ class ShipmentRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order_items
      *
-     * @return \OpenAPI\Client\Model\OrderItem[]
+     * @return \BolApi\Client\Model\OrderItem[]
      */
     public function getOrderItems()
     {
@@ -259,7 +259,7 @@ class ShipmentRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order_items
      *
-     * @param \OpenAPI\Client\Model\OrderItem[] $order_items List of order items to ship. Order item id's must belong to the same order.
+     * @param \BolApi\Client\Model\OrderItem[] $order_items List of order items to ship. Order item id's must belong to the same order.
      *
      * @return self
      */
@@ -335,7 +335,7 @@ class ShipmentRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets transport
      *
-     * @return \OpenAPI\Client\Model\TransportInstruction|null
+     * @return \BolApi\Client\Model\TransportInstruction|null
      */
     public function getTransport()
     {
@@ -345,7 +345,7 @@ class ShipmentRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets transport
      *
-     * @param \OpenAPI\Client\Model\TransportInstruction|null $transport transport
+     * @param \BolApi\Client\Model\TransportInstruction|null $transport transport
      *
      * @return self
      */

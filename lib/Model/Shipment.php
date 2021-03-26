@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * Shipment Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -64,11 +64,11 @@ class Shipment implements ModelInterface, ArrayAccess, \JsonSerializable
         'shipment_date_time' => '\DateTime',
         'shipment_reference' => 'string',
         'pick_up_point' => 'bool',
-        'order' => '\OpenAPI\Client\Model\ShipmentOrder',
-        'shipment_details' => '\OpenAPI\Client\Model\ShipmentDetails',
-        'billing_details' => '\OpenAPI\Client\Model\BillingDetails',
-        'shipment_items' => '\OpenAPI\Client\Model\ShipmentItem[]',
-        'transport' => '\OpenAPI\Client\Model\ShipmentTransport'
+        'order' => '\BolApi\Client\Model\ShipmentOrder',
+        'shipment_details' => '\BolApi\Client\Model\ShipmentDetails',
+        'billing_details' => '\BolApi\Client\Model\BillingDetails',
+        'shipment_items' => '\BolApi\Client\Model\ShipmentItem[]',
+        'transport' => '\BolApi\Client\Model\ShipmentTransport'
     ];
 
     /**
@@ -362,7 +362,7 @@ class Shipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order
      *
-     * @return \OpenAPI\Client\Model\ShipmentOrder
+     * @return \BolApi\Client\Model\ShipmentOrder
      */
     public function getOrder()
     {
@@ -372,7 +372,7 @@ class Shipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order
      *
-     * @param \OpenAPI\Client\Model\ShipmentOrder $order order
+     * @param \BolApi\Client\Model\ShipmentOrder $order order
      *
      * @return self
      */
@@ -386,7 +386,7 @@ class Shipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipment_details
      *
-     * @return \OpenAPI\Client\Model\ShipmentDetails|null
+     * @return \BolApi\Client\Model\ShipmentDetails|null
      */
     public function getShipmentDetails()
     {
@@ -396,7 +396,7 @@ class Shipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipment_details
      *
-     * @param \OpenAPI\Client\Model\ShipmentDetails|null $shipment_details shipment_details
+     * @param \BolApi\Client\Model\ShipmentDetails|null $shipment_details shipment_details
      *
      * @return self
      */
@@ -410,7 +410,7 @@ class Shipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets billing_details
      *
-     * @return \OpenAPI\Client\Model\BillingDetails|null
+     * @return \BolApi\Client\Model\BillingDetails|null
      */
     public function getBillingDetails()
     {
@@ -420,7 +420,7 @@ class Shipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets billing_details
      *
-     * @param \OpenAPI\Client\Model\BillingDetails|null $billing_details billing_details
+     * @param \BolApi\Client\Model\BillingDetails|null $billing_details billing_details
      *
      * @return self
      */
@@ -434,7 +434,7 @@ class Shipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipment_items
      *
-     * @return \OpenAPI\Client\Model\ShipmentItem[]
+     * @return \BolApi\Client\Model\ShipmentItem[]
      */
     public function getShipmentItems()
     {
@@ -444,7 +444,7 @@ class Shipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipment_items
      *
-     * @param \OpenAPI\Client\Model\ShipmentItem[] $shipment_items shipment_items
+     * @param \BolApi\Client\Model\ShipmentItem[] $shipment_items shipment_items
      *
      * @return self
      */
@@ -458,7 +458,7 @@ class Shipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets transport
      *
-     * @return \OpenAPI\Client\Model\ShipmentTransport|null
+     * @return \BolApi\Client\Model\ShipmentTransport|null
      */
     public function getTransport()
     {
@@ -468,7 +468,7 @@ class Shipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets transport
      *
-     * @param \OpenAPI\Client\Model\ShipmentTransport|null $transport transport
+     * @param \BolApi\Client\Model\ShipmentTransport|null $transport transport
      *
      * @return self
      */

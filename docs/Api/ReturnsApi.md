@@ -1,4 +1,4 @@
-# OpenAPI\Client\ReturnsApi
+# BolApi\Client\ReturnsApi
 
 All URIs are relative to https://api.bol.com.
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 ## `createReturn()`
 
 ```php
-createReturn($body): \OpenAPI\Client\Model\ProcessStatus
+createReturn($body): \BolApi\Client\Model\ProcessStatus
 ```
 
 Create return
@@ -28,12 +28,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ReturnsApi(
+$apiInstance = new BolApi\Client\Api\ReturnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\CreateReturnRequest(); // \OpenAPI\Client\Model\CreateReturnRequest
+$body = new \BolApi\Client\Model\CreateReturnRequest(); // \BolApi\Client\Model\CreateReturnRequest
 
 try {
     $result = $apiInstance->createReturn($body);
@@ -47,11 +47,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\OpenAPI\Client\Model\CreateReturnRequest**](../Model/CreateReturnRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\CreateReturnRequest**](../Model/CreateReturnRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `getReturn()`
 
 ```php
-getReturn($return_id): \OpenAPI\Client\Model\ModelReturn
+getReturn($return_id): \BolApi\Client\Model\ModelReturn
 ```
 
 Get a return by return id
@@ -84,7 +84,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ReturnsApi(
+$apiInstance = new BolApi\Client\Api\ReturnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ModelReturn**](../Model/ModelReturn.md)
+[**\BolApi\Client\Model\ModelReturn**](../Model/ModelReturn.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ No authorization required
 ## `getReturns()`
 
 ```php
-getReturns($page, $handled, $fulfilment_method): \OpenAPI\Client\Model\ReturnsResponse
+getReturns($page, $handled, $fulfilment_method): \BolApi\Client\Model\ReturnsResponse
 ```
 
 Get returns
@@ -140,7 +140,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ReturnsApi(
+$apiInstance = new BolApi\Client\Api\ReturnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -167,7 +167,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ReturnsResponse**](../Model/ReturnsResponse.md)
+[**\BolApi\Client\Model\ReturnsResponse**](../Model/ReturnsResponse.md)
 
 ### Authorization
 
@@ -185,7 +185,7 @@ No authorization required
 ## `handleReturn()`
 
 ```php
-handleReturn($rma_id, $body): \OpenAPI\Client\Model\ProcessStatus
+handleReturn($rma_id, $body): \BolApi\Client\Model\ProcessStatus
 ```
 
 Handle a return
@@ -200,13 +200,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ReturnsApi(
+$apiInstance = new BolApi\Client\Api\ReturnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $rma_id = 56; // int | The RMA (Return Merchandise Authorization) id that identifies this particular return.
-$body = new \OpenAPI\Client\Model\ReturnRequest(); // \OpenAPI\Client\Model\ReturnRequest | The handling result requested by the retailer.
+$body = new \BolApi\Client\Model\ReturnRequest(); // \BolApi\Client\Model\ReturnRequest | The handling result requested by the retailer.
 
 try {
     $result = $apiInstance->handleReturn($rma_id, $body);
@@ -221,11 +221,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **rma_id** | **int**| The RMA (Return Merchandise Authorization) id that identifies this particular return. |
- **body** | [**\OpenAPI\Client\Model\ReturnRequest**](../Model/ReturnRequest.md)| The handling result requested by the retailer. | [optional]
+ **body** | [**\BolApi\Client\Model\ReturnRequest**](../Model/ReturnRequest.md)| The handling result requested by the retailer. | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 

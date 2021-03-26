@@ -4,7 +4,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace BolApi\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use BolApi\Client\ApiException;
+use BolApi\Client\Configuration;
+use BolApi\Client\HeaderSelector;
+use BolApi\Client\ObjectSerializer;
 
 /**
  * ProductContentApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -122,9 +122,9 @@ class ProductContentApi
      *
      * @param  string $upload_id The identifier of the product content upload. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ValidationReportResponse|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ValidationReportResponse|\BolApi\Client\Model\Problem
      */
     public function getValidationReport($upload_id)
     {
@@ -139,9 +139,9 @@ class ProductContentApi
      *
      * @param  string $upload_id The identifier of the product content upload. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ValidationReportResponse|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ValidationReportResponse|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getValidationReportWithHttpInfo($upload_id)
     {
@@ -178,32 +178,32 @@ class ProductContentApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ValidationReportResponse' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ValidationReportResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ValidationReportResponse', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ValidationReportResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ValidationReportResponse';
+            $returnType = '\BolApi\Client\Model\ValidationReportResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -222,7 +222,7 @@ class ProductContentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ValidationReportResponse',
+                        '\BolApi\Client\Model\ValidationReportResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -230,7 +230,7 @@ class ProductContentApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -272,7 +272,7 @@ class ProductContentApi
      */
     public function getValidationReportAsyncWithHttpInfo($upload_id)
     {
-        $returnType = '\OpenAPI\Client\Model\ValidationReportResponse';
+        $returnType = '\BolApi\Client\Model\ValidationReportResponse';
         $request = $this->getValidationReportRequest($upload_id);
 
         return $this->client
@@ -407,11 +407,11 @@ class ProductContentApi
      *
      * Post product content
      *
-     * @param  \OpenAPI\Client\Model\CreateProductContentRequest $body body (optional)
+     * @param  \BolApi\Client\Model\CreateProductContentRequest $body body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem
      */
     public function postProductContent($body = null)
     {
@@ -424,11 +424,11 @@ class ProductContentApi
      *
      * Post product content
      *
-     * @param  \OpenAPI\Client\Model\CreateProductContentRequest $body (optional)
+     * @param  \BolApi\Client\Model\CreateProductContentRequest $body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function postProductContentWithHttpInfo($body = null)
     {
@@ -465,32 +465,32 @@ class ProductContentApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 202:
-                    if ('\OpenAPI\Client\Model\ProcessStatus' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ProcessStatus' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProcessStatus', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ProcessStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+            $returnType = '\BolApi\Client\Model\ProcessStatus';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -509,7 +509,7 @@ class ProductContentApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProcessStatus',
+                        '\BolApi\Client\Model\ProcessStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -517,7 +517,7 @@ class ProductContentApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -532,7 +532,7 @@ class ProductContentApi
      *
      * Post product content
      *
-     * @param  \OpenAPI\Client\Model\CreateProductContentRequest $body (optional)
+     * @param  \BolApi\Client\Model\CreateProductContentRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -552,14 +552,14 @@ class ProductContentApi
      *
      * Post product content
      *
-     * @param  \OpenAPI\Client\Model\CreateProductContentRequest $body (optional)
+     * @param  \BolApi\Client\Model\CreateProductContentRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postProductContentAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+        $returnType = '\BolApi\Client\Model\ProcessStatus';
         $request = $this->postProductContentRequest($body);
 
         return $this->client
@@ -599,7 +599,7 @@ class ProductContentApi
     /**
      * Create request for operation 'postProductContent'
      *
-     * @param  \OpenAPI\Client\Model\CreateProductContentRequest $body (optional)
+     * @param  \BolApi\Client\Model\CreateProductContentRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

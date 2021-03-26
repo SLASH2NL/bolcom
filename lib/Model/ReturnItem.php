@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ReturnItem Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -70,8 +70,8 @@ class ReturnItem implements ModelInterface, ArrayAccess, \JsonSerializable
         'track_and_trace' => 'string',
         'transporter_name' => 'string',
         'handled' => 'bool',
-        'processing_results' => '\OpenAPI\Client\Model\ReturnProcessingResult[]',
-        'customer_details' => '\OpenAPI\Client\Model\CustomerDetails'
+        'processing_results' => '\BolApi\Client\Model\ReturnProcessingResult[]',
+        'customer_details' => '\BolApi\Client\Model\CustomerDetails'
     ];
 
     /**
@@ -521,7 +521,7 @@ class ReturnItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets processing_results
      *
-     * @return \OpenAPI\Client\Model\ReturnProcessingResult[]
+     * @return \BolApi\Client\Model\ReturnProcessingResult[]
      */
     public function getProcessingResults()
     {
@@ -531,7 +531,7 @@ class ReturnItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets processing_results
      *
-     * @param \OpenAPI\Client\Model\ReturnProcessingResult[] $processing_results processing_results
+     * @param \BolApi\Client\Model\ReturnProcessingResult[] $processing_results processing_results
      *
      * @return self
      */
@@ -545,7 +545,7 @@ class ReturnItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets customer_details
      *
-     * @return \OpenAPI\Client\Model\CustomerDetails|null
+     * @return \BolApi\Client\Model\CustomerDetails|null
      */
     public function getCustomerDetails()
     {
@@ -555,7 +555,7 @@ class ReturnItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets customer_details
      *
-     * @param \OpenAPI\Client\Model\CustomerDetails|null $customer_details customer_details
+     * @param \BolApi\Client\Model\CustomerDetails|null $customer_details customer_details
      *
      * @return self
      */

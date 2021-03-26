@@ -1,4 +1,4 @@
-# OpenAPI\Client\ProcessStatusApi
+# BolApi\Client\ProcessStatusApi
 
 All URIs are relative to https://api.bol.com.
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 ## `getProcessStatus()`
 
 ```php
-getProcessStatus($process_status_id): \OpenAPI\Client\Model\ProcessStatus
+getProcessStatus($process_status_id): \BolApi\Client\Model\ProcessStatus
 ```
 
 Get the status of an asynchronous process by id
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ProcessStatusApi(
+$apiInstance = new BolApi\Client\Api\ProcessStatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 
@@ -68,7 +68,7 @@ No authorization required
 ## `getProcessStatusBulk()`
 
 ```php
-getProcessStatusBulk($body): \OpenAPI\Client\Model\ProcessStatusResponse
+getProcessStatusBulk($body): \BolApi\Client\Model\ProcessStatusResponse
 ```
 
 Gets the status of multiple asynchronous processes by an array of process status id's for a retailer
@@ -83,12 +83,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ProcessStatusApi(
+$apiInstance = new BolApi\Client\Api\ProcessStatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\BulkProcessStatusRequest(); // \OpenAPI\Client\Model\BulkProcessStatusRequest
+$body = new \BolApi\Client\Model\BulkProcessStatusRequest(); // \BolApi\Client\Model\BulkProcessStatusRequest
 
 try {
     $result = $apiInstance->getProcessStatusBulk($body);
@@ -102,11 +102,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\OpenAPI\Client\Model\BulkProcessStatusRequest**](../Model/BulkProcessStatusRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\BulkProcessStatusRequest**](../Model/BulkProcessStatusRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatusResponse**](../Model/ProcessStatusResponse.md)
+[**\BolApi\Client\Model\ProcessStatusResponse**](../Model/ProcessStatusResponse.md)
 
 ### Authorization
 
@@ -124,7 +124,7 @@ No authorization required
 ## `getProcessStatusEntityId()`
 
 ```php
-getProcessStatusEntityId($entity_id, $event_type, $page): \OpenAPI\Client\Model\ProcessStatusResponse
+getProcessStatusEntityId($entity_id, $event_type, $page): \BolApi\Client\Model\ProcessStatusResponse
 ```
 
 Gets the status of an asynchronous process by entity id and event type for a retailer
@@ -139,7 +139,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ProcessStatusApi(
+$apiInstance = new BolApi\Client\Api\ProcessStatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -166,7 +166,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatusResponse**](../Model/ProcessStatusResponse.md)
+[**\BolApi\Client\Model\ProcessStatusResponse**](../Model/ProcessStatusResponse.md)
 
 ### Authorization
 

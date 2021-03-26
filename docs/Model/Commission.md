@@ -11,6 +11,6 @@ Name | Type | Description | Notes
 **percentage** | **float** | A percentage of commission, based on the intended selling price per unit, including VAT. | [optional]
 **total_cost** | **float** | The total commission for selling this product at bol.com. The price includes VAT for Dutch sellers, and excludes VAT for Belgium sellers. | [optional]
 **total_cost_without_reduction** | **float** | The total commission for selling this product at bol.com without reductions including VAT. | [optional]
-**reductions** | [**\OpenAPI\Client\Model\Reduction[]**](Reduction.md) |  |
+**reductions** | [**\BolApi\Client\Model\Reduction[]**](Reduction.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

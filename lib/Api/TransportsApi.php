@@ -4,7 +4,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace BolApi\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use BolApi\Client\ApiException;
+use BolApi\Client\Configuration;
+use BolApi\Client\HeaderSelector;
+use BolApi\Client\ObjectSerializer;
 
 /**
  * TransportsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -121,11 +121,11 @@ class TransportsApi
      * Add transport information by transport id
      *
      * @param  int $transport_id The transport id. (required)
-     * @param  \OpenAPI\Client\Model\ChangeTransportRequest $body The change transport requested by the user. (optional)
+     * @param  \BolApi\Client\Model\ChangeTransportRequest $body The change transport requested by the user. (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem
      */
     public function addTransportInformationByTransportId($transport_id, $body = null)
     {
@@ -139,11 +139,11 @@ class TransportsApi
      * Add transport information by transport id
      *
      * @param  int $transport_id The transport id. (required)
-     * @param  \OpenAPI\Client\Model\ChangeTransportRequest $body The change transport requested by the user. (optional)
+     * @param  \BolApi\Client\Model\ChangeTransportRequest $body The change transport requested by the user. (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function addTransportInformationByTransportIdWithHttpInfo($transport_id, $body = null)
     {
@@ -180,32 +180,32 @@ class TransportsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 202:
-                    if ('\OpenAPI\Client\Model\ProcessStatus' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ProcessStatus' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProcessStatus', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ProcessStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+            $returnType = '\BolApi\Client\Model\ProcessStatus';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -224,7 +224,7 @@ class TransportsApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProcessStatus',
+                        '\BolApi\Client\Model\ProcessStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -232,7 +232,7 @@ class TransportsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -248,7 +248,7 @@ class TransportsApi
      * Add transport information by transport id
      *
      * @param  int $transport_id The transport id. (required)
-     * @param  \OpenAPI\Client\Model\ChangeTransportRequest $body The change transport requested by the user. (optional)
+     * @param  \BolApi\Client\Model\ChangeTransportRequest $body The change transport requested by the user. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -269,14 +269,14 @@ class TransportsApi
      * Add transport information by transport id
      *
      * @param  int $transport_id The transport id. (required)
-     * @param  \OpenAPI\Client\Model\ChangeTransportRequest $body The change transport requested by the user. (optional)
+     * @param  \BolApi\Client\Model\ChangeTransportRequest $body The change transport requested by the user. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function addTransportInformationByTransportIdAsyncWithHttpInfo($transport_id, $body = null)
     {
-        $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+        $returnType = '\BolApi\Client\Model\ProcessStatus';
         $request = $this->addTransportInformationByTransportIdRequest($transport_id, $body);
 
         return $this->client
@@ -317,7 +317,7 @@ class TransportsApi
      * Create request for operation 'addTransportInformationByTransportId'
      *
      * @param  int $transport_id The transport id. (required)
-     * @param  \OpenAPI\Client\Model\ChangeTransportRequest $body The change transport requested by the user. (optional)
+     * @param  \BolApi\Client\Model\ChangeTransportRequest $body The change transport requested by the user. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ModelReturn Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -63,7 +63,7 @@ class ModelReturn implements ModelInterface, ArrayAccess, \JsonSerializable
         'return_id' => 'int',
         'registration_date_time' => '\DateTime',
         'fulfilment_method' => 'string',
-        'return_items' => '\OpenAPI\Client\Model\ReturnItem[]'
+        'return_items' => '\BolApi\Client\Model\ReturnItem[]'
     ];
 
     /**
@@ -305,7 +305,7 @@ class ModelReturn implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets return_items
      *
-     * @return \OpenAPI\Client\Model\ReturnItem[]
+     * @return \BolApi\Client\Model\ReturnItem[]
      */
     public function getReturnItems()
     {
@@ -315,7 +315,7 @@ class ModelReturn implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets return_items
      *
-     * @param \OpenAPI\Client\Model\ReturnItem[] $return_items return_items
+     * @param \BolApi\Client\Model\ReturnItem[] $return_items return_items
      *
      * @return self
      */

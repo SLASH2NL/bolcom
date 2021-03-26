@@ -1,4 +1,4 @@
-# OpenAPI\Client\InboundsApi
+# BolApi\Client\InboundsApi
 
 All URIs are relative to https://api.bol.com.
 
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 ## `getDeliveryWindows()`
 
 ```php
-getDeliveryWindows($delivery_date, $items_to_send): \OpenAPI\Client\Model\DeliveryWindowsForInboundShipments
+getDeliveryWindows($delivery_date, $items_to_send): \BolApi\Client\Model\DeliveryWindowsForInboundShipments
 ```
 
 Get delivery windows for new inbound shipments
@@ -32,7 +32,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\InboundsApi(
+$apiInstance = new BolApi\Client\Api\InboundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DeliveryWindowsForInboundShipments**](../Model/DeliveryWindowsForInboundShipments.md)
+[**\BolApi\Client\Model\DeliveryWindowsForInboundShipments**](../Model/DeliveryWindowsForInboundShipments.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ No authorization required
 ## `getInbound()`
 
 ```php
-getInbound($inbound_id): \OpenAPI\Client\Model\Inbound
+getInbound($inbound_id): \BolApi\Client\Model\Inbound
 ```
 
 Get inbound by inbound id
@@ -90,7 +90,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\InboundsApi(
+$apiInstance = new BolApi\Client\Api\InboundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Inbound**](../Model/Inbound.md)
+[**\BolApi\Client\Model\Inbound**](../Model/Inbound.md)
 
 ### Authorization
 
@@ -146,7 +146,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\InboundsApi(
+$apiInstance = new BolApi\Client\Api\InboundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -187,7 +187,7 @@ No authorization required
 ## `getInboundTransporters()`
 
 ```php
-getInboundTransporters(): \OpenAPI\Client\Model\TransportersResponse
+getInboundTransporters(): \BolApi\Client\Model\TransportersResponse
 ```
 
 Get inbound transporters list
@@ -202,7 +202,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\InboundsApi(
+$apiInstance = new BolApi\Client\Api\InboundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -222,7 +222,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TransportersResponse**](../Model/TransportersResponse.md)
+[**\BolApi\Client\Model\TransportersResponse**](../Model/TransportersResponse.md)
 
 ### Authorization
 
@@ -240,7 +240,7 @@ No authorization required
 ## `getInbounds()`
 
 ```php
-getInbounds($reference, $bsku, $creation_start_date, $creation_end_date, $state, $page): \OpenAPI\Client\Model\Inbounds
+getInbounds($reference, $bsku, $creation_start_date, $creation_end_date, $state, $page): \BolApi\Client\Model\Inbounds
 ```
 
 Get inbound shipment list
@@ -255,7 +255,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\InboundsApi(
+$apiInstance = new BolApi\Client\Api\InboundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -288,7 +288,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Inbounds**](../Model/Inbounds.md)
+[**\BolApi\Client\Model\Inbounds**](../Model/Inbounds.md)
 
 ### Authorization
 
@@ -321,7 +321,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\InboundsApi(
+$apiInstance = new BolApi\Client\Api\InboundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -377,12 +377,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\InboundsApi(
+$apiInstance = new BolApi\Client\Api\InboundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\ProductLabelsRequest(); // \OpenAPI\Client\Model\ProductLabelsRequest
+$body = new \BolApi\Client\Model\ProductLabelsRequest(); // \BolApi\Client\Model\ProductLabelsRequest
 
 try {
     $result = $apiInstance->getProductLabels($body);
@@ -396,7 +396,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\OpenAPI\Client\Model\ProductLabelsRequest**](../Model/ProductLabelsRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\ProductLabelsRequest**](../Model/ProductLabelsRequest.md)|  | [optional]
 
 ### Return type
 
@@ -418,7 +418,7 @@ No authorization required
 ## `postInbound()`
 
 ```php
-postInbound($body): \OpenAPI\Client\Model\ProcessStatus
+postInbound($body): \BolApi\Client\Model\ProcessStatus
 ```
 
 Post inbound shipment
@@ -433,12 +433,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\InboundsApi(
+$apiInstance = new BolApi\Client\Api\InboundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\InboundRequest(); // \OpenAPI\Client\Model\InboundRequest
+$body = new \BolApi\Client\Model\InboundRequest(); // \BolApi\Client\Model\InboundRequest
 
 try {
     $result = $apiInstance->postInbound($body);
@@ -452,11 +452,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\OpenAPI\Client\Model\InboundRequest**](../Model/InboundRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\InboundRequest**](../Model/InboundRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 

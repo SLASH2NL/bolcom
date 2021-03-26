@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ContainerForTheOrderItemsThatHaveToBeCancelled Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,7 +60,7 @@ class ContainerForTheOrderItemsThatHaveToBeCancelled implements ModelInterface, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'order_items' => '\OpenAPI\Client\Model\OrderItemCancellation[]'
+        'order_items' => '\BolApi\Client\Model\OrderItemCancellation[]'
     ];
 
     /**
@@ -223,7 +223,7 @@ class ContainerForTheOrderItemsThatHaveToBeCancelled implements ModelInterface, 
     /**
      * Gets order_items
      *
-     * @return \OpenAPI\Client\Model\OrderItemCancellation[]
+     * @return \BolApi\Client\Model\OrderItemCancellation[]
      */
     public function getOrderItems()
     {
@@ -233,7 +233,7 @@ class ContainerForTheOrderItemsThatHaveToBeCancelled implements ModelInterface, 
     /**
      * Sets order_items
      *
-     * @param \OpenAPI\Client\Model\OrderItemCancellation[] $order_items List of order items to cancel. Order item id's must belong to the same order.
+     * @param \BolApi\Client\Model\OrderItemCancellation[] $order_items List of order items to cancel. Order item id's must belong to the same order.
      *
      * @return self
      */

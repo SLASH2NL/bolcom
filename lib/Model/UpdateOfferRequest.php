@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * UpdateOfferRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -63,7 +63,7 @@ class UpdateOfferRequest implements ModelInterface, ArrayAccess, \JsonSerializab
         'reference' => 'string',
         'on_hold_by_retailer' => 'bool',
         'unknown_product_title' => 'string',
-        'fulfilment' => '\OpenAPI\Client\Model\Fulfilment'
+        'fulfilment' => '\BolApi\Client\Model\Fulfilment'
     ];
 
     /**
@@ -335,7 +335,7 @@ class UpdateOfferRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets fulfilment
      *
-     * @return \OpenAPI\Client\Model\Fulfilment
+     * @return \BolApi\Client\Model\Fulfilment
      */
     public function getFulfilment()
     {
@@ -345,7 +345,7 @@ class UpdateOfferRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets fulfilment
      *
-     * @param \OpenAPI\Client\Model\Fulfilment $fulfilment fulfilment
+     * @param \BolApi\Client\Model\Fulfilment $fulfilment fulfilment
      *
      * @return self
      */

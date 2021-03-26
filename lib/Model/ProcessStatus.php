@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ProcessStatus Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -67,7 +67,7 @@ class ProcessStatus implements ModelInterface, ArrayAccess, \JsonSerializable
         'status' => 'string',
         'error_message' => 'string',
         'create_timestamp' => '\DateTime',
-        'links' => '\OpenAPI\Client\Model\Link[]'
+        'links' => '\BolApi\Client\Model\Link[]'
     ];
 
     /**
@@ -460,7 +460,7 @@ class ProcessStatus implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets links
      *
-     * @return \OpenAPI\Client\Model\Link[]|null
+     * @return \BolApi\Client\Model\Link[]|null
      */
     public function getLinks()
     {
@@ -470,7 +470,7 @@ class ProcessStatus implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets links
      *
-     * @param \OpenAPI\Client\Model\Link[]|null $links Lists available actions applicable to this endpoint.
+     * @param \BolApi\Client\Model\Link[]|null $links Lists available actions applicable to this endpoint.
      *
      * @return self
      */

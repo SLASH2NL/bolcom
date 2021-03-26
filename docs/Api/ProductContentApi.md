@@ -1,4 +1,4 @@
-# OpenAPI\Client\ProductContentApi
+# BolApi\Client\ProductContentApi
 
 All URIs are relative to https://api.bol.com.
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 ## `getValidationReport()`
 
 ```php
-getValidationReport($upload_id): \OpenAPI\Client\Model\ValidationReportResponse
+getValidationReport($upload_id): \BolApi\Client\Model\ValidationReportResponse
 ```
 
 Get validation report
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ProductContentApi(
+$apiInstance = new BolApi\Client\Api\ProductContentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ValidationReportResponse**](../Model/ValidationReportResponse.md)
+[**\BolApi\Client\Model\ValidationReportResponse**](../Model/ValidationReportResponse.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ No authorization required
 ## `postProductContent()`
 
 ```php
-postProductContent($body): \OpenAPI\Client\Model\ProcessStatus
+postProductContent($body): \BolApi\Client\Model\ProcessStatus
 ```
 
 Post product content
@@ -82,12 +82,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ProductContentApi(
+$apiInstance = new BolApi\Client\Api\ProductContentApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\CreateProductContentRequest(); // \OpenAPI\Client\Model\CreateProductContentRequest
+$body = new \BolApi\Client\Model\CreateProductContentRequest(); // \BolApi\Client\Model\CreateProductContentRequest
 
 try {
     $result = $apiInstance->postProductContent($body);
@@ -101,11 +101,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\OpenAPI\Client\Model\CreateProductContentRequest**](../Model/CreateProductContentRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\CreateProductContentRequest**](../Model/CreateProductContentRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * DeliveryOption Class Doc Comment
  *
  * @category Class
  * @description A delivery option shows how and the costs of a transport for a shippable configuration
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -65,9 +65,9 @@ class DeliveryOption implements ModelInterface, ArrayAccess, \JsonSerializable
         'valid_until_date' => '\DateTime',
         'transporter_code' => 'string',
         'label_type' => 'string',
-        'label_price' => '\OpenAPI\Client\Model\LabelPrice',
-        'package_restrictions' => '\OpenAPI\Client\Model\PackageRestrictions',
-        'handover_details' => '\OpenAPI\Client\Model\HandoverDetails'
+        'label_price' => '\BolApi\Client\Model\LabelPrice',
+        'package_restrictions' => '\BolApi\Client\Model\PackageRestrictions',
+        'handover_details' => '\BolApi\Client\Model\HandoverDetails'
     ];
 
     /**
@@ -387,7 +387,7 @@ class DeliveryOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets label_price
      *
-     * @return \OpenAPI\Client\Model\LabelPrice
+     * @return \BolApi\Client\Model\LabelPrice
      */
     public function getLabelPrice()
     {
@@ -397,7 +397,7 @@ class DeliveryOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets label_price
      *
-     * @param \OpenAPI\Client\Model\LabelPrice $label_price label_price
+     * @param \BolApi\Client\Model\LabelPrice $label_price label_price
      *
      * @return self
      */
@@ -411,7 +411,7 @@ class DeliveryOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets package_restrictions
      *
-     * @return \OpenAPI\Client\Model\PackageRestrictions
+     * @return \BolApi\Client\Model\PackageRestrictions
      */
     public function getPackageRestrictions()
     {
@@ -421,7 +421,7 @@ class DeliveryOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets package_restrictions
      *
-     * @param \OpenAPI\Client\Model\PackageRestrictions $package_restrictions package_restrictions
+     * @param \BolApi\Client\Model\PackageRestrictions $package_restrictions package_restrictions
      *
      * @return self
      */
@@ -435,7 +435,7 @@ class DeliveryOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets handover_details
      *
-     * @return \OpenAPI\Client\Model\HandoverDetails|null
+     * @return \BolApi\Client\Model\HandoverDetails|null
      */
     public function getHandoverDetails()
     {
@@ -445,7 +445,7 @@ class DeliveryOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets handover_details
      *
-     * @param \OpenAPI\Client\Model\HandoverDetails|null $handover_details handover_details
+     * @param \BolApi\Client\Model\HandoverDetails|null $handover_details handover_details
      *
      * @return self
      */

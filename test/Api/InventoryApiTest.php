@@ -4,7 +4,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Bolcom\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,18 +26,18 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace OpenAPI\Client\Test\Api;
+namespace Bolcom\Client\Test\Api;
 
-use \OpenAPI\Client\Configuration;
-use \OpenAPI\Client\ApiException;
-use \OpenAPI\Client\ObjectSerializer;
+use \Bolcom\Client\Configuration;
+use \Bolcom\Client\ApiException;
+use \Bolcom\Client\ObjectSerializer;
 use PHPUnit\Framework\TestCase;
 
 /**
  * InventoryApiTest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  Bolcom\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

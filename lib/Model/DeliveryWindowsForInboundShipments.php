@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * DeliveryWindowsForInboundShipments Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,7 +60,7 @@ class DeliveryWindowsForInboundShipments implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'time_slots' => '\OpenAPI\Client\Model\TimeSlot[]'
+        'time_slots' => '\BolApi\Client\Model\TimeSlot[]'
     ];
 
     /**
@@ -212,7 +212,7 @@ class DeliveryWindowsForInboundShipments implements ModelInterface, ArrayAccess,
     /**
      * Gets time_slots
      *
-     * @return \OpenAPI\Client\Model\TimeSlot[]|null
+     * @return \BolApi\Client\Model\TimeSlot[]|null
      */
     public function getTimeSlots()
     {
@@ -222,7 +222,7 @@ class DeliveryWindowsForInboundShipments implements ModelInterface, ArrayAccess,
     /**
      * Sets time_slots
      *
-     * @param \OpenAPI\Client\Model\TimeSlot[]|null $time_slots An available timeslot to be reserved for inbound shipments.
+     * @param \BolApi\Client\Model\TimeSlot[]|null $time_slots An available timeslot to be reserved for inbound shipments.
      *
      * @return self
      */

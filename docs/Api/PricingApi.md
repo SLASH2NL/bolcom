@@ -1,4 +1,4 @@
-# OpenAPI\Client\PricingApi
+# BolApi\Client\PricingApi
 
 All URIs are relative to https://api.bol.com.
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `getRetailPrice()`
 
 ```php
-getRetailPrice($ean): \OpenAPI\Client\Model\RetailPriceResponse
+getRetailPrice($ean): \BolApi\Client\Model\RetailPriceResponse
 ```
 
 BETA: Retrieve retail price information for an EAN.
@@ -25,7 +25,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\PricingApi(
+$apiInstance = new BolApi\Client\Api\PricingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RetailPriceResponse**](../Model/RetailPriceResponse.md)
+[**\BolApi\Client\Model\RetailPriceResponse**](../Model/RetailPriceResponse.md)
 
 ### Authorization
 

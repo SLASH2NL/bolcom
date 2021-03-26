@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * InventoryResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,7 +60,7 @@ class InventoryResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'inventory' => '\OpenAPI\Client\Model\Inventory[]'
+        'inventory' => '\BolApi\Client\Model\Inventory[]'
     ];
 
     /**
@@ -215,7 +215,7 @@ class InventoryResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets inventory
      *
-     * @return \OpenAPI\Client\Model\Inventory[]
+     * @return \BolApi\Client\Model\Inventory[]
      */
     public function getInventory()
     {
@@ -225,7 +225,7 @@ class InventoryResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets inventory
      *
-     * @param \OpenAPI\Client\Model\Inventory[] $inventory inventory
+     * @param \BolApi\Client\Model\Inventory[] $inventory inventory
      *
      * @return self
      */

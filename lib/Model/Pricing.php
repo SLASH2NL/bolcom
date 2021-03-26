@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * Pricing Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,7 +60,7 @@ class Pricing implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'bundle_prices' => '\OpenAPI\Client\Model\BundlePrice[]'
+        'bundle_prices' => '\BolApi\Client\Model\BundlePrice[]'
     ];
 
     /**
@@ -223,7 +223,7 @@ class Pricing implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets bundle_prices
      *
-     * @return \OpenAPI\Client\Model\BundlePrice[]
+     * @return \BolApi\Client\Model\BundlePrice[]
      */
     public function getBundlePrices()
     {
@@ -233,7 +233,7 @@ class Pricing implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets bundle_prices
      *
-     * @param \OpenAPI\Client\Model\BundlePrice[] $bundle_prices A set of prices (containing a quantity and selling price) that apply to this offer.
+     * @param \BolApi\Client\Model\BundlePrice[] $bundle_prices A set of prices (containing a quantity and selling price) that apply to this offer.
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace BolApi\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use BolApi\Client\ApiException;
+use BolApi\Client\Configuration;
+use BolApi\Client\HeaderSelector;
+use BolApi\Client\ObjectSerializer;
 
 /**
  * InsightsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -125,9 +125,9 @@ class InsightsApi
      * @param  int $number_of_periods The number of periods for which the offer insights are requested back in time. (required)
      * @param  string[] $name The name of the requested offer insight. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\OfferInsights|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\OfferInsights|\BolApi\Client\Model\Problem
      */
     public function getOfferInsights($offer_id, $period, $number_of_periods, $name)
     {
@@ -145,9 +145,9 @@ class InsightsApi
      * @param  int $number_of_periods The number of periods for which the offer insights are requested back in time. (required)
      * @param  string[] $name The name of the requested offer insight. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\OfferInsights|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\OfferInsights|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOfferInsightsWithHttpInfo($offer_id, $period, $number_of_periods, $name)
     {
@@ -184,32 +184,32 @@ class InsightsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\OfferInsights' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\OfferInsights' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\OfferInsights', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\OfferInsights', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\OfferInsights';
+            $returnType = '\BolApi\Client\Model\OfferInsights';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -228,7 +228,7 @@ class InsightsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\OfferInsights',
+                        '\BolApi\Client\Model\OfferInsights',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -236,7 +236,7 @@ class InsightsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -284,7 +284,7 @@ class InsightsApi
      */
     public function getOfferInsightsAsyncWithHttpInfo($offer_id, $period, $number_of_periods, $name)
     {
-        $returnType = '\OpenAPI\Client\Model\OfferInsights';
+        $returnType = '\BolApi\Client\Model\OfferInsights';
         $request = $this->getOfferInsightsRequest($offer_id, $period, $number_of_periods, $name);
 
         return $this->client
@@ -468,9 +468,9 @@ class InsightsApi
      * @param  string $year Year number in the ISO-8601 standard. (required)
      * @param  string $week Week number in the ISO-8601 standard. If you would like to get the relative scores from the current week, please provide the current week number here. Be advised that measurements can change heavily over the course of the week. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\PerformanceIndicators
+     * @return \BolApi\Client\Model\PerformanceIndicators
      */
     public function getPerformanceIndicator($name, $year, $week)
     {
@@ -487,9 +487,9 @@ class InsightsApi
      * @param  string $year Year number in the ISO-8601 standard. (required)
      * @param  string $week Week number in the ISO-8601 standard. If you would like to get the relative scores from the current week, please provide the current week number here. Be advised that measurements can change heavily over the course of the week. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\PerformanceIndicators, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\PerformanceIndicators, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPerformanceIndicatorWithHttpInfo($name, $year, $week)
     {
@@ -526,20 +526,20 @@ class InsightsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\PerformanceIndicators' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\PerformanceIndicators' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\PerformanceIndicators', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\PerformanceIndicators', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\PerformanceIndicators';
+            $returnType = '\BolApi\Client\Model\PerformanceIndicators';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -558,7 +558,7 @@ class InsightsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\PerformanceIndicators',
+                        '\BolApi\Client\Model\PerformanceIndicators',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -604,7 +604,7 @@ class InsightsApi
      */
     public function getPerformanceIndicatorAsyncWithHttpInfo($name, $year, $week)
     {
-        $returnType = '\OpenAPI\Client\Model\PerformanceIndicators';
+        $returnType = '\BolApi\Client\Model\PerformanceIndicators';
         $request = $this->getPerformanceIndicatorRequest($name, $year, $week);
 
         return $this->client
@@ -773,9 +773,9 @@ class InsightsApi
      * @param  string $offer_id Unique identifier for an offer. (required)
      * @param  int $weeks_ahead The number of weeks into the future, starting from today. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SalesForecastResponse|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\SalesForecastResponse|\BolApi\Client\Model\Problem
      */
     public function getSalesForecast($offer_id, $weeks_ahead)
     {
@@ -791,9 +791,9 @@ class InsightsApi
      * @param  string $offer_id Unique identifier for an offer. (required)
      * @param  int $weeks_ahead The number of weeks into the future, starting from today. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SalesForecastResponse|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\SalesForecastResponse|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSalesForecastWithHttpInfo($offer_id, $weeks_ahead)
     {
@@ -830,32 +830,32 @@ class InsightsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SalesForecastResponse' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\SalesForecastResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SalesForecastResponse', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\SalesForecastResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\SalesForecastResponse';
+            $returnType = '\BolApi\Client\Model\SalesForecastResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -874,7 +874,7 @@ class InsightsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SalesForecastResponse',
+                        '\BolApi\Client\Model\SalesForecastResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -882,7 +882,7 @@ class InsightsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -926,7 +926,7 @@ class InsightsApi
      */
     public function getSalesForecastAsyncWithHttpInfo($offer_id, $weeks_ahead)
     {
-        $returnType = '\OpenAPI\Client\Model\SalesForecastResponse';
+        $returnType = '\BolApi\Client\Model\SalesForecastResponse';
         $request = $this->getSalesForecastRequest($offer_id, $weeks_ahead);
 
         return $this->client

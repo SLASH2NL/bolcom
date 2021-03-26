@@ -4,7 +4,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace BolApi\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use BolApi\Client\ApiException;
+use BolApi\Client\Configuration;
+use BolApi\Client\HeaderSelector;
+use BolApi\Client\ObjectSerializer;
 
 /**
  * ProcessStatusApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -122,9 +122,9 @@ class ProcessStatusApi
      *
      * @param  int $process_status_id The id of the process status being requested. This id is supplied in every response to a PUT/POST/DELETE request on the other endpoints. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem
      */
     public function getProcessStatus($process_status_id)
     {
@@ -139,9 +139,9 @@ class ProcessStatusApi
      *
      * @param  int $process_status_id The id of the process status being requested. This id is supplied in every response to a PUT/POST/DELETE request on the other endpoints. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getProcessStatusWithHttpInfo($process_status_id)
     {
@@ -178,32 +178,32 @@ class ProcessStatusApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ProcessStatus' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ProcessStatus' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProcessStatus', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ProcessStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+            $returnType = '\BolApi\Client\Model\ProcessStatus';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -222,7 +222,7 @@ class ProcessStatusApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProcessStatus',
+                        '\BolApi\Client\Model\ProcessStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -230,7 +230,7 @@ class ProcessStatusApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -272,7 +272,7 @@ class ProcessStatusApi
      */
     public function getProcessStatusAsyncWithHttpInfo($process_status_id)
     {
-        $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+        $returnType = '\BolApi\Client\Model\ProcessStatus';
         $request = $this->getProcessStatusRequest($process_status_id);
 
         return $this->client
@@ -407,11 +407,11 @@ class ProcessStatusApi
      *
      * Gets the status of multiple asynchronous processes by an array of process status id's for a retailer
      *
-     * @param  \OpenAPI\Client\Model\BulkProcessStatusRequest $body body (optional)
+     * @param  \BolApi\Client\Model\BulkProcessStatusRequest $body body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProcessStatusResponse|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ProcessStatusResponse|\BolApi\Client\Model\Problem
      */
     public function getProcessStatusBulk($body = null)
     {
@@ -424,11 +424,11 @@ class ProcessStatusApi
      *
      * Gets the status of multiple asynchronous processes by an array of process status id's for a retailer
      *
-     * @param  \OpenAPI\Client\Model\BulkProcessStatusRequest $body (optional)
+     * @param  \BolApi\Client\Model\BulkProcessStatusRequest $body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProcessStatusResponse|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ProcessStatusResponse|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getProcessStatusBulkWithHttpInfo($body = null)
     {
@@ -465,32 +465,32 @@ class ProcessStatusApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ProcessStatusResponse' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ProcessStatusResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProcessStatusResponse', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ProcessStatusResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProcessStatusResponse';
+            $returnType = '\BolApi\Client\Model\ProcessStatusResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -509,7 +509,7 @@ class ProcessStatusApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProcessStatusResponse',
+                        '\BolApi\Client\Model\ProcessStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -517,7 +517,7 @@ class ProcessStatusApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -532,7 +532,7 @@ class ProcessStatusApi
      *
      * Gets the status of multiple asynchronous processes by an array of process status id's for a retailer
      *
-     * @param  \OpenAPI\Client\Model\BulkProcessStatusRequest $body (optional)
+     * @param  \BolApi\Client\Model\BulkProcessStatusRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -552,14 +552,14 @@ class ProcessStatusApi
      *
      * Gets the status of multiple asynchronous processes by an array of process status id's for a retailer
      *
-     * @param  \OpenAPI\Client\Model\BulkProcessStatusRequest $body (optional)
+     * @param  \BolApi\Client\Model\BulkProcessStatusRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function getProcessStatusBulkAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\OpenAPI\Client\Model\ProcessStatusResponse';
+        $returnType = '\BolApi\Client\Model\ProcessStatusResponse';
         $request = $this->getProcessStatusBulkRequest($body);
 
         return $this->client
@@ -599,7 +599,7 @@ class ProcessStatusApi
     /**
      * Create request for operation 'getProcessStatusBulk'
      *
-     * @param  \OpenAPI\Client\Model\BulkProcessStatusRequest $body (optional)
+     * @param  \BolApi\Client\Model\BulkProcessStatusRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -690,9 +690,9 @@ class ProcessStatusApi
      * @param  string $event_type The event type can only be used in combination with the entity id. (required)
      * @param  int $page The requested page number with a page size of 50 items. (optional, default to 1)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProcessStatusResponse|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ProcessStatusResponse|\BolApi\Client\Model\Problem
      */
     public function getProcessStatusEntityId($entity_id, $event_type, $page = 1)
     {
@@ -709,9 +709,9 @@ class ProcessStatusApi
      * @param  string $event_type The event type can only be used in combination with the entity id. (required)
      * @param  int $page The requested page number with a page size of 50 items. (optional, default to 1)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProcessStatusResponse|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ProcessStatusResponse|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getProcessStatusEntityIdWithHttpInfo($entity_id, $event_type, $page = 1)
     {
@@ -748,32 +748,32 @@ class ProcessStatusApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ProcessStatusResponse' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ProcessStatusResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProcessStatusResponse', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ProcessStatusResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProcessStatusResponse';
+            $returnType = '\BolApi\Client\Model\ProcessStatusResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -792,7 +792,7 @@ class ProcessStatusApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProcessStatusResponse',
+                        '\BolApi\Client\Model\ProcessStatusResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -800,7 +800,7 @@ class ProcessStatusApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -846,7 +846,7 @@ class ProcessStatusApi
      */
     public function getProcessStatusEntityIdAsyncWithHttpInfo($entity_id, $event_type, $page = 1)
     {
-        $returnType = '\OpenAPI\Client\Model\ProcessStatusResponse';
+        $returnType = '\BolApi\Client\Model\ProcessStatusResponse';
         $request = $this->getProcessStatusEntityIdRequest($entity_id, $event_type, $page);
 
         return $this->client

@@ -11,6 +11,6 @@ Name | Type | Description | Notes
 **return_reason** | **string** | The reason why the customer returned this product. | [optional]
 **return_reason_comments** | **string** | Additional details from the customer as to why this item was returned. | [optional]
 **handled** | **bool** | Indicates if this return item has been handled (by the retailer). | [optional]
-**processing_results** | [**\OpenAPI\Client\Model\ReturnProcessingResult[]**](ReturnProcessingResult.md) |  |
+**processing_results** | [**\BolApi\Client\Model\ReturnProcessingResult[]**](ReturnProcessingResult.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

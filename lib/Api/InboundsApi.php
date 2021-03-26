@@ -4,7 +4,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace BolApi\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use BolApi\Client\ApiException;
+use BolApi\Client\Configuration;
+use BolApi\Client\HeaderSelector;
+use BolApi\Client\ObjectSerializer;
 
 /**
  * InboundsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -123,9 +123,9 @@ class InboundsApi
      * @param  string $delivery_date The expected delivery date for the inbound in ISO 8601 format. (optional, default to 'Today's date.')
      * @param  int $items_to_send The number of items that will be sent in the inbound. (optional, default to 1)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\DeliveryWindowsForInboundShipments|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\DeliveryWindowsForInboundShipments|\BolApi\Client\Model\Problem
      */
     public function getDeliveryWindows($delivery_date = 'Today's date.', $items_to_send = 1)
     {
@@ -141,9 +141,9 @@ class InboundsApi
      * @param  string $delivery_date The expected delivery date for the inbound in ISO 8601 format. (optional, default to 'Today's date.')
      * @param  int $items_to_send The number of items that will be sent in the inbound. (optional, default to 1)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\DeliveryWindowsForInboundShipments|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\DeliveryWindowsForInboundShipments|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDeliveryWindowsWithHttpInfo($delivery_date = 'Today's date.', $items_to_send = 1)
     {
@@ -180,32 +180,32 @@ class InboundsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\DeliveryWindowsForInboundShipments' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\DeliveryWindowsForInboundShipments' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\DeliveryWindowsForInboundShipments', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\DeliveryWindowsForInboundShipments', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\DeliveryWindowsForInboundShipments';
+            $returnType = '\BolApi\Client\Model\DeliveryWindowsForInboundShipments';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -224,7 +224,7 @@ class InboundsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\DeliveryWindowsForInboundShipments',
+                        '\BolApi\Client\Model\DeliveryWindowsForInboundShipments',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -232,7 +232,7 @@ class InboundsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -276,7 +276,7 @@ class InboundsApi
      */
     public function getDeliveryWindowsAsyncWithHttpInfo($delivery_date = 'Today's date.', $items_to_send = 1)
     {
-        $returnType = '\OpenAPI\Client\Model\DeliveryWindowsForInboundShipments';
+        $returnType = '\BolApi\Client\Model\DeliveryWindowsForInboundShipments';
         $request = $this->getDeliveryWindowsRequest($delivery_date, $items_to_send);
 
         return $this->client
@@ -414,9 +414,9 @@ class InboundsApi
      *
      * @param  int $inbound_id A unique identifier for an inbound shipment. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Inbound|\OpenAPI\Client\Model\Problem|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\Inbound|\BolApi\Client\Model\Problem|\BolApi\Client\Model\Problem
      */
     public function getInbound($inbound_id)
     {
@@ -431,9 +431,9 @@ class InboundsApi
      *
      * @param  int $inbound_id A unique identifier for an inbound shipment. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Inbound|\OpenAPI\Client\Model\Problem|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\Inbound|\BolApi\Client\Model\Problem|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInboundWithHttpInfo($inbound_id)
     {
@@ -470,44 +470,44 @@ class InboundsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Inbound' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Inbound' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Inbound', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Inbound', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Inbound';
+            $returnType = '\BolApi\Client\Model\Inbound';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -526,7 +526,7 @@ class InboundsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Inbound',
+                        '\BolApi\Client\Model\Inbound',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -534,7 +534,7 @@ class InboundsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -542,7 +542,7 @@ class InboundsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -584,7 +584,7 @@ class InboundsApi
      */
     public function getInboundAsyncWithHttpInfo($inbound_id)
     {
-        $returnType = '\OpenAPI\Client\Model\Inbound';
+        $returnType = '\BolApi\Client\Model\Inbound';
         $request = $this->getInboundRequest($inbound_id);
 
         return $this->client
@@ -721,9 +721,9 @@ class InboundsApi
      *
      * @param  int $inbound_id A unique identifier for an inbound shipment. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return string[]|\OpenAPI\Client\Model\Problem|\OpenAPI\Client\Model\Problem
+     * @return string[]|\BolApi\Client\Model\Problem|\BolApi\Client\Model\Problem
      */
     public function getInboundShippingLabel($inbound_id)
     {
@@ -738,9 +738,9 @@ class InboundsApi
      *
      * @param  int $inbound_id A unique identifier for an inbound shipment. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of string[]|\OpenAPI\Client\Model\Problem|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of string[]|\BolApi\Client\Model\Problem|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInboundShippingLabelWithHttpInfo($inbound_id)
     {
@@ -789,26 +789,26 @@ class InboundsApi
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -841,7 +841,7 @@ class InboundsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -849,7 +849,7 @@ class InboundsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1027,9 +1027,9 @@ class InboundsApi
      * Get inbound transporters list
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\TransportersResponse
+     * @return \BolApi\Client\Model\TransportersResponse
      */
     public function getInboundTransporters()
     {
@@ -1043,9 +1043,9 @@ class InboundsApi
      * Get inbound transporters list
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\TransportersResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\TransportersResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInboundTransportersWithHttpInfo()
     {
@@ -1082,20 +1082,20 @@ class InboundsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\TransportersResponse' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\TransportersResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\TransportersResponse', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\TransportersResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\TransportersResponse';
+            $returnType = '\BolApi\Client\Model\TransportersResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1114,7 +1114,7 @@ class InboundsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\TransportersResponse',
+                        '\BolApi\Client\Model\TransportersResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1154,7 +1154,7 @@ class InboundsApi
      */
     public function getInboundTransportersAsyncWithHttpInfo()
     {
-        $returnType = '\OpenAPI\Client\Model\TransportersResponse';
+        $returnType = '\BolApi\Client\Model\TransportersResponse';
         $request = $this->getInboundTransportersRequest();
 
         return $this->client
@@ -1281,9 +1281,9 @@ class InboundsApi
      * @param  string $state The current state of the inbound shipment. (optional)
      * @param  int $page The requested page number with a page size of 50 items. (optional, default to 1)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Inbounds|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\Inbounds|\BolApi\Client\Model\Problem
      */
     public function getInbounds($reference = null, $bsku = null, $creation_start_date = null, $creation_end_date = null, $state = null, $page = 1)
     {
@@ -1303,9 +1303,9 @@ class InboundsApi
      * @param  string $state The current state of the inbound shipment. (optional)
      * @param  int $page The requested page number with a page size of 50 items. (optional, default to 1)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Inbounds|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\Inbounds|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInboundsWithHttpInfo($reference = null, $bsku = null, $creation_start_date = null, $creation_end_date = null, $state = null, $page = 1)
     {
@@ -1342,32 +1342,32 @@ class InboundsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Inbounds' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Inbounds' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Inbounds', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Inbounds', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Inbounds';
+            $returnType = '\BolApi\Client\Model\Inbounds';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1386,7 +1386,7 @@ class InboundsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Inbounds',
+                        '\BolApi\Client\Model\Inbounds',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1394,7 +1394,7 @@ class InboundsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1446,7 +1446,7 @@ class InboundsApi
      */
     public function getInboundsAsyncWithHttpInfo($reference = null, $bsku = null, $creation_start_date = null, $creation_end_date = null, $state = null, $page = 1)
     {
-        $returnType = '\OpenAPI\Client\Model\Inbounds';
+        $returnType = '\BolApi\Client\Model\Inbounds';
         $request = $this->getInboundsRequest($reference, $bsku, $creation_start_date, $creation_end_date, $state, $page);
 
         return $this->client
@@ -1620,9 +1620,9 @@ class InboundsApi
      *
      * @param  int $inbound_id A unique identifier for an inbound shipment. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return string[]|\OpenAPI\Client\Model\Problem|\OpenAPI\Client\Model\Problem
+     * @return string[]|\BolApi\Client\Model\Problem|\BolApi\Client\Model\Problem
      */
     public function getPackingList($inbound_id)
     {
@@ -1637,9 +1637,9 @@ class InboundsApi
      *
      * @param  int $inbound_id A unique identifier for an inbound shipment. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of string[]|\OpenAPI\Client\Model\Problem|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of string[]|\BolApi\Client\Model\Problem|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPackingListWithHttpInfo($inbound_id)
     {
@@ -1688,26 +1688,26 @@ class InboundsApi
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1740,7 +1740,7 @@ class InboundsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1748,7 +1748,7 @@ class InboundsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1925,11 +1925,11 @@ class InboundsApi
      *
      * Get inbound product labels by EAN
      *
-     * @param  \OpenAPI\Client\Model\ProductLabelsRequest $body body (optional)
+     * @param  \BolApi\Client\Model\ProductLabelsRequest $body body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return string[]|\OpenAPI\Client\Model\Problem|\OpenAPI\Client\Model\Problem
+     * @return string[]|\BolApi\Client\Model\Problem|\BolApi\Client\Model\Problem
      */
     public function getProductLabels($body = null)
     {
@@ -1942,11 +1942,11 @@ class InboundsApi
      *
      * Get inbound product labels by EAN
      *
-     * @param  \OpenAPI\Client\Model\ProductLabelsRequest $body (optional)
+     * @param  \BolApi\Client\Model\ProductLabelsRequest $body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of string[]|\OpenAPI\Client\Model\Problem|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of string[]|\BolApi\Client\Model\Problem|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getProductLabelsWithHttpInfo($body = null)
     {
@@ -1995,26 +1995,26 @@ class InboundsApi
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -2047,7 +2047,7 @@ class InboundsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2055,7 +2055,7 @@ class InboundsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2070,7 +2070,7 @@ class InboundsApi
      *
      * Get inbound product labels by EAN
      *
-     * @param  \OpenAPI\Client\Model\ProductLabelsRequest $body (optional)
+     * @param  \BolApi\Client\Model\ProductLabelsRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2090,7 +2090,7 @@ class InboundsApi
      *
      * Get inbound product labels by EAN
      *
-     * @param  \OpenAPI\Client\Model\ProductLabelsRequest $body (optional)
+     * @param  \BolApi\Client\Model\ProductLabelsRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2137,7 +2137,7 @@ class InboundsApi
     /**
      * Create request for operation 'getProductLabels'
      *
-     * @param  \OpenAPI\Client\Model\ProductLabelsRequest $body (optional)
+     * @param  \BolApi\Client\Model\ProductLabelsRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -2224,11 +2224,11 @@ class InboundsApi
      *
      * Post inbound shipment
      *
-     * @param  \OpenAPI\Client\Model\InboundRequest $body body (optional)
+     * @param  \BolApi\Client\Model\InboundRequest $body body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem
      */
     public function postInbound($body = null)
     {
@@ -2241,11 +2241,11 @@ class InboundsApi
      *
      * Post inbound shipment
      *
-     * @param  \OpenAPI\Client\Model\InboundRequest $body (optional)
+     * @param  \BolApi\Client\Model\InboundRequest $body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function postInboundWithHttpInfo($body = null)
     {
@@ -2282,32 +2282,32 @@ class InboundsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 202:
-                    if ('\OpenAPI\Client\Model\ProcessStatus' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ProcessStatus' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProcessStatus', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ProcessStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+            $returnType = '\BolApi\Client\Model\ProcessStatus';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -2326,7 +2326,7 @@ class InboundsApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProcessStatus',
+                        '\BolApi\Client\Model\ProcessStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2334,7 +2334,7 @@ class InboundsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2349,7 +2349,7 @@ class InboundsApi
      *
      * Post inbound shipment
      *
-     * @param  \OpenAPI\Client\Model\InboundRequest $body (optional)
+     * @param  \BolApi\Client\Model\InboundRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -2369,14 +2369,14 @@ class InboundsApi
      *
      * Post inbound shipment
      *
-     * @param  \OpenAPI\Client\Model\InboundRequest $body (optional)
+     * @param  \BolApi\Client\Model\InboundRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postInboundAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+        $returnType = '\BolApi\Client\Model\ProcessStatus';
         $request = $this->postInboundRequest($body);
 
         return $this->client
@@ -2416,7 +2416,7 @@ class InboundsApi
     /**
      * Create request for operation 'postInbound'
      *
-     * @param  \OpenAPI\Client\Model\InboundRequest $body (optional)
+     * @param  \BolApi\Client\Model\InboundRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

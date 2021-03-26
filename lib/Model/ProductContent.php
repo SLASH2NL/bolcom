@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ProductContent Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,7 +61,7 @@ class ProductContent implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'internal_reference' => 'string',
-        'attributes' => '\OpenAPI\Client\Model\Attribute[]'
+        'attributes' => '\BolApi\Client\Model\Attribute[]'
     ];
 
     /**
@@ -271,7 +271,7 @@ class ProductContent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets attributes
      *
-     * @return \OpenAPI\Client\Model\Attribute[]
+     * @return \BolApi\Client\Model\Attribute[]
      */
     public function getAttributes()
     {
@@ -281,7 +281,7 @@ class ProductContent implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets attributes
      *
-     * @param \OpenAPI\Client\Model\Attribute[] $attributes A list of attributes.
+     * @param \BolApi\Client\Model\Attribute[] $attributes A list of attributes.
      *
      * @return self
      */

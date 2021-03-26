@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ProductLabelsRequest Class Doc Comment
  *
  * @category Class
  * @description The product labels to retrieve.
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -62,7 +62,7 @@ class ProductLabelsRequest implements ModelInterface, ArrayAccess, \JsonSerializ
       */
     protected static $openAPITypes = [
         'format' => 'string',
-        'product_labels' => '\OpenAPI\Client\Model\ProductLabel[]'
+        'product_labels' => '\BolApi\Client\Model\ProductLabel[]'
     ];
 
     /**
@@ -296,7 +296,7 @@ class ProductLabelsRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets product_labels
      *
-     * @return \OpenAPI\Client\Model\ProductLabel[]
+     * @return \BolApi\Client\Model\ProductLabel[]
      */
     public function getProductLabels()
     {
@@ -306,7 +306,7 @@ class ProductLabelsRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets product_labels
      *
-     * @param \OpenAPI\Client\Model\ProductLabel[] $product_labels product_labels
+     * @param \BolApi\Client\Model\ProductLabel[] $product_labels product_labels
      *
      * @return self
      */

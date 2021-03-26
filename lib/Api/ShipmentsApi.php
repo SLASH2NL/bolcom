@@ -4,7 +4,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace BolApi\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use BolApi\Client\ApiException;
+use BolApi\Client\Configuration;
+use BolApi\Client\HeaderSelector;
+use BolApi\Client\ObjectSerializer;
 
 /**
  * ShipmentsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -122,9 +122,9 @@ class ShipmentsApi
      *
      * @param  int $shipment_id The id of the shipment. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Shipment|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\Shipment|\BolApi\Client\Model\Problem
      */
     public function getShipment($shipment_id)
     {
@@ -139,9 +139,9 @@ class ShipmentsApi
      *
      * @param  int $shipment_id The id of the shipment. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Shipment|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\Shipment|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getShipmentWithHttpInfo($shipment_id)
     {
@@ -178,32 +178,32 @@ class ShipmentsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Shipment' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Shipment' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Shipment', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Shipment', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Shipment';
+            $returnType = '\BolApi\Client\Model\Shipment';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -222,7 +222,7 @@ class ShipmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Shipment',
+                        '\BolApi\Client\Model\Shipment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -230,7 +230,7 @@ class ShipmentsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -272,7 +272,7 @@ class ShipmentsApi
      */
     public function getShipmentAsyncWithHttpInfo($shipment_id)
     {
-        $returnType = '\OpenAPI\Client\Model\Shipment';
+        $returnType = '\BolApi\Client\Model\Shipment';
         $request = $this->getShipmentRequest($shipment_id);
 
         return $this->client
@@ -411,9 +411,9 @@ class ShipmentsApi
      * @param  string $fulfilment_method The fulfilment method. Fulfilled by the retailer (FBR) or fulfilled by bol.com (FBB). (optional, default to 'FBR')
      * @param  string $order_id The id of the order. Only valid without fulfilment-method. The default fulfilment-method is ignored. (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ShipmentsResponse|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ShipmentsResponse|\BolApi\Client\Model\Problem
      */
     public function getShipments($page = 1, $fulfilment_method = 'FBR', $order_id = null)
     {
@@ -430,9 +430,9 @@ class ShipmentsApi
      * @param  string $fulfilment_method The fulfilment method. Fulfilled by the retailer (FBR) or fulfilled by bol.com (FBB). (optional, default to 'FBR')
      * @param  string $order_id The id of the order. Only valid without fulfilment-method. The default fulfilment-method is ignored. (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ShipmentsResponse|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ShipmentsResponse|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getShipmentsWithHttpInfo($page = 1, $fulfilment_method = 'FBR', $order_id = null)
     {
@@ -469,32 +469,32 @@ class ShipmentsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ShipmentsResponse' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ShipmentsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ShipmentsResponse', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ShipmentsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ShipmentsResponse';
+            $returnType = '\BolApi\Client\Model\ShipmentsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -513,7 +513,7 @@ class ShipmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ShipmentsResponse',
+                        '\BolApi\Client\Model\ShipmentsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -521,7 +521,7 @@ class ShipmentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -567,7 +567,7 @@ class ShipmentsApi
      */
     public function getShipmentsAsyncWithHttpInfo($page = 1, $fulfilment_method = 'FBR', $order_id = null)
     {
-        $returnType = '\OpenAPI\Client\Model\ShipmentsResponse';
+        $returnType = '\BolApi\Client\Model\ShipmentsResponse';
         $request = $this->getShipmentsRequest($page, $fulfilment_method, $order_id);
 
         return $this->client

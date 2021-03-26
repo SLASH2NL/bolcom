@@ -4,7 +4,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace BolApi\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use BolApi\Client\ApiException;
+use BolApi\Client\Configuration;
+use BolApi\Client\HeaderSelector;
+use BolApi\Client\ObjectSerializer;
 
 /**
  * SubscriptionsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -122,9 +122,9 @@ class SubscriptionsApi
      *
      * @param  int $subscription_id A unique identifier for the subscription (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem
      */
     public function deletePushNotificationSubscription($subscription_id)
     {
@@ -139,9 +139,9 @@ class SubscriptionsApi
      *
      * @param  int $subscription_id A unique identifier for the subscription (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function deletePushNotificationSubscriptionWithHttpInfo($subscription_id)
     {
@@ -178,32 +178,32 @@ class SubscriptionsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 202:
-                    if ('\OpenAPI\Client\Model\ProcessStatus' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ProcessStatus' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProcessStatus', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ProcessStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+            $returnType = '\BolApi\Client\Model\ProcessStatus';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -222,7 +222,7 @@ class SubscriptionsApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProcessStatus',
+                        '\BolApi\Client\Model\ProcessStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -230,7 +230,7 @@ class SubscriptionsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -272,7 +272,7 @@ class SubscriptionsApi
      */
     public function deletePushNotificationSubscriptionAsyncWithHttpInfo($subscription_id)
     {
-        $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+        $returnType = '\BolApi\Client\Model\ProcessStatus';
         $request = $this->deletePushNotificationSubscriptionRequest($subscription_id);
 
         return $this->client
@@ -409,9 +409,9 @@ class SubscriptionsApi
      *
      * @param  int $subscription_id A unique identifier for the subscription (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SubscriptionResponse|\OpenAPI\Client\Model\Problem|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\SubscriptionResponse|\BolApi\Client\Model\Problem|\BolApi\Client\Model\Problem
      */
     public function getPushNotificationSubscription($subscription_id)
     {
@@ -426,9 +426,9 @@ class SubscriptionsApi
      *
      * @param  int $subscription_id A unique identifier for the subscription (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SubscriptionResponse|\OpenAPI\Client\Model\Problem|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\SubscriptionResponse|\BolApi\Client\Model\Problem|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPushNotificationSubscriptionWithHttpInfo($subscription_id)
     {
@@ -465,44 +465,44 @@ class SubscriptionsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SubscriptionResponse' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\SubscriptionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SubscriptionResponse', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\SubscriptionResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\SubscriptionResponse';
+            $returnType = '\BolApi\Client\Model\SubscriptionResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -521,7 +521,7 @@ class SubscriptionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SubscriptionResponse',
+                        '\BolApi\Client\Model\SubscriptionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -529,7 +529,7 @@ class SubscriptionsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -537,7 +537,7 @@ class SubscriptionsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -579,7 +579,7 @@ class SubscriptionsApi
      */
     public function getPushNotificationSubscriptionAsyncWithHttpInfo($subscription_id)
     {
-        $returnType = '\OpenAPI\Client\Model\SubscriptionResponse';
+        $returnType = '\BolApi\Client\Model\SubscriptionResponse';
         $request = $this->getPushNotificationSubscriptionRequest($subscription_id);
 
         return $this->client
@@ -715,9 +715,9 @@ class SubscriptionsApi
      * BETA: Get push notification subscriptions
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\SubscriptionsResponse|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\SubscriptionsResponse|\BolApi\Client\Model\Problem
      */
     public function getPushNotificationSubscriptions()
     {
@@ -731,9 +731,9 @@ class SubscriptionsApi
      * BETA: Get push notification subscriptions
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\SubscriptionsResponse|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\SubscriptionsResponse|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPushNotificationSubscriptionsWithHttpInfo()
     {
@@ -770,32 +770,32 @@ class SubscriptionsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\SubscriptionsResponse' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\SubscriptionsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\SubscriptionsResponse', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\SubscriptionsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\SubscriptionsResponse';
+            $returnType = '\BolApi\Client\Model\SubscriptionsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -814,7 +814,7 @@ class SubscriptionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\SubscriptionsResponse',
+                        '\BolApi\Client\Model\SubscriptionsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -822,7 +822,7 @@ class SubscriptionsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -862,7 +862,7 @@ class SubscriptionsApi
      */
     public function getPushNotificationSubscriptionsAsyncWithHttpInfo()
     {
-        $returnType = '\OpenAPI\Client\Model\SubscriptionsResponse';
+        $returnType = '\BolApi\Client\Model\SubscriptionsResponse';
         $request = $this->getPushNotificationSubscriptionsRequest();
 
         return $this->client
@@ -983,9 +983,9 @@ class SubscriptionsApi
      * BETA: Retrieve public keys for push notification signature validation.
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\KeySetResponse
+     * @return \BolApi\Client\Model\KeySetResponse
      */
     public function getSubscriptionKeys()
     {
@@ -999,9 +999,9 @@ class SubscriptionsApi
      * BETA: Retrieve public keys for push notification signature validation.
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\KeySetResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\KeySetResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getSubscriptionKeysWithHttpInfo()
     {
@@ -1038,20 +1038,20 @@ class SubscriptionsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\KeySetResponse' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\KeySetResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\KeySetResponse', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\KeySetResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\KeySetResponse';
+            $returnType = '\BolApi\Client\Model\KeySetResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1070,7 +1070,7 @@ class SubscriptionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\KeySetResponse',
+                        '\BolApi\Client\Model\KeySetResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1110,7 +1110,7 @@ class SubscriptionsApi
      */
     public function getSubscriptionKeysAsyncWithHttpInfo()
     {
-        $returnType = '\OpenAPI\Client\Model\KeySetResponse';
+        $returnType = '\BolApi\Client\Model\KeySetResponse';
         $request = $this->getSubscriptionKeysRequest();
 
         return $this->client
@@ -1230,11 +1230,11 @@ class SubscriptionsApi
      *
      * BETA: Create push notification subscription
      *
-     * @param  \OpenAPI\Client\Model\CreateSubscriptionRequest $body body (optional)
+     * @param  \BolApi\Client\Model\CreateSubscriptionRequest $body body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem
      */
     public function postPushNotificationSubscription($body = null)
     {
@@ -1247,11 +1247,11 @@ class SubscriptionsApi
      *
      * BETA: Create push notification subscription
      *
-     * @param  \OpenAPI\Client\Model\CreateSubscriptionRequest $body (optional)
+     * @param  \BolApi\Client\Model\CreateSubscriptionRequest $body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function postPushNotificationSubscriptionWithHttpInfo($body = null)
     {
@@ -1288,32 +1288,32 @@ class SubscriptionsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 202:
-                    if ('\OpenAPI\Client\Model\ProcessStatus' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ProcessStatus' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProcessStatus', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ProcessStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+            $returnType = '\BolApi\Client\Model\ProcessStatus';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1332,7 +1332,7 @@ class SubscriptionsApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProcessStatus',
+                        '\BolApi\Client\Model\ProcessStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1340,7 +1340,7 @@ class SubscriptionsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1355,7 +1355,7 @@ class SubscriptionsApi
      *
      * BETA: Create push notification subscription
      *
-     * @param  \OpenAPI\Client\Model\CreateSubscriptionRequest $body (optional)
+     * @param  \BolApi\Client\Model\CreateSubscriptionRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1375,14 +1375,14 @@ class SubscriptionsApi
      *
      * BETA: Create push notification subscription
      *
-     * @param  \OpenAPI\Client\Model\CreateSubscriptionRequest $body (optional)
+     * @param  \BolApi\Client\Model\CreateSubscriptionRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postPushNotificationSubscriptionAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+        $returnType = '\BolApi\Client\Model\ProcessStatus';
         $request = $this->postPushNotificationSubscriptionRequest($body);
 
         return $this->client
@@ -1422,7 +1422,7 @@ class SubscriptionsApi
     /**
      * Create request for operation 'postPushNotificationSubscription'
      *
-     * @param  \OpenAPI\Client\Model\CreateSubscriptionRequest $body (optional)
+     * @param  \BolApi\Client\Model\CreateSubscriptionRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1510,9 +1510,9 @@ class SubscriptionsApi
      * BETA: Send test push notification for subscriptions
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem
      */
     public function postTestPushNotification()
     {
@@ -1526,9 +1526,9 @@ class SubscriptionsApi
      * BETA: Send test push notification for subscriptions
      *
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function postTestPushNotificationWithHttpInfo()
     {
@@ -1565,32 +1565,32 @@ class SubscriptionsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 202:
-                    if ('\OpenAPI\Client\Model\ProcessStatus' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ProcessStatus' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProcessStatus', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ProcessStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+            $returnType = '\BolApi\Client\Model\ProcessStatus';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1609,7 +1609,7 @@ class SubscriptionsApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProcessStatus',
+                        '\BolApi\Client\Model\ProcessStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1617,7 +1617,7 @@ class SubscriptionsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1657,7 +1657,7 @@ class SubscriptionsApi
      */
     public function postTestPushNotificationAsyncWithHttpInfo()
     {
-        $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+        $returnType = '\BolApi\Client\Model\ProcessStatus';
         $request = $this->postTestPushNotificationRequest();
 
         return $this->client
@@ -1778,11 +1778,11 @@ class SubscriptionsApi
      * BETA: Update push notification subscription
      *
      * @param  int $subscription_id A unique identifier for the subscription (required)
-     * @param  \OpenAPI\Client\Model\UpdateSubscriptionRequest $body body (optional)
+     * @param  \BolApi\Client\Model\UpdateSubscriptionRequest $body body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem
      */
     public function putPushNotificationSubscription($subscription_id, $body = null)
     {
@@ -1796,11 +1796,11 @@ class SubscriptionsApi
      * BETA: Update push notification subscription
      *
      * @param  int $subscription_id A unique identifier for the subscription (required)
-     * @param  \OpenAPI\Client\Model\UpdateSubscriptionRequest $body (optional)
+     * @param  \BolApi\Client\Model\UpdateSubscriptionRequest $body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function putPushNotificationSubscriptionWithHttpInfo($subscription_id, $body = null)
     {
@@ -1837,32 +1837,32 @@ class SubscriptionsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 202:
-                    if ('\OpenAPI\Client\Model\ProcessStatus' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ProcessStatus' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProcessStatus', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ProcessStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+            $returnType = '\BolApi\Client\Model\ProcessStatus';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1881,7 +1881,7 @@ class SubscriptionsApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProcessStatus',
+                        '\BolApi\Client\Model\ProcessStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1889,7 +1889,7 @@ class SubscriptionsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1905,7 +1905,7 @@ class SubscriptionsApi
      * BETA: Update push notification subscription
      *
      * @param  int $subscription_id A unique identifier for the subscription (required)
-     * @param  \OpenAPI\Client\Model\UpdateSubscriptionRequest $body (optional)
+     * @param  \BolApi\Client\Model\UpdateSubscriptionRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1926,14 +1926,14 @@ class SubscriptionsApi
      * BETA: Update push notification subscription
      *
      * @param  int $subscription_id A unique identifier for the subscription (required)
-     * @param  \OpenAPI\Client\Model\UpdateSubscriptionRequest $body (optional)
+     * @param  \BolApi\Client\Model\UpdateSubscriptionRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function putPushNotificationSubscriptionAsyncWithHttpInfo($subscription_id, $body = null)
     {
-        $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+        $returnType = '\BolApi\Client\Model\ProcessStatus';
         $request = $this->putPushNotificationSubscriptionRequest($subscription_id, $body);
 
         return $this->client
@@ -1974,7 +1974,7 @@ class SubscriptionsApi
      * Create request for operation 'putPushNotificationSubscription'
      *
      * @param  int $subscription_id A unique identifier for the subscription (required)
-     * @param  \OpenAPI\Client\Model\UpdateSubscriptionRequest $body (optional)
+     * @param  \BolApi\Client\Model\UpdateSubscriptionRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

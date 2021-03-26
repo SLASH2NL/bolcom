@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * OfferInsight Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -63,8 +63,8 @@ class OfferInsight implements ModelInterface, ArrayAccess, \JsonSerializable
         'name' => 'string',
         'type' => 'string',
         'total' => 'double',
-        'countries' => '\OpenAPI\Client\Model\Country[]',
-        'periods' => '\OpenAPI\Client\Model\Periods[]'
+        'countries' => '\BolApi\Client\Model\Country[]',
+        'periods' => '\BolApi\Client\Model\Periods[]'
     ];
 
     /**
@@ -314,7 +314,7 @@ class OfferInsight implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets countries
      *
-     * @return \OpenAPI\Client\Model\Country[]
+     * @return \BolApi\Client\Model\Country[]
      */
     public function getCountries()
     {
@@ -324,7 +324,7 @@ class OfferInsight implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets countries
      *
-     * @param \OpenAPI\Client\Model\Country[] $countries countries
+     * @param \BolApi\Client\Model\Country[] $countries countries
      *
      * @return self
      */
@@ -338,7 +338,7 @@ class OfferInsight implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets periods
      *
-     * @return \OpenAPI\Client\Model\Periods[]
+     * @return \BolApi\Client\Model\Periods[]
      */
     public function getPeriods()
     {
@@ -348,7 +348,7 @@ class OfferInsight implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets periods
      *
-     * @param \OpenAPI\Client\Model\Periods[] $periods periods
+     * @param \BolApi\Client\Model\Periods[] $periods periods
      *
      * @return self
      */

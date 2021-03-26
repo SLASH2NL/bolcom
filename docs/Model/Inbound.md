@@ -13,9 +13,9 @@ Name | Type | Description | Notes
 **announced_quantity** | **int** | The number of announced items. |
 **received_bskus** | **int** | Number of lines that were scanned in our warehouse. This value does not provide the unique number of received bsku&#39;s. |
 **received_quantity** | **int** | The number of received items. |
-**time_slot** | [**\OpenAPI\Client\Model\TimeSlot**](TimeSlot.md) |  | [optional]
-**products** | [**\OpenAPI\Client\Model\Product[]**](Product.md) | List of products. |
-**state_transitions** | [**\OpenAPI\Client\Model\StateTransition[]**](StateTransition.md) | List of state transitions. |
-**inbound_transporter** | [**\OpenAPI\Client\Model\Transporter**](Transporter.md) |  |
+**time_slot** | [**\BolApi\Client\Model\TimeSlot**](TimeSlot.md) |  | [optional]
+**products** | [**\BolApi\Client\Model\Product[]**](Product.md) | List of products. |
+**state_transitions** | [**\BolApi\Client\Model\StateTransition[]**](StateTransition.md) | List of state transitions. |
+**inbound_transporter** | [**\BolApi\Client\Model\Transporter**](Transporter.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * Commission Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -67,7 +67,7 @@ class Commission implements ModelInterface, ArrayAccess, \JsonSerializable
         'percentage' => 'float',
         'total_cost' => 'float',
         'total_cost_without_reduction' => 'float',
-        'reductions' => '\OpenAPI\Client\Model\Reduction[]'
+        'reductions' => '\BolApi\Client\Model\Reduction[]'
     ];
 
     /**
@@ -428,7 +428,7 @@ class Commission implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets reductions
      *
-     * @return \OpenAPI\Client\Model\Reduction[]
+     * @return \BolApi\Client\Model\Reduction[]
      */
     public function getReductions()
     {
@@ -438,7 +438,7 @@ class Commission implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets reductions
      *
-     * @param \OpenAPI\Client\Model\Reduction[] $reductions reductions
+     * @param \BolApi\Client\Model\Reduction[] $reductions reductions
      *
      * @return self
      */

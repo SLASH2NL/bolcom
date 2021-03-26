@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * InboundRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,10 +61,10 @@ class InboundRequest implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'reference' => 'string',
-        'time_slot' => '\OpenAPI\Client\Model\TimeSlot',
-        'inbound_transporter' => '\OpenAPI\Client\Model\Transporter',
+        'time_slot' => '\BolApi\Client\Model\TimeSlot',
+        'inbound_transporter' => '\BolApi\Client\Model\Transporter',
         'labelling_service' => 'bool',
-        'products' => '\OpenAPI\Client\Model\InboundProductRequest[]'
+        'products' => '\BolApi\Client\Model\InboundProductRequest[]'
     ];
 
     /**
@@ -272,7 +272,7 @@ class InboundRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets time_slot
      *
-     * @return \OpenAPI\Client\Model\TimeSlot
+     * @return \BolApi\Client\Model\TimeSlot
      */
     public function getTimeSlot()
     {
@@ -282,7 +282,7 @@ class InboundRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets time_slot
      *
-     * @param \OpenAPI\Client\Model\TimeSlot $time_slot time_slot
+     * @param \BolApi\Client\Model\TimeSlot $time_slot time_slot
      *
      * @return self
      */
@@ -296,7 +296,7 @@ class InboundRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets inbound_transporter
      *
-     * @return \OpenAPI\Client\Model\Transporter
+     * @return \BolApi\Client\Model\Transporter
      */
     public function getInboundTransporter()
     {
@@ -306,7 +306,7 @@ class InboundRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets inbound_transporter
      *
-     * @param \OpenAPI\Client\Model\Transporter $inbound_transporter inbound_transporter
+     * @param \BolApi\Client\Model\Transporter $inbound_transporter inbound_transporter
      *
      * @return self
      */
@@ -344,7 +344,7 @@ class InboundRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets products
      *
-     * @return \OpenAPI\Client\Model\InboundProductRequest[]
+     * @return \BolApi\Client\Model\InboundProductRequest[]
      */
     public function getProducts()
     {
@@ -354,7 +354,7 @@ class InboundRequest implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets products
      *
-     * @param \OpenAPI\Client\Model\InboundProductRequest[] $products List of products.
+     * @param \BolApi\Client\Model\InboundProductRequest[] $products List of products.
      *
      * @return self
      */

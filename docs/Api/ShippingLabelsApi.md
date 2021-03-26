@@ -1,4 +1,4 @@
-# OpenAPI\Client\ShippingLabelsApi
+# BolApi\Client\ShippingLabelsApi
 
 All URIs are relative to https://api.bol.com.
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 ## `getDeliveryOptions()`
 
 ```php
-getDeliveryOptions($body): \OpenAPI\Client\Model\DeliveryOptionsResponse
+getDeliveryOptions($body): \BolApi\Client\Model\DeliveryOptionsResponse
 ```
 
 Get delivery options for a shippable configuration of a number of order items within an order.
@@ -27,12 +27,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ShippingLabelsApi(
+$apiInstance = new BolApi\Client\Api\ShippingLabelsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\DeliveryOptionsRequest(); // \OpenAPI\Client\Model\DeliveryOptionsRequest
+$body = new \BolApi\Client\Model\DeliveryOptionsRequest(); // \BolApi\Client\Model\DeliveryOptionsRequest
 
 try {
     $result = $apiInstance->getDeliveryOptions($body);
@@ -46,11 +46,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\OpenAPI\Client\Model\DeliveryOptionsRequest**](../Model/DeliveryOptionsRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\DeliveryOptionsRequest**](../Model/DeliveryOptionsRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\DeliveryOptionsResponse**](../Model/DeliveryOptionsResponse.md)
+[**\BolApi\Client\Model\DeliveryOptionsResponse**](../Model/DeliveryOptionsResponse.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ShippingLabelsApi(
+$apiInstance = new BolApi\Client\Api\ShippingLabelsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -124,7 +124,7 @@ No authorization required
 ## `postShippingLabel()`
 
 ```php
-postShippingLabel($body): \OpenAPI\Client\Model\ProcessStatus
+postShippingLabel($body): \BolApi\Client\Model\ProcessStatus
 ```
 
 Create a shipping label
@@ -139,12 +139,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ShippingLabelsApi(
+$apiInstance = new BolApi\Client\Api\ShippingLabelsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\ShippingLabelRequest(); // \OpenAPI\Client\Model\ShippingLabelRequest
+$body = new \BolApi\Client\Model\ShippingLabelRequest(); // \BolApi\Client\Model\ShippingLabelRequest
 
 try {
     $result = $apiInstance->postShippingLabel($body);
@@ -158,11 +158,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\OpenAPI\Client\Model\ShippingLabelRequest**](../Model/ShippingLabelRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\ShippingLabelRequest**](../Model/ShippingLabelRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 

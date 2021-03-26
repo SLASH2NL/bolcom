@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * RejectedAttributeResponse Class Doc Comment
  *
  * @category Class
  * @description An rejected attribute.
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -62,7 +62,7 @@ class RejectedAttributeResponse implements ModelInterface, ArrayAccess, \JsonSer
       */
     protected static $openAPITypes = [
         'attribute_id' => 'string',
-        'rejection_errors' => '\OpenAPI\Client\Model\RejectionError[]'
+        'rejection_errors' => '\BolApi\Client\Model\RejectionError[]'
     ];
 
     /**
@@ -246,7 +246,7 @@ class RejectedAttributeResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets rejection_errors
      *
-     * @return \OpenAPI\Client\Model\RejectionError[]
+     * @return \BolApi\Client\Model\RejectionError[]
      */
     public function getRejectionErrors()
     {
@@ -256,7 +256,7 @@ class RejectedAttributeResponse implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets rejection_errors
      *
-     * @param \OpenAPI\Client\Model\RejectionError[] $rejection_errors rejection_errors
+     * @param \BolApi\Client\Model\RejectionError[] $rejection_errors rejection_errors
      *
      * @return self
      */

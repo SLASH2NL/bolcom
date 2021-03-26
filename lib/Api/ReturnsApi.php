@@ -4,7 +4,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace BolApi\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use BolApi\Client\ApiException;
+use BolApi\Client\Configuration;
+use BolApi\Client\HeaderSelector;
+use BolApi\Client\ObjectSerializer;
 
 /**
  * ReturnsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -120,11 +120,11 @@ class ReturnsApi
      *
      * Create return
      *
-     * @param  \OpenAPI\Client\Model\CreateReturnRequest $body body (optional)
+     * @param  \BolApi\Client\Model\CreateReturnRequest $body body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem
      */
     public function createReturn($body = null)
     {
@@ -137,11 +137,11 @@ class ReturnsApi
      *
      * Create return
      *
-     * @param  \OpenAPI\Client\Model\CreateReturnRequest $body (optional)
+     * @param  \BolApi\Client\Model\CreateReturnRequest $body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function createReturnWithHttpInfo($body = null)
     {
@@ -178,32 +178,32 @@ class ReturnsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 202:
-                    if ('\OpenAPI\Client\Model\ProcessStatus' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ProcessStatus' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProcessStatus', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ProcessStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+            $returnType = '\BolApi\Client\Model\ProcessStatus';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -222,7 +222,7 @@ class ReturnsApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProcessStatus',
+                        '\BolApi\Client\Model\ProcessStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -230,7 +230,7 @@ class ReturnsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -245,7 +245,7 @@ class ReturnsApi
      *
      * Create return
      *
-     * @param  \OpenAPI\Client\Model\CreateReturnRequest $body (optional)
+     * @param  \BolApi\Client\Model\CreateReturnRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -265,14 +265,14 @@ class ReturnsApi
      *
      * Create return
      *
-     * @param  \OpenAPI\Client\Model\CreateReturnRequest $body (optional)
+     * @param  \BolApi\Client\Model\CreateReturnRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createReturnAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+        $returnType = '\BolApi\Client\Model\ProcessStatus';
         $request = $this->createReturnRequest($body);
 
         return $this->client
@@ -312,7 +312,7 @@ class ReturnsApi
     /**
      * Create request for operation 'createReturn'
      *
-     * @param  \OpenAPI\Client\Model\CreateReturnRequest $body (optional)
+     * @param  \BolApi\Client\Model\CreateReturnRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -401,9 +401,9 @@ class ReturnsApi
      *
      * @param  int $return_id Unique identifier for a return. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ModelReturn|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ModelReturn|\BolApi\Client\Model\Problem
      */
     public function getReturn($return_id)
     {
@@ -418,9 +418,9 @@ class ReturnsApi
      *
      * @param  int $return_id Unique identifier for a return. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ModelReturn|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ModelReturn|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getReturnWithHttpInfo($return_id)
     {
@@ -457,32 +457,32 @@ class ReturnsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ModelReturn' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ModelReturn' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ModelReturn', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ModelReturn', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ModelReturn';
+            $returnType = '\BolApi\Client\Model\ModelReturn';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -501,7 +501,7 @@ class ReturnsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ModelReturn',
+                        '\BolApi\Client\Model\ModelReturn',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -509,7 +509,7 @@ class ReturnsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -551,7 +551,7 @@ class ReturnsApi
      */
     public function getReturnAsyncWithHttpInfo($return_id)
     {
-        $returnType = '\OpenAPI\Client\Model\ModelReturn';
+        $returnType = '\BolApi\Client\Model\ModelReturn';
         $request = $this->getReturnRequest($return_id);
 
         return $this->client
@@ -690,9 +690,9 @@ class ReturnsApi
      * @param  bool $handled The status of the returns you wish to see, shows either handled or unhandled returns. (optional)
      * @param  string $fulfilment_method The fulfilment method. Fulfilled by the retailer (FBR) or fulfilled by bol.com (FBB). (optional, default to 'FBR')
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ReturnsResponse|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ReturnsResponse|\BolApi\Client\Model\Problem
      */
     public function getReturns($page = 1, $handled = null, $fulfilment_method = 'FBR')
     {
@@ -709,9 +709,9 @@ class ReturnsApi
      * @param  bool $handled The status of the returns you wish to see, shows either handled or unhandled returns. (optional)
      * @param  string $fulfilment_method The fulfilment method. Fulfilled by the retailer (FBR) or fulfilled by bol.com (FBB). (optional, default to 'FBR')
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ReturnsResponse|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ReturnsResponse|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getReturnsWithHttpInfo($page = 1, $handled = null, $fulfilment_method = 'FBR')
     {
@@ -748,32 +748,32 @@ class ReturnsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ReturnsResponse' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ReturnsResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ReturnsResponse', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ReturnsResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ReturnsResponse';
+            $returnType = '\BolApi\Client\Model\ReturnsResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -792,7 +792,7 @@ class ReturnsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ReturnsResponse',
+                        '\BolApi\Client\Model\ReturnsResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -800,7 +800,7 @@ class ReturnsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -846,7 +846,7 @@ class ReturnsApi
      */
     public function getReturnsAsyncWithHttpInfo($page = 1, $handled = null, $fulfilment_method = 'FBR')
     {
-        $returnType = '\OpenAPI\Client\Model\ReturnsResponse';
+        $returnType = '\BolApi\Client\Model\ReturnsResponse';
         $request = $this->getReturnsRequest($page, $handled, $fulfilment_method);
 
         return $this->client
@@ -995,11 +995,11 @@ class ReturnsApi
      * Handle a return
      *
      * @param  int $rma_id The RMA (Return Merchandise Authorization) id that identifies this particular return. (required)
-     * @param  \OpenAPI\Client\Model\ReturnRequest $body The handling result requested by the retailer. (optional)
+     * @param  \BolApi\Client\Model\ReturnRequest $body The handling result requested by the retailer. (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem
      */
     public function handleReturn($rma_id, $body = null)
     {
@@ -1013,11 +1013,11 @@ class ReturnsApi
      * Handle a return
      *
      * @param  int $rma_id The RMA (Return Merchandise Authorization) id that identifies this particular return. (required)
-     * @param  \OpenAPI\Client\Model\ReturnRequest $body The handling result requested by the retailer. (optional)
+     * @param  \BolApi\Client\Model\ReturnRequest $body The handling result requested by the retailer. (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function handleReturnWithHttpInfo($rma_id, $body = null)
     {
@@ -1054,32 +1054,32 @@ class ReturnsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 202:
-                    if ('\OpenAPI\Client\Model\ProcessStatus' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ProcessStatus' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProcessStatus', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ProcessStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+            $returnType = '\BolApi\Client\Model\ProcessStatus';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1098,7 +1098,7 @@ class ReturnsApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProcessStatus',
+                        '\BolApi\Client\Model\ProcessStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1106,7 +1106,7 @@ class ReturnsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1122,7 +1122,7 @@ class ReturnsApi
      * Handle a return
      *
      * @param  int $rma_id The RMA (Return Merchandise Authorization) id that identifies this particular return. (required)
-     * @param  \OpenAPI\Client\Model\ReturnRequest $body The handling result requested by the retailer. (optional)
+     * @param  \BolApi\Client\Model\ReturnRequest $body The handling result requested by the retailer. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1143,14 +1143,14 @@ class ReturnsApi
      * Handle a return
      *
      * @param  int $rma_id The RMA (Return Merchandise Authorization) id that identifies this particular return. (required)
-     * @param  \OpenAPI\Client\Model\ReturnRequest $body The handling result requested by the retailer. (optional)
+     * @param  \BolApi\Client\Model\ReturnRequest $body The handling result requested by the retailer. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function handleReturnAsyncWithHttpInfo($rma_id, $body = null)
     {
-        $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+        $returnType = '\BolApi\Client\Model\ProcessStatus';
         $request = $this->handleReturnRequest($rma_id, $body);
 
         return $this->client
@@ -1191,7 +1191,7 @@ class ReturnsApi
      * Create request for operation 'handleReturn'
      *
      * @param  int $rma_id The RMA (Return Merchandise Authorization) id that identifies this particular return. (required)
-     * @param  \OpenAPI\Client\Model\ReturnRequest $body The handling result requested by the retailer. (optional)
+     * @param  \BolApi\Client\Model\ReturnRequest $body The handling result requested by the retailer. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

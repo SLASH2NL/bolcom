@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client\Model
+ * @package  BolApi\Client\Model
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,12 +27,12 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package OpenAPI\Client\Model
+ * @package BolApi\Client\Model
  * @author  OpenAPI Generator team
  */
 interface ModelInterface

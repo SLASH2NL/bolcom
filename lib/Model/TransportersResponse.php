@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * TransportersResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,7 +60,7 @@ class TransportersResponse implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'transporters' => '\OpenAPI\Client\Model\Transporter[]'
+        'transporters' => '\BolApi\Client\Model\Transporter[]'
     ];
 
     /**
@@ -215,7 +215,7 @@ class TransportersResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets transporters
      *
-     * @return \OpenAPI\Client\Model\Transporter[]
+     * @return \BolApi\Client\Model\Transporter[]
      */
     public function getTransporters()
     {
@@ -225,7 +225,7 @@ class TransportersResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets transporters
      *
-     * @param \OpenAPI\Client\Model\Transporter[] $transporters transporters
+     * @param \BolApi\Client\Model\Transporter[] $transporters transporters
      *
      * @return self
      */

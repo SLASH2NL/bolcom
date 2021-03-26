@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * Fulfilment Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -62,7 +62,7 @@ class Fulfilment implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'method' => 'string',
         'delivery_code' => 'string',
-        'pick_up_points' => '\OpenAPI\Client\Model\PickUpPoint[]'
+        'pick_up_points' => '\BolApi\Client\Model\PickUpPoint[]'
     ];
 
     /**
@@ -377,7 +377,7 @@ class Fulfilment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets pick_up_points
      *
-     * @return \OpenAPI\Client\Model\PickUpPoint[]|null
+     * @return \BolApi\Client\Model\PickUpPoint[]|null
      */
     public function getPickUpPoints()
     {
@@ -387,7 +387,7 @@ class Fulfilment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets pick_up_points
      *
-     * @param \OpenAPI\Client\Model\PickUpPoint[]|null $pick_up_points Indicates whether this order is shipped to a Pick Up Point.
+     * @param \BolApi\Client\Model\PickUpPoint[]|null $pick_up_points Indicates whether this order is shipped to a Pick Up Point.
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * Inbound Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -69,10 +69,10 @@ class Inbound implements ModelInterface, ArrayAccess, \JsonSerializable
         'announced_quantity' => 'int',
         'received_bskus' => 'int',
         'received_quantity' => 'int',
-        'time_slot' => '\OpenAPI\Client\Model\TimeSlot',
-        'products' => '\OpenAPI\Client\Model\Product[]',
-        'state_transitions' => '\OpenAPI\Client\Model\StateTransition[]',
-        'inbound_transporter' => '\OpenAPI\Client\Model\Transporter'
+        'time_slot' => '\BolApi\Client\Model\TimeSlot',
+        'products' => '\BolApi\Client\Model\Product[]',
+        'state_transitions' => '\BolApi\Client\Model\StateTransition[]',
+        'inbound_transporter' => '\BolApi\Client\Model\Transporter'
     ];
 
     /**
@@ -571,7 +571,7 @@ class Inbound implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets time_slot
      *
-     * @return \OpenAPI\Client\Model\TimeSlot|null
+     * @return \BolApi\Client\Model\TimeSlot|null
      */
     public function getTimeSlot()
     {
@@ -581,7 +581,7 @@ class Inbound implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets time_slot
      *
-     * @param \OpenAPI\Client\Model\TimeSlot|null $time_slot time_slot
+     * @param \BolApi\Client\Model\TimeSlot|null $time_slot time_slot
      *
      * @return self
      */
@@ -595,7 +595,7 @@ class Inbound implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets products
      *
-     * @return \OpenAPI\Client\Model\Product[]
+     * @return \BolApi\Client\Model\Product[]
      */
     public function getProducts()
     {
@@ -605,7 +605,7 @@ class Inbound implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets products
      *
-     * @param \OpenAPI\Client\Model\Product[] $products List of products.
+     * @param \BolApi\Client\Model\Product[] $products List of products.
      *
      * @return self
      */
@@ -619,7 +619,7 @@ class Inbound implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets state_transitions
      *
-     * @return \OpenAPI\Client\Model\StateTransition[]
+     * @return \BolApi\Client\Model\StateTransition[]
      */
     public function getStateTransitions()
     {
@@ -629,7 +629,7 @@ class Inbound implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets state_transitions
      *
-     * @param \OpenAPI\Client\Model\StateTransition[] $state_transitions List of state transitions.
+     * @param \BolApi\Client\Model\StateTransition[] $state_transitions List of state transitions.
      *
      * @return self
      */
@@ -643,7 +643,7 @@ class Inbound implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets inbound_transporter
      *
-     * @return \OpenAPI\Client\Model\Transporter
+     * @return \BolApi\Client\Model\Transporter
      */
     public function getInboundTransporter()
     {
@@ -653,7 +653,7 @@ class Inbound implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets inbound_transporter
      *
-     * @param \OpenAPI\Client\Model\Transporter $inbound_transporter inbound_transporter
+     * @param \BolApi\Client\Model\Transporter $inbound_transporter inbound_transporter
      *
      * @return self
      */

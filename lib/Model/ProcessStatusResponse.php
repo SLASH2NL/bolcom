@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ProcessStatusResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,7 +60,7 @@ class ProcessStatusResponse implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'process_statuses' => '\OpenAPI\Client\Model\ProcessStatus[]'
+        'process_statuses' => '\BolApi\Client\Model\ProcessStatus[]'
     ];
 
     /**
@@ -215,7 +215,7 @@ class ProcessStatusResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets process_statuses
      *
-     * @return \OpenAPI\Client\Model\ProcessStatus[]
+     * @return \BolApi\Client\Model\ProcessStatus[]
      */
     public function getProcessStatuses()
     {
@@ -225,7 +225,7 @@ class ProcessStatusResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets process_statuses
      *
-     * @param \OpenAPI\Client\Model\ProcessStatus[] $process_statuses process_statuses
+     * @param \BolApi\Client\Model\ProcessStatus[] $process_statuses process_statuses
      *
      * @return self
      */

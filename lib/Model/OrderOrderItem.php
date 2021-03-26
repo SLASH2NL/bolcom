@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * OrderOrderItem Class Doc Comment
  *
  * @category Class
  * @description Order item details from an order.
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -63,13 +63,13 @@ class OrderOrderItem implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'order_item_id' => 'string',
         'cancellation_request' => 'bool',
-        'fulfilment' => '\OpenAPI\Client\Model\OrderFulfilment',
-        'offer' => '\OpenAPI\Client\Model\OrderOffer',
-        'product' => '\OpenAPI\Client\Model\OrderProduct',
+        'fulfilment' => '\BolApi\Client\Model\OrderFulfilment',
+        'offer' => '\BolApi\Client\Model\OrderOffer',
+        'product' => '\BolApi\Client\Model\OrderProduct',
         'quantity' => 'int',
         'unit_price' => 'float',
         'commission' => 'float',
-        'additional_services' => '\OpenAPI\Client\Model\AdditionalService[]'
+        'additional_services' => '\BolApi\Client\Model\AdditionalService[]'
     ];
 
     /**
@@ -309,7 +309,7 @@ class OrderOrderItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets fulfilment
      *
-     * @return \OpenAPI\Client\Model\OrderFulfilment|null
+     * @return \BolApi\Client\Model\OrderFulfilment|null
      */
     public function getFulfilment()
     {
@@ -319,7 +319,7 @@ class OrderOrderItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets fulfilment
      *
-     * @param \OpenAPI\Client\Model\OrderFulfilment|null $fulfilment fulfilment
+     * @param \BolApi\Client\Model\OrderFulfilment|null $fulfilment fulfilment
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class OrderOrderItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offer
      *
-     * @return \OpenAPI\Client\Model\OrderOffer|null
+     * @return \BolApi\Client\Model\OrderOffer|null
      */
     public function getOffer()
     {
@@ -343,7 +343,7 @@ class OrderOrderItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets offer
      *
-     * @param \OpenAPI\Client\Model\OrderOffer|null $offer offer
+     * @param \BolApi\Client\Model\OrderOffer|null $offer offer
      *
      * @return self
      */
@@ -357,7 +357,7 @@ class OrderOrderItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets product
      *
-     * @return \OpenAPI\Client\Model\OrderProduct|null
+     * @return \BolApi\Client\Model\OrderProduct|null
      */
     public function getProduct()
     {
@@ -367,7 +367,7 @@ class OrderOrderItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets product
      *
-     * @param \OpenAPI\Client\Model\OrderProduct|null $product product
+     * @param \BolApi\Client\Model\OrderProduct|null $product product
      *
      * @return self
      */
@@ -453,7 +453,7 @@ class OrderOrderItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_services
      *
-     * @return \OpenAPI\Client\Model\AdditionalService[]|null
+     * @return \BolApi\Client\Model\AdditionalService[]|null
      */
     public function getAdditionalServices()
     {
@@ -463,7 +463,7 @@ class OrderOrderItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_services
      *
-     * @param \OpenAPI\Client\Model\AdditionalService[]|null $additional_services additional_services
+     * @param \BolApi\Client\Model\AdditionalService[]|null $additional_services additional_services
      *
      * @return self
      */

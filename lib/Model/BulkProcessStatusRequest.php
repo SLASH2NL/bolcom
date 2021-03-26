@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * BulkProcessStatusRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,7 +60,7 @@ class BulkProcessStatusRequest implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'process_status_queries' => '\OpenAPI\Client\Model\ProcessStatusId[]'
+        'process_status_queries' => '\BolApi\Client\Model\ProcessStatusId[]'
     ];
 
     /**
@@ -223,7 +223,7 @@ class BulkProcessStatusRequest implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets process_status_queries
      *
-     * @return \OpenAPI\Client\Model\ProcessStatusId[]
+     * @return \BolApi\Client\Model\ProcessStatusId[]
      */
     public function getProcessStatusQueries()
     {
@@ -233,7 +233,7 @@ class BulkProcessStatusRequest implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets process_status_queries
      *
-     * @param \OpenAPI\Client\Model\ProcessStatusId[] $process_status_queries process_status_queries
+     * @param \BolApi\Client\Model\ProcessStatusId[] $process_status_queries process_status_queries
      *
      * @return self
      */

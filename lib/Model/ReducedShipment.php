@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ReducedShipment Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -63,9 +63,9 @@ class ReducedShipment implements ModelInterface, ArrayAccess, \JsonSerializable
         'shipment_id' => 'int',
         'shipment_date_time' => '\DateTime',
         'shipment_reference' => 'string',
-        'order' => '\OpenAPI\Client\Model\ReducedShipmentOrder',
-        'shipment_items' => '\OpenAPI\Client\Model\ReducedShipmentItem[]',
-        'transport' => '\OpenAPI\Client\Model\ReducedTransport'
+        'order' => '\BolApi\Client\Model\ReducedShipmentOrder',
+        'shipment_items' => '\BolApi\Client\Model\ReducedShipmentItem[]',
+        'transport' => '\BolApi\Client\Model\ReducedTransport'
     ];
 
     /**
@@ -323,7 +323,7 @@ class ReducedShipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order
      *
-     * @return \OpenAPI\Client\Model\ReducedShipmentOrder
+     * @return \BolApi\Client\Model\ReducedShipmentOrder
      */
     public function getOrder()
     {
@@ -333,7 +333,7 @@ class ReducedShipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order
      *
-     * @param \OpenAPI\Client\Model\ReducedShipmentOrder $order order
+     * @param \BolApi\Client\Model\ReducedShipmentOrder $order order
      *
      * @return self
      */
@@ -347,7 +347,7 @@ class ReducedShipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipment_items
      *
-     * @return \OpenAPI\Client\Model\ReducedShipmentItem[]
+     * @return \BolApi\Client\Model\ReducedShipmentItem[]
      */
     public function getShipmentItems()
     {
@@ -357,7 +357,7 @@ class ReducedShipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipment_items
      *
-     * @param \OpenAPI\Client\Model\ReducedShipmentItem[] $shipment_items shipment_items
+     * @param \BolApi\Client\Model\ReducedShipmentItem[] $shipment_items shipment_items
      *
      * @return self
      */
@@ -371,7 +371,7 @@ class ReducedShipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets transport
      *
-     * @return \OpenAPI\Client\Model\ReducedTransport
+     * @return \BolApi\Client\Model\ReducedTransport
      */
     public function getTransport()
     {
@@ -381,7 +381,7 @@ class ReducedShipment implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets transport
      *
-     * @param \OpenAPI\Client\Model\ReducedTransport $transport transport
+     * @param \BolApi\Client\Model\ReducedTransport $transport transport
      *
      * @return self
      */

@@ -11,6 +11,6 @@ Name | Type | Description | Notes
 **status** | **string** | Status of the action being processed. | [optional]
 **error_message** | **string** | Shows error message if applicable. | [optional]
 **create_timestamp** | [**\DateTime**](\DateTime.md) | Time of creation of the response. | [optional]
-**links** | [**\OpenAPI\Client\Model\Link[]**](Link.md) | Lists available actions applicable to this endpoint. | [optional]
+**links** | [**\BolApi\Client\Model\Link[]**](Link.md) | Lists available actions applicable to this endpoint. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

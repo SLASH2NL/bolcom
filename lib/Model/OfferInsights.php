@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * OfferInsights Class Doc Comment
  *
  * @category Class
  * @description Offer insights.
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,7 +61,7 @@ class OfferInsights implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'offer_insights' => '\OpenAPI\Client\Model\OfferInsight[]'
+        'offer_insights' => '\BolApi\Client\Model\OfferInsight[]'
     ];
 
     /**
@@ -216,7 +216,7 @@ class OfferInsights implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets offer_insights
      *
-     * @return \OpenAPI\Client\Model\OfferInsight[]
+     * @return \BolApi\Client\Model\OfferInsight[]
      */
     public function getOfferInsights()
     {
@@ -226,7 +226,7 @@ class OfferInsights implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets offer_insights
      *
-     * @param \OpenAPI\Client\Model\OfferInsight[] $offer_insights offer_insights
+     * @param \BolApi\Client\Model\OfferInsight[] $offer_insights offer_insights
      *
      * @return self
      */

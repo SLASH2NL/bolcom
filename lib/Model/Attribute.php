@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * Attribute Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,7 +61,7 @@ class Attribute implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'values' => '\OpenAPI\Client\Model\AttributeValue[]'
+        'values' => '\BolApi\Client\Model\AttributeValue[]'
     ];
 
     /**
@@ -263,7 +263,7 @@ class Attribute implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets values
      *
-     * @return \OpenAPI\Client\Model\AttributeValue[]
+     * @return \BolApi\Client\Model\AttributeValue[]
      */
     public function getValues()
     {
@@ -273,7 +273,7 @@ class Attribute implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets values
      *
-     * @param \OpenAPI\Client\Model\AttributeValue[] $values A list of attribute values.
+     * @param \BolApi\Client\Model\AttributeValue[] $values A list of attribute values.
      *
      * @return self
      */

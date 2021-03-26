@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * Details Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,9 +60,9 @@ class Details implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'period' => '\OpenAPI\Client\Model\Period',
-        'score' => '\OpenAPI\Client\Model\Score',
-        'norm' => '\OpenAPI\Client\Model\Norm'
+        'period' => '\BolApi\Client\Model\Period',
+        'score' => '\BolApi\Client\Model\Score',
+        'norm' => '\BolApi\Client\Model\Norm'
     ];
 
     /**
@@ -224,7 +224,7 @@ class Details implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets period
      *
-     * @return \OpenAPI\Client\Model\Period|null
+     * @return \BolApi\Client\Model\Period|null
      */
     public function getPeriod()
     {
@@ -234,7 +234,7 @@ class Details implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets period
      *
-     * @param \OpenAPI\Client\Model\Period|null $period period
+     * @param \BolApi\Client\Model\Period|null $period period
      *
      * @return self
      */
@@ -248,7 +248,7 @@ class Details implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets score
      *
-     * @return \OpenAPI\Client\Model\Score|null
+     * @return \BolApi\Client\Model\Score|null
      */
     public function getScore()
     {
@@ -258,7 +258,7 @@ class Details implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets score
      *
-     * @param \OpenAPI\Client\Model\Score|null $score score
+     * @param \BolApi\Client\Model\Score|null $score score
      *
      * @return self
      */
@@ -272,7 +272,7 @@ class Details implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets norm
      *
-     * @return \OpenAPI\Client\Model\Norm|null
+     * @return \BolApi\Client\Model\Norm|null
      */
     public function getNorm()
     {
@@ -282,7 +282,7 @@ class Details implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets norm
      *
-     * @param \OpenAPI\Client\Model\Norm|null $norm norm
+     * @param \BolApi\Client\Model\Norm|null $norm norm
      *
      * @return self
      */

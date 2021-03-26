@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ReducedReturnItem Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -67,7 +67,7 @@ class ReducedReturnItem implements ModelInterface, ArrayAccess, \JsonSerializabl
         'return_reason' => 'string',
         'return_reason_comments' => 'string',
         'handled' => 'bool',
-        'processing_results' => '\OpenAPI\Client\Model\ReturnProcessingResult[]'
+        'processing_results' => '\BolApi\Client\Model\ReturnProcessingResult[]'
     ];
 
     /**
@@ -425,7 +425,7 @@ class ReducedReturnItem implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets processing_results
      *
-     * @return \OpenAPI\Client\Model\ReturnProcessingResult[]
+     * @return \BolApi\Client\Model\ReturnProcessingResult[]
      */
     public function getProcessingResults()
     {
@@ -435,7 +435,7 @@ class ReducedReturnItem implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets processing_results
      *
-     * @param \OpenAPI\Client\Model\ReturnProcessingResult[] $processing_results processing_results
+     * @param \BolApi\Client\Model\ReturnProcessingResult[] $processing_results processing_results
      *
      * @return self
      */

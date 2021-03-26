@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ReducedOrders Class Doc Comment
  *
  * @category Class
  * @description Container for many orders.
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,7 +61,7 @@ class ReducedOrders implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'orders' => '\OpenAPI\Client\Model\ReducedOrder[]'
+        'orders' => '\BolApi\Client\Model\ReducedOrder[]'
     ];
 
     /**
@@ -216,7 +216,7 @@ class ReducedOrders implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets orders
      *
-     * @return \OpenAPI\Client\Model\ReducedOrder[]
+     * @return \BolApi\Client\Model\ReducedOrder[]
      */
     public function getOrders()
     {
@@ -226,7 +226,7 @@ class ReducedOrders implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets orders
      *
-     * @param \OpenAPI\Client\Model\ReducedOrder[] $orders orders
+     * @param \BolApi\Client\Model\ReducedOrder[] $orders orders
      *
      * @return self
      */

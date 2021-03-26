@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * SubscriptionsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,7 +60,7 @@ class SubscriptionsResponse implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'subscriptions' => '\OpenAPI\Client\Model\SubscriptionResponse[]'
+        'subscriptions' => '\BolApi\Client\Model\SubscriptionResponse[]'
     ];
 
     /**
@@ -215,7 +215,7 @@ class SubscriptionsResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets subscriptions
      *
-     * @return \OpenAPI\Client\Model\SubscriptionResponse[]
+     * @return \BolApi\Client\Model\SubscriptionResponse[]
      */
     public function getSubscriptions()
     {
@@ -225,7 +225,7 @@ class SubscriptionsResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets subscriptions
      *
-     * @param \OpenAPI\Client\Model\SubscriptionResponse[] $subscriptions subscriptions
+     * @param \BolApi\Client\Model\SubscriptionResponse[] $subscriptions subscriptions
      *
      * @return self
      */

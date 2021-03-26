@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ShipmentsResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,7 +60,7 @@ class ShipmentsResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shipments' => '\OpenAPI\Client\Model\ReducedShipment[]'
+        'shipments' => '\BolApi\Client\Model\ReducedShipment[]'
     ];
 
     /**
@@ -215,7 +215,7 @@ class ShipmentsResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets shipments
      *
-     * @return \OpenAPI\Client\Model\ReducedShipment[]
+     * @return \BolApi\Client\Model\ReducedShipment[]
      */
     public function getShipments()
     {
@@ -225,7 +225,7 @@ class ShipmentsResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets shipments
      *
-     * @param \OpenAPI\Client\Model\ReducedShipment[] $shipments shipments
+     * @param \BolApi\Client\Model\ReducedShipment[] $shipments shipments
      *
      * @return self
      */

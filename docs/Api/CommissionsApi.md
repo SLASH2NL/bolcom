@@ -1,4 +1,4 @@
-# OpenAPI\Client\CommissionsApi
+# BolApi\Client\CommissionsApi
 
 All URIs are relative to https://api.bol.com.
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 ## `getCommission()`
 
 ```php
-getCommission($ean, $unit_price, $condition): \OpenAPI\Client\Model\Commission
+getCommission($ean, $unit_price, $condition): \BolApi\Client\Model\Commission
 ```
 
 Get all commissions and reductions by EAN per single EAN
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\CommissionsApi(
+$apiInstance = new BolApi\Client\Api\CommissionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Commission**](../Model/Commission.md)
+[**\BolApi\Client\Model\Commission**](../Model/Commission.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 ## `getCommissions()`
 
 ```php
-getCommissions($body): \OpenAPI\Client\Model\BulkCommissionResponse
+getCommissions($body): \BolApi\Client\Model\BulkCommissionResponse
 ```
 
 Get all commissions and reductions by EAN in bulk
@@ -86,12 +86,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\CommissionsApi(
+$apiInstance = new BolApi\Client\Api\CommissionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\BulkCommissionRequest(); // \OpenAPI\Client\Model\BulkCommissionRequest
+$body = new \BolApi\Client\Model\BulkCommissionRequest(); // \BolApi\Client\Model\BulkCommissionRequest
 
 try {
     $result = $apiInstance->getCommissions($body);
@@ -105,11 +105,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\OpenAPI\Client\Model\BulkCommissionRequest**](../Model/BulkCommissionRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\BulkCommissionRequest**](../Model/BulkCommissionRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\BulkCommissionResponse**](../Model/BulkCommissionResponse.md)
+[**\BolApi\Client\Model\BulkCommissionResponse**](../Model/BulkCommissionResponse.md)
 
 ### Authorization
 

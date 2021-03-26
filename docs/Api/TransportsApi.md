@@ -1,4 +1,4 @@
-# OpenAPI\Client\TransportsApi
+# BolApi\Client\TransportsApi
 
 All URIs are relative to https://api.bol.com.
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `addTransportInformationByTransportId()`
 
 ```php
-addTransportInformationByTransportId($transport_id, $body): \OpenAPI\Client\Model\ProcessStatus
+addTransportInformationByTransportId($transport_id, $body): \BolApi\Client\Model\ProcessStatus
 ```
 
 Add transport information by transport id
@@ -25,13 +25,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\TransportsApi(
+$apiInstance = new BolApi\Client\Api\TransportsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $transport_id = 56; // int | The transport id.
-$body = new \OpenAPI\Client\Model\ChangeTransportRequest(); // \OpenAPI\Client\Model\ChangeTransportRequest | The change transport requested by the user.
+$body = new \BolApi\Client\Model\ChangeTransportRequest(); // \BolApi\Client\Model\ChangeTransportRequest | The change transport requested by the user.
 
 try {
     $result = $apiInstance->addTransportInformationByTransportId($transport_id, $body);
@@ -46,11 +46,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **transport_id** | **int**| The transport id. |
- **body** | [**\OpenAPI\Client\Model\ChangeTransportRequest**](../Model/ChangeTransportRequest.md)| The change transport requested by the user. | [optional]
+ **body** | [**\BolApi\Client\Model\ChangeTransportRequest**](../Model/ChangeTransportRequest.md)| The change transport requested by the user. | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 

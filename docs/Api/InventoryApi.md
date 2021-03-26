@@ -1,4 +1,4 @@
-# OpenAPI\Client\InventoryApi
+# BolApi\Client\InventoryApi
 
 All URIs are relative to https://api.bol.com.
 
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `getInventory()`
 
 ```php
-getInventory($page, $quantity, $stock, $state, $query): \OpenAPI\Client\Model\InventoryResponse
+getInventory($page, $quantity, $stock, $state, $query): \BolApi\Client\Model\InventoryResponse
 ```
 
 Get LVB/FBB inventory
@@ -25,7 +25,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\InventoryApi(
+$apiInstance = new BolApi\Client\Api\InventoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\InventoryResponse**](../Model/InventoryResponse.md)
+[**\BolApi\Client\Model\InventoryResponse**](../Model/InventoryResponse.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * CreateProductContentRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,7 +61,7 @@ class CreateProductContentRequest implements ModelInterface, ArrayAccess, \JsonS
       */
     protected static $openAPITypes = [
         'language' => 'string',
-        'product_contents' => '\OpenAPI\Client\Model\ProductContent[]'
+        'product_contents' => '\BolApi\Client\Model\ProductContent[]'
     ];
 
     /**
@@ -294,7 +294,7 @@ class CreateProductContentRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets product_contents
      *
-     * @return \OpenAPI\Client\Model\ProductContent[]
+     * @return \BolApi\Client\Model\ProductContent[]
      */
     public function getProductContents()
     {
@@ -304,7 +304,7 @@ class CreateProductContentRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets product_contents
      *
-     * @param \OpenAPI\Client\Model\ProductContent[] $product_contents A list of supplied products and their attributes. Attributes that are required for publishing products online will be mentioned in the data model.
+     * @param \BolApi\Client\Model\ProductContent[] $product_contents A list of supplied products and their attributes. Attributes that are required for publishing products online will be mentioned in the data model.
      *
      * @return self
      */

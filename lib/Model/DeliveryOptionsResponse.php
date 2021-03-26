@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * DeliveryOptionsResponse Class Doc Comment
  *
  * @category Class
  * @description The possible delivery options based on a shippable configuration
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,7 +61,7 @@ class DeliveryOptionsResponse implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'delivery_options' => '\OpenAPI\Client\Model\DeliveryOption[]'
+        'delivery_options' => '\BolApi\Client\Model\DeliveryOption[]'
     ];
 
     /**
@@ -216,7 +216,7 @@ class DeliveryOptionsResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets delivery_options
      *
-     * @return \OpenAPI\Client\Model\DeliveryOption[]
+     * @return \BolApi\Client\Model\DeliveryOption[]
      */
     public function getDeliveryOptions()
     {
@@ -226,7 +226,7 @@ class DeliveryOptionsResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets delivery_options
      *
-     * @param \OpenAPI\Client\Model\DeliveryOption[] $delivery_options delivery_options
+     * @param \BolApi\Client\Model\DeliveryOption[] $delivery_options delivery_options
      *
      * @return self
      */

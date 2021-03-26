@@ -1,4 +1,4 @@
-# OpenAPI\Client\OrdersApi
+# BolApi\Client\OrdersApi
 
 All URIs are relative to https://api.bol.com.
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 ## `cancelOrderItem()`
 
 ```php
-cancelOrderItem($body): \OpenAPI\Client\Model\ProcessStatus
+cancelOrderItem($body): \BolApi\Client\Model\ProcessStatus
 ```
 
 Cancel an order item by an order item id
@@ -28,12 +28,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OrdersApi(
+$apiInstance = new BolApi\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled(); // \OpenAPI\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled
+$body = new \BolApi\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled(); // \BolApi\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled
 
 try {
     $result = $apiInstance->cancelOrderItem($body);
@@ -47,11 +47,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\OpenAPI\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled**](../Model/ContainerForTheOrderItemsThatHaveToBeCancelled.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled**](../Model/ContainerForTheOrderItemsThatHaveToBeCancelled.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `getOrder()`
 
 ```php
-getOrder($order_id): \OpenAPI\Client\Model\Order
+getOrder($order_id): \BolApi\Client\Model\Order
 ```
 
 Get an open order by order id
@@ -84,7 +84,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OrdersApi(
+$apiInstance = new BolApi\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -107,7 +107,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Order**](../Model/Order.md)
+[**\BolApi\Client\Model\Order**](../Model/Order.md)
 
 ### Authorization
 
@@ -125,7 +125,7 @@ No authorization required
 ## `getOrders()`
 
 ```php
-getOrders($page, $fulfilment_method): \OpenAPI\Client\Model\ReducedOrders
+getOrders($page, $fulfilment_method): \BolApi\Client\Model\ReducedOrders
 ```
 
 Get open orders
@@ -140,7 +140,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OrdersApi(
+$apiInstance = new BolApi\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ReducedOrders**](../Model/ReducedOrders.md)
+[**\BolApi\Client\Model\ReducedOrders**](../Model/ReducedOrders.md)
 
 ### Authorization
 
@@ -183,7 +183,7 @@ No authorization required
 ## `shipOrderItem()`
 
 ```php
-shipOrderItem($body): \OpenAPI\Client\Model\ProcessStatus
+shipOrderItem($body): \BolApi\Client\Model\ProcessStatus
 ```
 
 Ship order item
@@ -198,12 +198,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OrdersApi(
+$apiInstance = new BolApi\Client\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\ShipmentRequest(); // \OpenAPI\Client\Model\ShipmentRequest
+$body = new \BolApi\Client\Model\ShipmentRequest(); // \BolApi\Client\Model\ShipmentRequest
 
 try {
     $result = $apiInstance->shipOrderItem($body);
@@ -217,11 +217,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\OpenAPI\Client\Model\ShipmentRequest**](../Model/ShipmentRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\ShipmentRequest**](../Model/ShipmentRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 

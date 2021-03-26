@@ -4,7 +4,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace BolApi\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use BolApi\Client\ApiException;
+use BolApi\Client\Configuration;
+use BolApi\Client\HeaderSelector;
+use BolApi\Client\ObjectSerializer;
 
 /**
  * CommissionsApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -124,9 +124,9 @@ class CommissionsApi
      * @param  float $unit_price The price of the product with a period as a decimal separator. The price should always have two decimals precision. (required)
      * @param  string $condition The condition of the offer. (optional, default to 'NEW')
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Commission|\OpenAPI\Client\Model\Problem|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\Commission|\BolApi\Client\Model\Problem|\BolApi\Client\Model\Problem
      */
     public function getCommission($ean, $unit_price, $condition = 'NEW')
     {
@@ -143,9 +143,9 @@ class CommissionsApi
      * @param  float $unit_price The price of the product with a period as a decimal separator. The price should always have two decimals precision. (required)
      * @param  string $condition The condition of the offer. (optional, default to 'NEW')
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Commission|\OpenAPI\Client\Model\Problem|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\Commission|\BolApi\Client\Model\Problem|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCommissionWithHttpInfo($ean, $unit_price, $condition = 'NEW')
     {
@@ -182,44 +182,44 @@ class CommissionsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Commission' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Commission' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Commission', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Commission', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Commission';
+            $returnType = '\BolApi\Client\Model\Commission';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -238,7 +238,7 @@ class CommissionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Commission',
+                        '\BolApi\Client\Model\Commission',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -246,7 +246,7 @@ class CommissionsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -254,7 +254,7 @@ class CommissionsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -300,7 +300,7 @@ class CommissionsApi
      */
     public function getCommissionAsyncWithHttpInfo($ean, $unit_price, $condition = 'NEW')
     {
-        $returnType = '\OpenAPI\Client\Model\Commission';
+        $returnType = '\BolApi\Client\Model\Commission';
         $request = $this->getCommissionRequest($ean, $unit_price, $condition);
 
         return $this->client
@@ -457,11 +457,11 @@ class CommissionsApi
      *
      * Get all commissions and reductions by EAN in bulk
      *
-     * @param  \OpenAPI\Client\Model\BulkCommissionRequest $body body (optional)
+     * @param  \BolApi\Client\Model\BulkCommissionRequest $body body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\BulkCommissionResponse|\OpenAPI\Client\Model\Problem|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\BulkCommissionResponse|\BolApi\Client\Model\Problem|\BolApi\Client\Model\Problem
      */
     public function getCommissions($body = null)
     {
@@ -474,11 +474,11 @@ class CommissionsApi
      *
      * Get all commissions and reductions by EAN in bulk
      *
-     * @param  \OpenAPI\Client\Model\BulkCommissionRequest $body (optional)
+     * @param  \BolApi\Client\Model\BulkCommissionRequest $body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\BulkCommissionResponse|\OpenAPI\Client\Model\Problem|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\BulkCommissionResponse|\BolApi\Client\Model\Problem|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCommissionsWithHttpInfo($body = null)
     {
@@ -515,44 +515,44 @@ class CommissionsApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\BulkCommissionResponse' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\BulkCommissionResponse' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\BulkCommissionResponse', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\BulkCommissionResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\BulkCommissionResponse';
+            $returnType = '\BolApi\Client\Model\BulkCommissionResponse';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -571,7 +571,7 @@ class CommissionsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\BulkCommissionResponse',
+                        '\BolApi\Client\Model\BulkCommissionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -579,7 +579,7 @@ class CommissionsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -587,7 +587,7 @@ class CommissionsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -602,7 +602,7 @@ class CommissionsApi
      *
      * Get all commissions and reductions by EAN in bulk
      *
-     * @param  \OpenAPI\Client\Model\BulkCommissionRequest $body (optional)
+     * @param  \BolApi\Client\Model\BulkCommissionRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -622,14 +622,14 @@ class CommissionsApi
      *
      * Get all commissions and reductions by EAN in bulk
      *
-     * @param  \OpenAPI\Client\Model\BulkCommissionRequest $body (optional)
+     * @param  \BolApi\Client\Model\BulkCommissionRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function getCommissionsAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\OpenAPI\Client\Model\BulkCommissionResponse';
+        $returnType = '\BolApi\Client\Model\BulkCommissionResponse';
         $request = $this->getCommissionsRequest($body);
 
         return $this->client
@@ -669,7 +669,7 @@ class CommissionsApi
     /**
      * Create request for operation 'getCommissions'
      *
-     * @param  \OpenAPI\Client\Model\BulkCommissionRequest $body (optional)
+     * @param  \BolApi\Client\Model\BulkCommissionRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

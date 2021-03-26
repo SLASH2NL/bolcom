@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ValidationReportResponse Class Doc Comment
  *
  * @category Class
  * @description Validation report.
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,7 +61,7 @@ class ValidationReportResponse implements ModelInterface, ArrayAccess, \JsonSeri
       * @var string[]
       */
     protected static $openAPITypes = [
-        'product_contents' => '\OpenAPI\Client\Model\ProductContentResponse[]'
+        'product_contents' => '\BolApi\Client\Model\ProductContentResponse[]'
     ];
 
     /**
@@ -213,7 +213,7 @@ class ValidationReportResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Gets product_contents
      *
-     * @return \OpenAPI\Client\Model\ProductContentResponse[]|null
+     * @return \BolApi\Client\Model\ProductContentResponse[]|null
      */
     public function getProductContents()
     {
@@ -223,7 +223,7 @@ class ValidationReportResponse implements ModelInterface, ArrayAccess, \JsonSeri
     /**
      * Sets product_contents
      *
-     * @param \OpenAPI\Client\Model\ProductContentResponse[]|null $product_contents product_contents
+     * @param \BolApi\Client\Model\ProductContentResponse[]|null $product_contents product_contents
      *
      * @return self
      */

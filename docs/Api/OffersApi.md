@@ -1,4 +1,4 @@
-# OpenAPI\Client\OffersApi
+# BolApi\Client\OffersApi
 
 All URIs are relative to https://api.bol.com.
 
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 ## `deleteOffer()`
 
 ```php
-deleteOffer($offer_id): \OpenAPI\Client\Model\ProcessStatus
+deleteOffer($offer_id): \BolApi\Client\Model\ProcessStatus
 ```
 
 Delete offer by id
@@ -34,7 +34,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OffersApi(
+$apiInstance = new BolApi\Client\Api\OffersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ No authorization required
 ## `getOffer()`
 
 ```php
-getOffer($offer_id): \OpenAPI\Client\Model\RetailerOffer
+getOffer($offer_id): \BolApi\Client\Model\RetailerOffer
 ```
 
 Retrieve an offer by its offer id
@@ -90,7 +90,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OffersApi(
+$apiInstance = new BolApi\Client\Api\OffersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RetailerOffer**](../Model/RetailerOffer.md)
+[**\BolApi\Client\Model\RetailerOffer**](../Model/RetailerOffer.md)
 
 ### Authorization
 
@@ -146,7 +146,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OffersApi(
+$apiInstance = new BolApi\Client\Api\OffersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -201,7 +201,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OffersApi(
+$apiInstance = new BolApi\Client\Api\OffersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -241,7 +241,7 @@ No authorization required
 ## `postOffer()`
 
 ```php
-postOffer($body): \OpenAPI\Client\Model\ProcessStatus
+postOffer($body): \BolApi\Client\Model\ProcessStatus
 ```
 
 Create a new offer
@@ -256,12 +256,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OffersApi(
+$apiInstance = new BolApi\Client\Api\OffersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\CreateOfferRequest(); // \OpenAPI\Client\Model\CreateOfferRequest
+$body = new \BolApi\Client\Model\CreateOfferRequest(); // \BolApi\Client\Model\CreateOfferRequest
 
 try {
     $result = $apiInstance->postOffer($body);
@@ -275,11 +275,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\OpenAPI\Client\Model\CreateOfferRequest**](../Model/CreateOfferRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\CreateOfferRequest**](../Model/CreateOfferRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 
@@ -297,7 +297,7 @@ No authorization required
 ## `postOfferExport()`
 
 ```php
-postOfferExport($body): \OpenAPI\Client\Model\ProcessStatus
+postOfferExport($body): \BolApi\Client\Model\ProcessStatus
 ```
 
 Request an offer export file
@@ -312,12 +312,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OffersApi(
+$apiInstance = new BolApi\Client\Api\OffersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\CreateOfferExportRequest(); // \OpenAPI\Client\Model\CreateOfferExportRequest
+$body = new \BolApi\Client\Model\CreateOfferExportRequest(); // \BolApi\Client\Model\CreateOfferExportRequest
 
 try {
     $result = $apiInstance->postOfferExport($body);
@@ -331,11 +331,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\OpenAPI\Client\Model\CreateOfferExportRequest**](../Model/CreateOfferExportRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\CreateOfferExportRequest**](../Model/CreateOfferExportRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 
@@ -353,7 +353,7 @@ No authorization required
 ## `postUnpublishedOfferReport()`
 
 ```php
-postUnpublishedOfferReport($body): \OpenAPI\Client\Model\ProcessStatus
+postUnpublishedOfferReport($body): \BolApi\Client\Model\ProcessStatus
 ```
 
 BETA: Request an unpublished offer report
@@ -368,12 +368,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OffersApi(
+$apiInstance = new BolApi\Client\Api\OffersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\CreateUnpublishedOfferReportRequest(); // \OpenAPI\Client\Model\CreateUnpublishedOfferReportRequest
+$body = new \BolApi\Client\Model\CreateUnpublishedOfferReportRequest(); // \BolApi\Client\Model\CreateUnpublishedOfferReportRequest
 
 try {
     $result = $apiInstance->postUnpublishedOfferReport($body);
@@ -387,11 +387,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\OpenAPI\Client\Model\CreateUnpublishedOfferReportRequest**](../Model/CreateUnpublishedOfferReportRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\CreateUnpublishedOfferReportRequest**](../Model/CreateUnpublishedOfferReportRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 
@@ -409,7 +409,7 @@ No authorization required
 ## `putOffer()`
 
 ```php
-putOffer($offer_id, $body): \OpenAPI\Client\Model\ProcessStatus
+putOffer($offer_id, $body): \BolApi\Client\Model\ProcessStatus
 ```
 
 Update an offer
@@ -424,13 +424,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OffersApi(
+$apiInstance = new BolApi\Client\Api\OffersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $offer_id = 'offer_id_example'; // string | Unique identifier for an offer.
-$body = new \OpenAPI\Client\Model\UpdateOfferRequest(); // \OpenAPI\Client\Model\UpdateOfferRequest
+$body = new \BolApi\Client\Model\UpdateOfferRequest(); // \BolApi\Client\Model\UpdateOfferRequest
 
 try {
     $result = $apiInstance->putOffer($offer_id, $body);
@@ -445,11 +445,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **offer_id** | **string**| Unique identifier for an offer. |
- **body** | [**\OpenAPI\Client\Model\UpdateOfferRequest**](../Model/UpdateOfferRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\UpdateOfferRequest**](../Model/UpdateOfferRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 
@@ -467,7 +467,7 @@ No authorization required
 ## `updateOfferPrice()`
 
 ```php
-updateOfferPrice($offer_id, $body): \OpenAPI\Client\Model\ProcessStatus
+updateOfferPrice($offer_id, $body): \BolApi\Client\Model\ProcessStatus
 ```
 
 Update price(s) for offer by id
@@ -482,13 +482,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OffersApi(
+$apiInstance = new BolApi\Client\Api\OffersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $offer_id = 'offer_id_example'; // string | Unique identifier for an offer.
-$body = new \OpenAPI\Client\Model\UpdateOfferPriceRequest(); // \OpenAPI\Client\Model\UpdateOfferPriceRequest
+$body = new \BolApi\Client\Model\UpdateOfferPriceRequest(); // \BolApi\Client\Model\UpdateOfferPriceRequest
 
 try {
     $result = $apiInstance->updateOfferPrice($offer_id, $body);
@@ -503,11 +503,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **offer_id** | **string**| Unique identifier for an offer. |
- **body** | [**\OpenAPI\Client\Model\UpdateOfferPriceRequest**](../Model/UpdateOfferPriceRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\UpdateOfferPriceRequest**](../Model/UpdateOfferPriceRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 
@@ -525,7 +525,7 @@ No authorization required
 ## `updateOfferStock()`
 
 ```php
-updateOfferStock($offer_id, $body): \OpenAPI\Client\Model\ProcessStatus
+updateOfferStock($offer_id, $body): \BolApi\Client\Model\ProcessStatus
 ```
 
 Update stock for offer by id
@@ -540,13 +540,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\OffersApi(
+$apiInstance = new BolApi\Client\Api\OffersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $offer_id = 'offer_id_example'; // string | Unique identifier for an offer.
-$body = new \OpenAPI\Client\Model\UpdateOfferStockRequest(); // \OpenAPI\Client\Model\UpdateOfferStockRequest
+$body = new \BolApi\Client\Model\UpdateOfferStockRequest(); // \BolApi\Client\Model\UpdateOfferStockRequest
 
 try {
     $result = $apiInstance->updateOfferStock($offer_id, $body);
@@ -561,11 +561,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **offer_id** | **string**| Unique identifier for an offer. |
- **body** | [**\OpenAPI\Client\Model\UpdateOfferStockRequest**](../Model/UpdateOfferStockRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\UpdateOfferStockRequest**](../Model/UpdateOfferStockRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 

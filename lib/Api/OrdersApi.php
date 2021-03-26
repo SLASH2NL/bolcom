@@ -4,7 +4,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace BolApi\Client\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use BolApi\Client\ApiException;
+use BolApi\Client\Configuration;
+use BolApi\Client\HeaderSelector;
+use BolApi\Client\ObjectSerializer;
 
 /**
  * OrdersApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -120,11 +120,11 @@ class OrdersApi
      *
      * Cancel an order item by an order item id
      *
-     * @param  \OpenAPI\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled $body body (optional)
+     * @param  \BolApi\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled $body body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem
      */
     public function cancelOrderItem($body = null)
     {
@@ -137,11 +137,11 @@ class OrdersApi
      *
      * Cancel an order item by an order item id
      *
-     * @param  \OpenAPI\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled $body (optional)
+     * @param  \BolApi\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled $body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function cancelOrderItemWithHttpInfo($body = null)
     {
@@ -178,32 +178,32 @@ class OrdersApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 202:
-                    if ('\OpenAPI\Client\Model\ProcessStatus' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ProcessStatus' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProcessStatus', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ProcessStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+            $returnType = '\BolApi\Client\Model\ProcessStatus';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -222,7 +222,7 @@ class OrdersApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProcessStatus',
+                        '\BolApi\Client\Model\ProcessStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -230,7 +230,7 @@ class OrdersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -245,7 +245,7 @@ class OrdersApi
      *
      * Cancel an order item by an order item id
      *
-     * @param  \OpenAPI\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled $body (optional)
+     * @param  \BolApi\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -265,14 +265,14 @@ class OrdersApi
      *
      * Cancel an order item by an order item id
      *
-     * @param  \OpenAPI\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled $body (optional)
+     * @param  \BolApi\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function cancelOrderItemAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+        $returnType = '\BolApi\Client\Model\ProcessStatus';
         $request = $this->cancelOrderItemRequest($body);
 
         return $this->client
@@ -312,7 +312,7 @@ class OrdersApi
     /**
      * Create request for operation 'cancelOrderItem'
      *
-     * @param  \OpenAPI\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled $body (optional)
+     * @param  \BolApi\Client\Model\ContainerForTheOrderItemsThatHaveToBeCancelled $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -401,9 +401,9 @@ class OrdersApi
      *
      * @param  string $order_id The id of the open order to get. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\Order|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\Order|\BolApi\Client\Model\Problem
      */
     public function getOrder($order_id)
     {
@@ -418,9 +418,9 @@ class OrdersApi
      *
      * @param  string $order_id The id of the open order to get. (required)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\Order|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\Order|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderWithHttpInfo($order_id)
     {
@@ -457,32 +457,32 @@ class OrdersApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\Order' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Order' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Order', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Order', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 404:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\Order';
+            $returnType = '\BolApi\Client\Model\Order';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -501,7 +501,7 @@ class OrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Order',
+                        '\BolApi\Client\Model\Order',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -509,7 +509,7 @@ class OrdersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -551,7 +551,7 @@ class OrdersApi
      */
     public function getOrderAsyncWithHttpInfo($order_id)
     {
-        $returnType = '\OpenAPI\Client\Model\Order';
+        $returnType = '\BolApi\Client\Model\Order';
         $request = $this->getOrderRequest($order_id);
 
         return $this->client
@@ -689,9 +689,9 @@ class OrdersApi
      * @param  int $page The requested page number with a page size of 50 items. (optional, default to 1)
      * @param  string $fulfilment_method The fulfilment method. Fulfilled by the retailer (FBR) or fulfilled by bol.com (FBB). (optional, default to 'FBR')
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ReducedOrders
+     * @return \BolApi\Client\Model\ReducedOrders
      */
     public function getOrders($page = 1, $fulfilment_method = 'FBR')
     {
@@ -707,9 +707,9 @@ class OrdersApi
      * @param  int $page The requested page number with a page size of 50 items. (optional, default to 1)
      * @param  string $fulfilment_method The fulfilment method. Fulfilled by the retailer (FBR) or fulfilled by bol.com (FBB). (optional, default to 'FBR')
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ReducedOrders, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ReducedOrders, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrdersWithHttpInfo($page = 1, $fulfilment_method = 'FBR')
     {
@@ -746,20 +746,20 @@ class OrdersApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\ReducedOrders' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ReducedOrders' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ReducedOrders', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ReducedOrders', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ReducedOrders';
+            $returnType = '\BolApi\Client\Model\ReducedOrders';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -778,7 +778,7 @@ class OrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ReducedOrders',
+                        '\BolApi\Client\Model\ReducedOrders',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -822,7 +822,7 @@ class OrdersApi
      */
     public function getOrdersAsyncWithHttpInfo($page = 1, $fulfilment_method = 'FBR')
     {
-        $returnType = '\OpenAPI\Client\Model\ReducedOrders';
+        $returnType = '\BolApi\Client\Model\ReducedOrders';
         $request = $this->getOrdersRequest($page, $fulfilment_method);
 
         return $this->client
@@ -962,11 +962,11 @@ class OrdersApi
      *
      * Ship order item
      *
-     * @param  \OpenAPI\Client\Model\ShipmentRequest $body body (optional)
+     * @param  \BolApi\Client\Model\ShipmentRequest $body body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem
+     * @return \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem
      */
     public function shipOrderItem($body = null)
     {
@@ -979,11 +979,11 @@ class OrdersApi
      *
      * Ship order item
      *
-     * @param  \OpenAPI\Client\Model\ShipmentRequest $body (optional)
+     * @param  \BolApi\Client\Model\ShipmentRequest $body (optional)
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response
+     * @throws \BolApi\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\ProcessStatus|\OpenAPI\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \BolApi\Client\Model\ProcessStatus|\BolApi\Client\Model\Problem, HTTP status code, HTTP response headers (array of strings)
      */
     public function shipOrderItemWithHttpInfo($body = null)
     {
@@ -1020,32 +1020,32 @@ class OrdersApi
             $responseBody = $response->getBody();
             switch($statusCode) {
                 case 202:
-                    if ('\OpenAPI\Client\Model\ProcessStatus' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\ProcessStatus' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\ProcessStatus', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\ProcessStatus', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\OpenAPI\Client\Model\Problem' === '\SplFileObject') {
+                    if ('\BolApi\Client\Model\Problem' === '\SplFileObject') {
                         $content = $responseBody; //stream goes to serializer
                     } else {
                         $content = (string) $responseBody;
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\Problem', []),
+                        ObjectSerializer::deserialize($content, '\BolApi\Client\Model\Problem', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+            $returnType = '\BolApi\Client\Model\ProcessStatus';
             $responseBody = $response->getBody();
             if ($returnType === '\SplFileObject') {
                 $content = $responseBody; //stream goes to serializer
@@ -1064,7 +1064,7 @@ class OrdersApi
                 case 202:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\ProcessStatus',
+                        '\BolApi\Client\Model\ProcessStatus',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1072,7 +1072,7 @@ class OrdersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\Problem',
+                        '\BolApi\Client\Model\Problem',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1087,7 +1087,7 @@ class OrdersApi
      *
      * Ship order item
      *
-     * @param  \OpenAPI\Client\Model\ShipmentRequest $body (optional)
+     * @param  \BolApi\Client\Model\ShipmentRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1107,14 +1107,14 @@ class OrdersApi
      *
      * Ship order item
      *
-     * @param  \OpenAPI\Client\Model\ShipmentRequest $body (optional)
+     * @param  \BolApi\Client\Model\ShipmentRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function shipOrderItemAsyncWithHttpInfo($body = null)
     {
-        $returnType = '\OpenAPI\Client\Model\ProcessStatus';
+        $returnType = '\BolApi\Client\Model\ProcessStatus';
         $request = $this->shipOrderItemRequest($body);
 
         return $this->client
@@ -1154,7 +1154,7 @@ class OrdersApi
     /**
      * Create request for operation 'shipOrderItem'
      *
-     * @param  \OpenAPI\Client\Model\ShipmentRequest $body (optional)
+     * @param  \BolApi\Client\Model\ShipmentRequest $body (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

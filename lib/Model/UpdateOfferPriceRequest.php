@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * UpdateOfferPriceRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,7 +60,7 @@ class UpdateOfferPriceRequest implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'pricing' => '\OpenAPI\Client\Model\Pricing'
+        'pricing' => '\BolApi\Client\Model\Pricing'
     ];
 
     /**
@@ -215,7 +215,7 @@ class UpdateOfferPriceRequest implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets pricing
      *
-     * @return \OpenAPI\Client\Model\Pricing
+     * @return \BolApi\Client\Model\Pricing
      */
     public function getPricing()
     {
@@ -225,7 +225,7 @@ class UpdateOfferPriceRequest implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets pricing
      *
-     * @param \OpenAPI\Client\Model\Pricing $pricing pricing
+     * @param \BolApi\Client\Model\Pricing $pricing pricing
      *
      * @return self
      */

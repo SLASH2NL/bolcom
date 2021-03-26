@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ReducedInbound Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -69,8 +69,8 @@ class ReducedInbound implements ModelInterface, ArrayAccess, \JsonSerializable
         'announced_quantity' => 'int',
         'received_bskus' => 'int',
         'received_quantity' => 'int',
-        'time_slot' => '\OpenAPI\Client\Model\TimeSlot',
-        'inbound_transporter' => '\OpenAPI\Client\Model\Transporter'
+        'time_slot' => '\BolApi\Client\Model\TimeSlot',
+        'inbound_transporter' => '\BolApi\Client\Model\Transporter'
     ];
 
     /**
@@ -553,7 +553,7 @@ class ReducedInbound implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets time_slot
      *
-     * @return \OpenAPI\Client\Model\TimeSlot|null
+     * @return \BolApi\Client\Model\TimeSlot|null
      */
     public function getTimeSlot()
     {
@@ -563,7 +563,7 @@ class ReducedInbound implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets time_slot
      *
-     * @param \OpenAPI\Client\Model\TimeSlot|null $time_slot time_slot
+     * @param \BolApi\Client\Model\TimeSlot|null $time_slot time_slot
      *
      * @return self
      */
@@ -577,7 +577,7 @@ class ReducedInbound implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets inbound_transporter
      *
-     * @return \OpenAPI\Client\Model\Transporter
+     * @return \BolApi\Client\Model\Transporter
      */
     public function getInboundTransporter()
     {
@@ -587,7 +587,7 @@ class ReducedInbound implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets inbound_transporter
      *
-     * @param \OpenAPI\Client\Model\Transporter $inbound_transporter inbound_transporter
+     * @param \BolApi\Client\Model\Transporter $inbound_transporter inbound_transporter
      *
      * @return self
      */

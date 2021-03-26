@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * KeySetResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,7 +60,7 @@ class KeySetResponse implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'signature_keys' => '\OpenAPI\Client\Model\KeySet[]'
+        'signature_keys' => '\BolApi\Client\Model\KeySet[]'
     ];
 
     /**
@@ -215,7 +215,7 @@ class KeySetResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets signature_keys
      *
-     * @return \OpenAPI\Client\Model\KeySet[]
+     * @return \BolApi\Client\Model\KeySet[]
      */
     public function getSignatureKeys()
     {
@@ -225,7 +225,7 @@ class KeySetResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets signature_keys
      *
-     * @param \OpenAPI\Client\Model\KeySet[] $signature_keys signature_keys
+     * @param \BolApi\Client\Model\KeySet[] $signature_keys signature_keys
      *
      * @return self
      */

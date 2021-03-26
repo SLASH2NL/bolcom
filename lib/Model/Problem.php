@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * Problem Class Doc Comment
  *
  * @category Class
  * @description Describes a problem that occurred interacting with the API.
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -67,7 +67,7 @@ class Problem implements ModelInterface, ArrayAccess, \JsonSerializable
         'detail' => 'string',
         'host' => 'string',
         'instance' => 'string',
-        'violations' => '\OpenAPI\Client\Model\Violation[]'
+        'violations' => '\BolApi\Client\Model\Violation[]'
     ];
 
     /**
@@ -393,7 +393,7 @@ class Problem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets violations
      *
-     * @return \OpenAPI\Client\Model\Violation[]|null
+     * @return \BolApi\Client\Model\Violation[]|null
      */
     public function getViolations()
     {
@@ -403,7 +403,7 @@ class Problem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets violations
      *
-     * @param \OpenAPI\Client\Model\Violation[]|null $violations violations
+     * @param \BolApi\Client\Model\Violation[]|null $violations violations
      *
      * @return self
      */

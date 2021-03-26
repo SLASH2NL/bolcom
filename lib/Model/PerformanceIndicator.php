@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * PerformanceIndicator Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -62,7 +62,7 @@ class PerformanceIndicator implements ModelInterface, ArrayAccess, \JsonSerializ
     protected static $openAPITypes = [
         'name' => 'string',
         'type' => 'string',
-        'details' => '\OpenAPI\Client\Model\Details'
+        'details' => '\BolApi\Client\Model\Details'
     ];
 
     /**
@@ -352,7 +352,7 @@ class PerformanceIndicator implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets details
      *
-     * @return \OpenAPI\Client\Model\Details|null
+     * @return \BolApi\Client\Model\Details|null
      */
     public function getDetails()
     {
@@ -362,7 +362,7 @@ class PerformanceIndicator implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets details
      *
-     * @param \OpenAPI\Client\Model\Details|null $details details
+     * @param \BolApi\Client\Model\Details|null $details details
      *
      * @return self
      */

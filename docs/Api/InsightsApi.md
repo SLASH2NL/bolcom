@@ -1,4 +1,4 @@
-# OpenAPI\Client\InsightsApi
+# BolApi\Client\InsightsApi
 
 All URIs are relative to https://api.bol.com.
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 ## `getOfferInsights()`
 
 ```php
-getOfferInsights($offer_id, $period, $number_of_periods, $name): \OpenAPI\Client\Model\OfferInsights
+getOfferInsights($offer_id, $period, $number_of_periods, $name): \BolApi\Client\Model\OfferInsights
 ```
 
 Get offer insights
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\InsightsApi(
+$apiInstance = new BolApi\Client\Api\InsightsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\OfferInsights**](../Model/OfferInsights.md)
+[**\BolApi\Client\Model\OfferInsights**](../Model/OfferInsights.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ No authorization required
 ## `getPerformanceIndicator()`
 
 ```php
-getPerformanceIndicator($name, $year, $week): \OpenAPI\Client\Model\PerformanceIndicators
+getPerformanceIndicator($name, $year, $week): \BolApi\Client\Model\PerformanceIndicators
 ```
 
 Get performance indicators
@@ -89,7 +89,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\InsightsApi(
+$apiInstance = new BolApi\Client\Api\InsightsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -116,7 +116,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\PerformanceIndicators**](../Model/PerformanceIndicators.md)
+[**\BolApi\Client\Model\PerformanceIndicators**](../Model/PerformanceIndicators.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ No authorization required
 ## `getSalesForecast()`
 
 ```php
-getSalesForecast($offer_id, $weeks_ahead): \OpenAPI\Client\Model\SalesForecastResponse
+getSalesForecast($offer_id, $weeks_ahead): \BolApi\Client\Model\SalesForecastResponse
 ```
 
 Get sales forecast
@@ -149,7 +149,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\InsightsApi(
+$apiInstance = new BolApi\Client\Api\InsightsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SalesForecastResponse**](../Model/SalesForecastResponse.md)
+[**\BolApi\Client\Model\SalesForecastResponse**](../Model/SalesForecastResponse.md)
 
 ### Authorization
 

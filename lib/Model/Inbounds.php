@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * Inbounds Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,7 +60,7 @@ class Inbounds implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'inbounds' => '\OpenAPI\Client\Model\ReducedInbound[]'
+        'inbounds' => '\BolApi\Client\Model\ReducedInbound[]'
     ];
 
     /**
@@ -215,7 +215,7 @@ class Inbounds implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets inbounds
      *
-     * @return \OpenAPI\Client\Model\ReducedInbound[]
+     * @return \BolApi\Client\Model\ReducedInbound[]
      */
     public function getInbounds()
     {
@@ -225,7 +225,7 @@ class Inbounds implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets inbounds
      *
-     * @param \OpenAPI\Client\Model\ReducedInbound[] $inbounds An inbound shipment.
+     * @param \BolApi\Client\Model\ReducedInbound[] $inbounds An inbound shipment.
      *
      * @return self
      */

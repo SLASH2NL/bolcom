@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * RetailPriceResponse Class Doc Comment
  *
  * @category Class
  * @description Retail price information for products and the countries in which they apply.
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,7 +61,7 @@ class RetailPriceResponse implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'retail_prices' => '\OpenAPI\Client\Model\RetailPrice[]'
+        'retail_prices' => '\BolApi\Client\Model\RetailPrice[]'
     ];
 
     /**
@@ -216,7 +216,7 @@ class RetailPriceResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets retail_prices
      *
-     * @return \OpenAPI\Client\Model\RetailPrice[]
+     * @return \BolApi\Client\Model\RetailPrice[]
      */
     public function getRetailPrices()
     {
@@ -226,7 +226,7 @@ class RetailPriceResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets retail_prices
      *
-     * @param \OpenAPI\Client\Model\RetailPrice[] $retail_prices retail_prices
+     * @param \BolApi\Client\Model\RetailPrice[] $retail_prices retail_prices
      *
      * @return self
      */

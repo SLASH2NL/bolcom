@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * PerformanceIndicators Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,7 +60,7 @@ class PerformanceIndicators implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'performance_indicators' => '\OpenAPI\Client\Model\PerformanceIndicator[]'
+        'performance_indicators' => '\BolApi\Client\Model\PerformanceIndicator[]'
     ];
 
     /**
@@ -215,7 +215,7 @@ class PerformanceIndicators implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets performance_indicators
      *
-     * @return \OpenAPI\Client\Model\PerformanceIndicator[]
+     * @return \BolApi\Client\Model\PerformanceIndicator[]
      */
     public function getPerformanceIndicators()
     {
@@ -225,7 +225,7 @@ class PerformanceIndicators implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets performance_indicators
      *
-     * @param \OpenAPI\Client\Model\PerformanceIndicator[] $performance_indicators performance_indicators
+     * @param \BolApi\Client\Model\PerformanceIndicator[] $performance_indicators performance_indicators
      *
      * @return self
      */

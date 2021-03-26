@@ -1,4 +1,4 @@
-# OpenAPI\Client\BETAApi
+# BolApi\Client\BETAApi
 
 All URIs are relative to https://api.bol.com.
 
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 ## `deletePushNotificationSubscription()`
 
 ```php
-deletePushNotificationSubscription($subscription_id): \OpenAPI\Client\Model\ProcessStatus
+deletePushNotificationSubscription($subscription_id): \BolApi\Client\Model\ProcessStatus
 ```
 
 BETA: Delete push notification subscription
@@ -34,7 +34,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\BETAApi(
+$apiInstance = new BolApi\Client\Api\BETAApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -57,7 +57,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ No authorization required
 ## `getPushNotificationSubscription()`
 
 ```php
-getPushNotificationSubscription($subscription_id): \OpenAPI\Client\Model\SubscriptionResponse
+getPushNotificationSubscription($subscription_id): \BolApi\Client\Model\SubscriptionResponse
 ```
 
 BETA: Get push notification subscription by id
@@ -90,7 +90,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\BETAApi(
+$apiInstance = new BolApi\Client\Api\BETAApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -113,7 +113,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SubscriptionResponse**](../Model/SubscriptionResponse.md)
+[**\BolApi\Client\Model\SubscriptionResponse**](../Model/SubscriptionResponse.md)
 
 ### Authorization
 
@@ -131,7 +131,7 @@ No authorization required
 ## `getPushNotificationSubscriptions()`
 
 ```php
-getPushNotificationSubscriptions(): \OpenAPI\Client\Model\SubscriptionsResponse
+getPushNotificationSubscriptions(): \BolApi\Client\Model\SubscriptionsResponse
 ```
 
 BETA: Get push notification subscriptions
@@ -146,7 +146,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\BETAApi(
+$apiInstance = new BolApi\Client\Api\BETAApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -166,7 +166,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\SubscriptionsResponse**](../Model/SubscriptionsResponse.md)
+[**\BolApi\Client\Model\SubscriptionsResponse**](../Model/SubscriptionsResponse.md)
 
 ### Authorization
 
@@ -184,7 +184,7 @@ No authorization required
 ## `getRetailPrice()`
 
 ```php
-getRetailPrice($ean): \OpenAPI\Client\Model\RetailPriceResponse
+getRetailPrice($ean): \BolApi\Client\Model\RetailPriceResponse
 ```
 
 BETA: Retrieve retail price information for an EAN.
@@ -199,7 +199,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\BETAApi(
+$apiInstance = new BolApi\Client\Api\BETAApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\RetailPriceResponse**](../Model/RetailPriceResponse.md)
+[**\BolApi\Client\Model\RetailPriceResponse**](../Model/RetailPriceResponse.md)
 
 ### Authorization
 
@@ -240,7 +240,7 @@ No authorization required
 ## `getSubscriptionKeys()`
 
 ```php
-getSubscriptionKeys(): \OpenAPI\Client\Model\KeySetResponse
+getSubscriptionKeys(): \BolApi\Client\Model\KeySetResponse
 ```
 
 BETA: Retrieve public keys for push notification signature validation.
@@ -255,7 +255,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\BETAApi(
+$apiInstance = new BolApi\Client\Api\BETAApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -275,7 +275,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\KeySetResponse**](../Model/KeySetResponse.md)
+[**\BolApi\Client\Model\KeySetResponse**](../Model/KeySetResponse.md)
 
 ### Authorization
 
@@ -308,7 +308,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\BETAApi(
+$apiInstance = new BolApi\Client\Api\BETAApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -348,7 +348,7 @@ No authorization required
 ## `postPushNotificationSubscription()`
 
 ```php
-postPushNotificationSubscription($body): \OpenAPI\Client\Model\ProcessStatus
+postPushNotificationSubscription($body): \BolApi\Client\Model\ProcessStatus
 ```
 
 BETA: Create push notification subscription
@@ -363,12 +363,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\BETAApi(
+$apiInstance = new BolApi\Client\Api\BETAApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\CreateSubscriptionRequest(); // \OpenAPI\Client\Model\CreateSubscriptionRequest
+$body = new \BolApi\Client\Model\CreateSubscriptionRequest(); // \BolApi\Client\Model\CreateSubscriptionRequest
 
 try {
     $result = $apiInstance->postPushNotificationSubscription($body);
@@ -382,11 +382,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\OpenAPI\Client\Model\CreateSubscriptionRequest**](../Model/CreateSubscriptionRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\CreateSubscriptionRequest**](../Model/CreateSubscriptionRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 
@@ -404,7 +404,7 @@ No authorization required
 ## `postTestPushNotification()`
 
 ```php
-postTestPushNotification(): \OpenAPI\Client\Model\ProcessStatus
+postTestPushNotification(): \BolApi\Client\Model\ProcessStatus
 ```
 
 BETA: Send test push notification for subscriptions
@@ -419,7 +419,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\BETAApi(
+$apiInstance = new BolApi\Client\Api\BETAApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -439,7 +439,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 
@@ -457,7 +457,7 @@ No authorization required
 ## `postUnpublishedOfferReport()`
 
 ```php
-postUnpublishedOfferReport($body): \OpenAPI\Client\Model\ProcessStatus
+postUnpublishedOfferReport($body): \BolApi\Client\Model\ProcessStatus
 ```
 
 BETA: Request an unpublished offer report
@@ -472,12 +472,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\BETAApi(
+$apiInstance = new BolApi\Client\Api\BETAApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \OpenAPI\Client\Model\CreateUnpublishedOfferReportRequest(); // \OpenAPI\Client\Model\CreateUnpublishedOfferReportRequest
+$body = new \BolApi\Client\Model\CreateUnpublishedOfferReportRequest(); // \BolApi\Client\Model\CreateUnpublishedOfferReportRequest
 
 try {
     $result = $apiInstance->postUnpublishedOfferReport($body);
@@ -491,11 +491,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\OpenAPI\Client\Model\CreateUnpublishedOfferReportRequest**](../Model/CreateUnpublishedOfferReportRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\CreateUnpublishedOfferReportRequest**](../Model/CreateUnpublishedOfferReportRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 
@@ -513,7 +513,7 @@ No authorization required
 ## `putPushNotificationSubscription()`
 
 ```php
-putPushNotificationSubscription($subscription_id, $body): \OpenAPI\Client\Model\ProcessStatus
+putPushNotificationSubscription($subscription_id, $body): \BolApi\Client\Model\ProcessStatus
 ```
 
 BETA: Update push notification subscription
@@ -528,13 +528,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\BETAApi(
+$apiInstance = new BolApi\Client\Api\BETAApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $subscription_id = 1234; // int | A unique identifier for the subscription
-$body = new \OpenAPI\Client\Model\UpdateSubscriptionRequest(); // \OpenAPI\Client\Model\UpdateSubscriptionRequest
+$body = new \BolApi\Client\Model\UpdateSubscriptionRequest(); // \BolApi\Client\Model\UpdateSubscriptionRequest
 
 try {
     $result = $apiInstance->putPushNotificationSubscription($subscription_id, $body);
@@ -549,11 +549,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **subscription_id** | **int**| A unique identifier for the subscription |
- **body** | [**\OpenAPI\Client\Model\UpdateSubscriptionRequest**](../Model/UpdateSubscriptionRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\UpdateSubscriptionRequest**](../Model/UpdateSubscriptionRequest.md)|  | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
+[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
 
 ### Authorization
 

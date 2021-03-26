@@ -1,4 +1,4 @@
-# OpenAPI\Client\ShipmentsApi
+# BolApi\Client\ShipmentsApi
 
 All URIs are relative to https://api.bol.com.
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 ## `getShipment()`
 
 ```php
-getShipment($shipment_id): \OpenAPI\Client\Model\Shipment
+getShipment($shipment_id): \BolApi\Client\Model\Shipment
 ```
 
 Get a shipment by shipment id
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentsApi(
+$apiInstance = new BolApi\Client\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\Shipment**](../Model/Shipment.md)
+[**\BolApi\Client\Model\Shipment**](../Model/Shipment.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ No authorization required
 ## `getShipments()`
 
 ```php
-getShipments($page, $fulfilment_method, $order_id): \OpenAPI\Client\Model\ShipmentsResponse
+getShipments($page, $fulfilment_method, $order_id): \BolApi\Client\Model\ShipmentsResponse
 ```
 
 Get shipment list
@@ -82,7 +82,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new OpenAPI\Client\Api\ShipmentsApi(
+$apiInstance = new BolApi\Client\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ShipmentsResponse**](../Model/ShipmentsResponse.md)
+[**\BolApi\Client\Model\ShipmentsResponse**](../Model/ShipmentsResponse.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * SalesForecastResponse Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -62,9 +62,9 @@ class SalesForecastResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     protected static $openAPITypes = [
         'name' => 'string',
         'type' => 'string',
-        'total' => '\OpenAPI\Client\Model\Total',
-        'countries' => '\OpenAPI\Client\Model\Countries[]',
-        'periods' => '\OpenAPI\Client\Model\Period[]'
+        'total' => '\BolApi\Client\Model\Total',
+        'countries' => '\BolApi\Client\Model\Countries[]',
+        'periods' => '\BolApi\Client\Model\Period[]'
     ];
 
     /**
@@ -293,7 +293,7 @@ class SalesForecastResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets total
      *
-     * @return \OpenAPI\Client\Model\Total
+     * @return \BolApi\Client\Model\Total
      */
     public function getTotal()
     {
@@ -303,7 +303,7 @@ class SalesForecastResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets total
      *
-     * @param \OpenAPI\Client\Model\Total $total total
+     * @param \BolApi\Client\Model\Total $total total
      *
      * @return self
      */
@@ -317,7 +317,7 @@ class SalesForecastResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets countries
      *
-     * @return \OpenAPI\Client\Model\Countries[]
+     * @return \BolApi\Client\Model\Countries[]
      */
     public function getCountries()
     {
@@ -327,7 +327,7 @@ class SalesForecastResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets countries
      *
-     * @param \OpenAPI\Client\Model\Countries[] $countries countries
+     * @param \BolApi\Client\Model\Countries[] $countries countries
      *
      * @return self
      */
@@ -341,7 +341,7 @@ class SalesForecastResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets periods
      *
-     * @return \OpenAPI\Client\Model\Period[]
+     * @return \BolApi\Client\Model\Period[]
      */
     public function getPeriods()
     {
@@ -351,7 +351,7 @@ class SalesForecastResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets periods
      *
-     * @param \OpenAPI\Client\Model\Period[] $periods periods
+     * @param \BolApi\Client\Model\Period[] $periods periods
      *
      * @return self
      */

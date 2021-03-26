@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**subscriptions** | [**\OpenAPI\Client\Model\SubscriptionResponse[]**](SubscriptionResponse.md) |  |
+**subscriptions** | [**\BolApi\Client\Model\SubscriptionResponse[]**](SubscriptionResponse.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

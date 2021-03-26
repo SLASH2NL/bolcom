@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * RetailerOffer Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -65,12 +65,12 @@ class RetailerOffer implements ModelInterface, ArrayAccess, \JsonSerializable
         'reference' => 'string',
         'on_hold_by_retailer' => 'bool',
         'unknown_product_title' => 'string',
-        'pricing' => '\OpenAPI\Client\Model\Pricing',
-        'stock' => '\OpenAPI\Client\Model\Stock',
-        'fulfilment' => '\OpenAPI\Client\Model\Fulfilment',
-        'store' => '\OpenAPI\Client\Model\Store',
-        'condition' => '\OpenAPI\Client\Model\Condition',
-        'not_publishable_reasons' => '\OpenAPI\Client\Model\NotPublishableReason[]'
+        'pricing' => '\BolApi\Client\Model\Pricing',
+        'stock' => '\BolApi\Client\Model\Stock',
+        'fulfilment' => '\BolApi\Client\Model\Fulfilment',
+        'store' => '\BolApi\Client\Model\Store',
+        'condition' => '\BolApi\Client\Model\Condition',
+        'not_publishable_reasons' => '\BolApi\Client\Model\NotPublishableReason[]'
     ];
 
     /**
@@ -410,7 +410,7 @@ class RetailerOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets pricing
      *
-     * @return \OpenAPI\Client\Model\Pricing
+     * @return \BolApi\Client\Model\Pricing
      */
     public function getPricing()
     {
@@ -420,7 +420,7 @@ class RetailerOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets pricing
      *
-     * @param \OpenAPI\Client\Model\Pricing $pricing pricing
+     * @param \BolApi\Client\Model\Pricing $pricing pricing
      *
      * @return self
      */
@@ -434,7 +434,7 @@ class RetailerOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets stock
      *
-     * @return \OpenAPI\Client\Model\Stock
+     * @return \BolApi\Client\Model\Stock
      */
     public function getStock()
     {
@@ -444,7 +444,7 @@ class RetailerOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets stock
      *
-     * @param \OpenAPI\Client\Model\Stock $stock stock
+     * @param \BolApi\Client\Model\Stock $stock stock
      *
      * @return self
      */
@@ -458,7 +458,7 @@ class RetailerOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets fulfilment
      *
-     * @return \OpenAPI\Client\Model\Fulfilment
+     * @return \BolApi\Client\Model\Fulfilment
      */
     public function getFulfilment()
     {
@@ -468,7 +468,7 @@ class RetailerOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets fulfilment
      *
-     * @param \OpenAPI\Client\Model\Fulfilment $fulfilment fulfilment
+     * @param \BolApi\Client\Model\Fulfilment $fulfilment fulfilment
      *
      * @return self
      */
@@ -482,7 +482,7 @@ class RetailerOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets store
      *
-     * @return \OpenAPI\Client\Model\Store
+     * @return \BolApi\Client\Model\Store
      */
     public function getStore()
     {
@@ -492,7 +492,7 @@ class RetailerOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets store
      *
-     * @param \OpenAPI\Client\Model\Store $store store
+     * @param \BolApi\Client\Model\Store $store store
      *
      * @return self
      */
@@ -506,7 +506,7 @@ class RetailerOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets condition
      *
-     * @return \OpenAPI\Client\Model\Condition
+     * @return \BolApi\Client\Model\Condition
      */
     public function getCondition()
     {
@@ -516,7 +516,7 @@ class RetailerOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets condition
      *
-     * @param \OpenAPI\Client\Model\Condition $condition condition
+     * @param \BolApi\Client\Model\Condition $condition condition
      *
      * @return self
      */
@@ -530,7 +530,7 @@ class RetailerOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets not_publishable_reasons
      *
-     * @return \OpenAPI\Client\Model\NotPublishableReason[]
+     * @return \BolApi\Client\Model\NotPublishableReason[]
      */
     public function getNotPublishableReasons()
     {
@@ -540,7 +540,7 @@ class RetailerOffer implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets not_publishable_reasons
      *
-     * @param \OpenAPI\Client\Model\NotPublishableReason[] $not_publishable_reasons not_publishable_reasons
+     * @param \BolApi\Client\Model\NotPublishableReason[] $not_publishable_reasons not_publishable_reasons
      *
      * @return self
      */

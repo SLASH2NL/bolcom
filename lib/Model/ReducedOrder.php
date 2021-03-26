@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ReducedOrder Class Doc Comment
  *
  * @category Class
  * @description An order.
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -63,7 +63,7 @@ class ReducedOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     protected static $openAPITypes = [
         'order_id' => 'string',
         'order_placed_date_time' => '\DateTime',
-        'order_items' => '\OpenAPI\Client\Model\ReducedOrderItem[]'
+        'order_items' => '\BolApi\Client\Model\ReducedOrderItem[]'
     ];
 
     /**
@@ -276,7 +276,7 @@ class ReducedOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets order_items
      *
-     * @return \OpenAPI\Client\Model\ReducedOrderItem[]
+     * @return \BolApi\Client\Model\ReducedOrderItem[]
      */
     public function getOrderItems()
     {
@@ -286,7 +286,7 @@ class ReducedOrder implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets order_items
      *
-     * @param \OpenAPI\Client\Model\ReducedOrderItem[] $order_items order_items
+     * @param \BolApi\Client\Model\ReducedOrderItem[] $order_items order_items
      *
      * @return self
      */

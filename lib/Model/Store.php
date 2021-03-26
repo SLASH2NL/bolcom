@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * Store Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,7 +61,7 @@ class Store implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'product_title' => 'string',
-        'visible' => '\OpenAPI\Client\Model\CountryCode[]'
+        'visible' => '\BolApi\Client\Model\CountryCode[]'
     ];
 
     /**
@@ -245,7 +245,7 @@ class Store implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets visible
      *
-     * @return \OpenAPI\Client\Model\CountryCode[]
+     * @return \BolApi\Client\Model\CountryCode[]
      */
     public function getVisible()
     {
@@ -255,7 +255,7 @@ class Store implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets visible
      *
-     * @param \OpenAPI\Client\Model\CountryCode[] $visible visible
+     * @param \BolApi\Client\Model\CountryCode[] $visible visible
      *
      * @return self
      */

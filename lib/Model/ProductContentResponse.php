@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ProductContentResponse Class Doc Comment
  *
  * @category Class
  * @description An rejected product content.
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -62,7 +62,7 @@ class ProductContentResponse implements ModelInterface, ArrayAccess, \JsonSerial
       */
     protected static $openAPITypes = [
         'internal_reference' => 'string',
-        'rejected_attributes' => '\OpenAPI\Client\Model\RejectedAttributeResponse[]',
+        'rejected_attributes' => '\BolApi\Client\Model\RejectedAttributeResponse[]',
         'status' => 'string',
         'error_code' => 'int',
         'error_description' => 'string'
@@ -289,7 +289,7 @@ class ProductContentResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets rejected_attributes
      *
-     * @return \OpenAPI\Client\Model\RejectedAttributeResponse[]|null
+     * @return \BolApi\Client\Model\RejectedAttributeResponse[]|null
      */
     public function getRejectedAttributes()
     {
@@ -299,7 +299,7 @@ class ProductContentResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets rejected_attributes
      *
-     * @param \OpenAPI\Client\Model\RejectedAttributeResponse[]|null $rejected_attributes rejected_attributes
+     * @param \BolApi\Client\Model\RejectedAttributeResponse[]|null $rejected_attributes rejected_attributes
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * CreateOfferRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,13 +61,13 @@ class CreateOfferRequest implements ModelInterface, ArrayAccess, \JsonSerializab
       */
     protected static $openAPITypes = [
         'ean' => 'string',
-        'condition' => '\OpenAPI\Client\Model\Condition',
+        'condition' => '\BolApi\Client\Model\Condition',
         'reference' => 'string',
         'on_hold_by_retailer' => 'bool',
         'unknown_product_title' => 'string',
-        'pricing' => '\OpenAPI\Client\Model\Pricing',
-        'stock' => '\OpenAPI\Client\Model\StockCreate',
-        'fulfilment' => '\OpenAPI\Client\Model\Fulfilment'
+        'pricing' => '\BolApi\Client\Model\Pricing',
+        'stock' => '\BolApi\Client\Model\StockCreate',
+        'fulfilment' => '\BolApi\Client\Model\Fulfilment'
     ];
 
     /**
@@ -309,7 +309,7 @@ class CreateOfferRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets condition
      *
-     * @return \OpenAPI\Client\Model\Condition
+     * @return \BolApi\Client\Model\Condition
      */
     public function getCondition()
     {
@@ -319,7 +319,7 @@ class CreateOfferRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets condition
      *
-     * @param \OpenAPI\Client\Model\Condition $condition condition
+     * @param \BolApi\Client\Model\Condition $condition condition
      *
      * @return self
      */
@@ -419,7 +419,7 @@ class CreateOfferRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets pricing
      *
-     * @return \OpenAPI\Client\Model\Pricing
+     * @return \BolApi\Client\Model\Pricing
      */
     public function getPricing()
     {
@@ -429,7 +429,7 @@ class CreateOfferRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets pricing
      *
-     * @param \OpenAPI\Client\Model\Pricing $pricing pricing
+     * @param \BolApi\Client\Model\Pricing $pricing pricing
      *
      * @return self
      */
@@ -443,7 +443,7 @@ class CreateOfferRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets stock
      *
-     * @return \OpenAPI\Client\Model\StockCreate
+     * @return \BolApi\Client\Model\StockCreate
      */
     public function getStock()
     {
@@ -453,7 +453,7 @@ class CreateOfferRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets stock
      *
-     * @param \OpenAPI\Client\Model\StockCreate $stock stock
+     * @param \BolApi\Client\Model\StockCreate $stock stock
      *
      * @return self
      */
@@ -467,7 +467,7 @@ class CreateOfferRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets fulfilment
      *
-     * @return \OpenAPI\Client\Model\Fulfilment
+     * @return \BolApi\Client\Model\Fulfilment
      */
     public function getFulfilment()
     {
@@ -477,7 +477,7 @@ class CreateOfferRequest implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets fulfilment
      *
-     * @param \OpenAPI\Client\Model\Fulfilment $fulfilment fulfilment
+     * @param \BolApi\Client\Model\Fulfilment $fulfilment fulfilment
      *
      * @return self
      */

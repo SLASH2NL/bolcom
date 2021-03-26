@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **track_and_trace** | **string** | The track and trace code that is associated with this transport. | [optional]
 **transporter_name** | **string** | The name of the transporter. | [optional]
 **handled** | **bool** | Indicates if this return item has been handled (by the retailer). | [optional]
-**processing_results** | [**\OpenAPI\Client\Model\ReturnProcessingResult[]**](ReturnProcessingResult.md) |  |
-**customer_details** | [**\OpenAPI\Client\Model\CustomerDetails**](CustomerDetails.md) |  | [optional]
+**processing_results** | [**\BolApi\Client\Model\ReturnProcessingResult[]**](ReturnProcessingResult.md) |  |
+**customer_details** | [**\BolApi\Client\Model\CustomerDetails**](CustomerDetails.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * BulkCommissionRequest Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,7 +60,7 @@ class BulkCommissionRequest implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'commission_queries' => '\OpenAPI\Client\Model\BulkCommissionQuery[]'
+        'commission_queries' => '\BolApi\Client\Model\BulkCommissionQuery[]'
     ];
 
     /**
@@ -223,7 +223,7 @@ class BulkCommissionRequest implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets commission_queries
      *
-     * @return \OpenAPI\Client\Model\BulkCommissionQuery[]
+     * @return \BolApi\Client\Model\BulkCommissionQuery[]
      */
     public function getCommissionQueries()
     {
@@ -233,7 +233,7 @@ class BulkCommissionRequest implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets commission_queries
      *
-     * @param \OpenAPI\Client\Model\BulkCommissionQuery[] $commission_queries commission_queries
+     * @param \BolApi\Client\Model\BulkCommissionQuery[] $commission_queries commission_queries
      *
      * @return self
      */

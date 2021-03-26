@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,17 +27,17 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * ShippingLabelRequest Class Doc Comment
  *
  * @category Class
  * @description The configuration of order items to get delivery options for.
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -61,7 +61,7 @@ class ShippingLabelRequest implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'order_items' => '\OpenAPI\Client\Model\OrderItem[]',
+        'order_items' => '\BolApi\Client\Model\OrderItem[]',
         'shipping_label_offer_id' => 'string'
     ];
 
@@ -225,7 +225,7 @@ class ShippingLabelRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets order_items
      *
-     * @return \OpenAPI\Client\Model\OrderItem[]
+     * @return \BolApi\Client\Model\OrderItem[]
      */
     public function getOrderItems()
     {
@@ -235,7 +235,7 @@ class ShippingLabelRequest implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets order_items
      *
-     * @param \OpenAPI\Client\Model\OrderItem[] $order_items Order items for which the delivery options are requested.
+     * @param \BolApi\Client\Model\OrderItem[] $order_items Order items for which the delivery options are requested.
      *
      * @return self
      */

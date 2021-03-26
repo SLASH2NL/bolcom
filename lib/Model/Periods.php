@@ -5,7 +5,7 @@
  * PHP version 7.2
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace BolApi\Client\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \BolApi\Client\ObjectSerializer;
 
 /**
  * Periods Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  BolApi\Client
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<TKey, TValue>
@@ -60,9 +60,9 @@ class Periods implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'period' => '\OpenAPI\Client\Model\Period',
+        'period' => '\BolApi\Client\Model\Period',
         'total' => 'double',
-        'countries' => '\OpenAPI\Client\Model\Country[]'
+        'countries' => '\BolApi\Client\Model\Country[]'
     ];
 
     /**
@@ -227,7 +227,7 @@ class Periods implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets period
      *
-     * @return \OpenAPI\Client\Model\Period
+     * @return \BolApi\Client\Model\Period
      */
     public function getPeriod()
     {
@@ -237,7 +237,7 @@ class Periods implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets period
      *
-     * @param \OpenAPI\Client\Model\Period $period period
+     * @param \BolApi\Client\Model\Period $period period
      *
      * @return self
      */
@@ -275,7 +275,7 @@ class Periods implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets countries
      *
-     * @return \OpenAPI\Client\Model\Country[]|null
+     * @return \BolApi\Client\Model\Country[]|null
      */
     public function getCountries()
     {
@@ -285,7 +285,7 @@ class Periods implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets countries
      *
-     * @param \OpenAPI\Client\Model\Country[]|null $countries countries
+     * @param \BolApi\Client\Model\Country[]|null $countries countries
      *
      * @return self
      */

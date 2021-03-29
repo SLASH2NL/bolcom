@@ -26,11 +26,17 @@ Gets offer insights.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: bearerAuth
+$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new BolApi\Client\Api\InsightsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $offer_id = 'offer_id_example'; // string | Unique identifier for an offer.
 $period = 'period_example'; // string | The time unit in which the offer insights are grouped.
@@ -60,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -88,11 +94,17 @@ Gets the measurements for your performance indicators per week.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: bearerAuth
+$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new BolApi\Client\Api\InsightsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $name = array('name_example'); // string[] | The type of the performance indicator
 $year = 'year_example'; // string | Year number in the ISO-8601 standard.
@@ -120,7 +132,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../../README.md#bearerAuth)
 
 ### HTTP request headers
 
@@ -148,11 +160,17 @@ Gets sales forecast.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure API key authorization: bearerAuth
+$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new BolApi\Client\Api\InsightsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $offer_id = 'offer_id_example'; // string | Unique identifier for an offer.
 $weeks_ahead = 56; // int | The number of weeks into the future, starting from today.
@@ -178,7 +196,7 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-No authorization required
+[bearerAuth](../../README.md#bearerAuth)
 
 ### HTTP request headers
 

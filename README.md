@@ -48,11 +48,17 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
+// Configure API key authorization: bearerAuth
+$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
 
 $apiInstance = new BolApi\Client\Api\BETAApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
+    new GuzzleHttp\Client(),
+    $config
 );
 $subscription_id = 1234; // int | A unique identifier for the subscription
 
@@ -256,7 +262,14 @@ Class | Method | HTTP request | Description
 - [Violation](docs/Model/Violation.md)
 
 ## Authorization
-All endpoints do not require authorization.
+
+### bearerAuth
+
+- **Type**: API key
+- **API key parameter name**: Authorization
+- **Location**: HTTP header
+
+
 ## Tests
 
 To run the tests, use:

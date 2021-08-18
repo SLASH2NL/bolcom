@@ -4,12 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**rma_id** | **int** | The RMA (Return Merchandise Authorization) id that identifies this particular return. | [optional]
-**order_id** | **string** | The id of the customer order this return item is in. | [optional]
-**ean** | **string** | The EAN number associated with this product. | [optional]
-**expected_quantity** | **int** | The quantity that is expected to be returned by the customer. Note: this can be greater than 1 in case the customer ordered a quantity greater than 1 of the same product in the same customer order. | [optional]
-**return_reason** | **string** | The reason why the customer returned this product. | [optional]
-**return_reason_comments** | **string** | Additional details from the customer as to why this item was returned. | [optional]
+**rma_id** | **string** | The RMA (Return Merchandise Authorization) id that identifies this particular return. |
+**order_id** | **string** | The id of the customer order this return item is in. |
+**ean** | **string** | The EAN number associated with this product. |
+**expected_quantity** | **int** | The quantity that is expected to be returned by the customer. Note: this can be greater than 1 in case the customer ordered a quantity greater than 1 of the same product in the same customer order. |
+**return_reason** | [**\BolApi\Client\Model\ReturnReason**](ReturnReason.md) |  | [optional]
 **handled** | **bool** | Indicates if this return item has been handled (by the retailer). | [optional]
 **processing_results** | [**\BolApi\Client\Model\ReturnProcessingResult[]**](ReturnProcessingResult.md) |  |
 

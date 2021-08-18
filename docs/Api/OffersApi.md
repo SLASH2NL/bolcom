@@ -7,10 +7,8 @@ Method | HTTP request | Description
 [**deleteOffer()**](OffersApi.md#deleteOffer) | **DELETE** /retailer/offers/{offer-id} | Delete offer by id
 [**getOffer()**](OffersApi.md#getOffer) | **GET** /retailer/offers/{offer-id} | Retrieve an offer by its offer id
 [**getOfferExport()**](OffersApi.md#getOfferExport) | **GET** /retailer/offers/export/{report-id} | Retrieve an offer export file by offer export id
-[**getUnpublishedOfferReport()**](OffersApi.md#getUnpublishedOfferReport) | **GET** /retailer/offers/unpublished/{report-id} | BETA: Retrieve an unpublished offer report by report id
 [**postOffer()**](OffersApi.md#postOffer) | **POST** /retailer/offers | Create a new offer
 [**postOfferExport()**](OffersApi.md#postOfferExport) | **POST** /retailer/offers/export | Request an offer export file
-[**postUnpublishedOfferReport()**](OffersApi.md#postUnpublishedOfferReport) | **POST** /retailer/offers/unpublished | BETA: Request an unpublished offer report
 [**putOffer()**](OffersApi.md#putOffer) | **PUT** /retailer/offers/{offer-id} | Update an offer
 [**updateOfferPrice()**](OffersApi.md#updateOfferPrice) | **PUT** /retailer/offers/{offer-id}/price | Update price(s) for offer by id
 [**updateOfferStock()**](OffersApi.md#updateOfferStock) | **PUT** /retailer/offers/{offer-id}/stock | Update stock for offer by id
@@ -72,7 +70,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -134,7 +132,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -195,68 +193,7 @@ void (empty response body)
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+csv`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `getUnpublishedOfferReport()`
-
-```php
-getUnpublishedOfferReport($report_id)
-```
-
-BETA: Retrieve an unpublished offer report by report id
-
-Retrieve an unpublished offer report containing all unpublished offers and reasons.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new BolApi\Client\Api\OffersApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$report_id = 'report_id_example'; // string | Unique identifier for unpublished offer report.
-
-try {
-    $apiInstance->getUnpublishedOfferReport($report_id);
-} catch (Exception $e) {
-    echo 'Exception when calling OffersApi->getUnpublishedOfferReport: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **report_id** | **string**| Unique identifier for unpublished offer report. |
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[bearerAuth](../../README.md#bearerAuth)
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+csv`
+- **Accept**: `application/vnd.retailer.v5+csv`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -317,8 +254,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v4+json`
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Content-Type**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -379,70 +316,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v4+json`
-- **Accept**: `application/vnd.retailer.v4+json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `postUnpublishedOfferReport()`
-
-```php
-postUnpublishedOfferReport($body): \BolApi\Client\Model\ProcessStatus
-```
-
-BETA: Request an unpublished offer report
-
-Request an unpublished offer report containing all unpublished offers and reasons.
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
-
-$apiInstance = new BolApi\Client\Api\OffersApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$body = new \BolApi\Client\Model\CreateUnpublishedOfferReportRequest(); // \BolApi\Client\Model\CreateUnpublishedOfferReportRequest
-
-try {
-    $result = $apiInstance->postUnpublishedOfferReport($body);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling OffersApi->postUnpublishedOfferReport: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **body** | [**\BolApi\Client\Model\CreateUnpublishedOfferReportRequest**](../Model/CreateUnpublishedOfferReportRequest.md)|  | [optional]
-
-### Return type
-
-[**\BolApi\Client\Model\ProcessStatus**](../Model/ProcessStatus.md)
-
-### Authorization
-
-[bearerAuth](../../README.md#bearerAuth)
-
-### HTTP request headers
-
-- **Content-Type**: `application/vnd.retailer.v4+json`
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Content-Type**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -505,8 +380,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v4+json`
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Content-Type**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -569,8 +444,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v4+json`
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Content-Type**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -633,8 +508,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v4+json`
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Content-Type**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

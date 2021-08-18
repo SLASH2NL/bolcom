@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**format** | **string** | The printer format to create labels for. | [optional]
-**product_labels** | [**\BolApi\Client\Model\ProductLabel[]**](ProductLabel.md) |  |
+**label_format** | **string** | The printer format to create labels for. |
+**products** | [**\BolApi\Client\Model\ProductLabelsProduct[]**](ProductLabelsProduct.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

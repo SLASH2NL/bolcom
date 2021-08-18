@@ -38,7 +38,7 @@ $apiInstance = new BolApi\Client\Api\InvoicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$invoice_id = 56; // int | The id of the invoice
+$invoice_id = 'invoice_id_example'; // string | The id of the invoice
 
 try {
     $result = $apiInstance->getInvoice($invoice_id);
@@ -52,7 +52,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **invoice_id** | **int**| The id of the invoice |
+ **invoice_id** | **string**| The id of the invoice |
 
 ### Return type
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`, `application/vnd.retailer.v4+pdf`
+- **Accept**: `application/vnd.retailer.v5+json`, `application/vnd.retailer.v5+pdf`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -100,8 +100,8 @@ $apiInstance = new BolApi\Client\Api\InvoicesApi(
     new GuzzleHttp\Client(),
     $config
 );
-$invoice_id = 56; // int | The id of the invoice.
-$page = 56; // int | The page to get. Each page contains a maximum of 25.000 lines.
+$invoice_id = 'invoice_id_example'; // string | The id of the invoice.
+$page = 56; // int | The page to get, defaults to page 1. Each page contains a maximum of 25,000 lines.
 
 try {
     $result = $apiInstance->getInvoiceSpecification($invoice_id, $page);
@@ -115,8 +115,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **invoice_id** | **int**| The id of the invoice. |
- **page** | **int**| The page to get. Each page contains a maximum of 25.000 lines. | [optional]
+ **invoice_id** | **string**| The id of the invoice. |
+ **page** | **int**| The page to get, defaults to page 1. Each page contains a maximum of 25,000 lines. | [optional]
 
 ### Return type
 
@@ -129,7 +129,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`, `application/vnd.retailer.v4+pdf`, `application/vnd.retailer.v4+openxmlformats-officedocument.spreadsheetml.sheet`
+- **Accept**: `application/vnd.retailer.v5+json`, `application/vnd.retailer.v5+pdf`, `application/vnd.retailer.v5+openxmlformats-officedocument.spreadsheetml.sheet`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -193,7 +193,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

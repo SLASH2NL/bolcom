@@ -9,5 +9,6 @@ Name | Type | Description | Notes
 **latest_delivery_date** | [**\DateTime**](\DateTime.md) | The ultimate delivery date at which this order must be delivered at the customer&#39;s shipping address. This field is empty in case the exactDeliveryDate is filled. | [optional]
 **exact_delivery_date** | [**\DateTime**](\DateTime.md) | The exact delivery date at which this order must be delivered at the customer&#39;s shipping address. This field is only filled when the customer chose an exact date for delivery. This field is empty in case the latestDeliveryDate is filled. | [optional]
 **expiry_date** | [**\DateTime**](\DateTime.md) | The date this order item will automatically expire and thereby cancelling this order item from the order. | [optional]
+**time_frame_type** | **string** | The selected delivery option. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -4,8 +4,8 @@ All URIs are relative to https://api.bol.com.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getProcessStatus()**](ProcessStatusApi.md#getProcessStatus) | **GET** /retailer/process-status/{process-status-id} | Get the status of an asynchronous process by id
-[**getProcessStatusBulk()**](ProcessStatusApi.md#getProcessStatusBulk) | **POST** /retailer/process-status | Gets the status of multiple asynchronous processes by an array of process status id&#39;s for a retailer
+[**getProcessStatus()**](ProcessStatusApi.md#getProcessStatus) | **GET** /retailer/process-status/{process-status-id} | Get the status of an asynchronous process by process status id
+[**getProcessStatusBulk()**](ProcessStatusApi.md#getProcessStatusBulk) | **POST** /retailer/process-status | Gets the status of multiple asynchronous processes by an array of process status ids for a retailer
 [**getProcessStatusEntityId()**](ProcessStatusApi.md#getProcessStatusEntityId) | **GET** /retailer/process-status | Gets the status of an asynchronous process by entity id and event type for a retailer
 
 
@@ -15,7 +15,7 @@ Method | HTTP request | Description
 getProcessStatus($process_status_id): \BolApi\Client\Model\ProcessStatus
 ```
 
-Get the status of an asynchronous process by id
+Get the status of an asynchronous process by process status id
 
 Retrieve a specific process-status, which shows information regarding a previously executed PUT/POST/DELETE request. All PUT/POST/DELETE requests on the other endpoints will supply a process-status-id in the related response. You can use this id to retrieve a status by using the endpoint below. Please note: process status instances are only retained for a limited period of time after completion. Outside of this period, a 404 will be returned for missing process statuses. Please handle this accordingly, by stopping any active polling for these statuses.
 
@@ -38,7 +38,7 @@ $apiInstance = new BolApi\Client\Api\ProcessStatusApi(
     new GuzzleHttp\Client(),
     $config
 );
-$process_status_id = 56; // int | The id of the process status being requested. This id is supplied in every response to a PUT/POST/DELETE request on the other endpoints.
+$process_status_id = 'process_status_id_example'; // string | The id of the process status being requested. This id is supplied in every response to a PUT/POST/DELETE request on the other endpoints.
 
 try {
     $result = $apiInstance->getProcessStatus($process_status_id);
@@ -52,7 +52,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **process_status_id** | **int**| The id of the process status being requested. This id is supplied in every response to a PUT/POST/DELETE request on the other endpoints. |
+ **process_status_id** | **string**| The id of the process status being requested. This id is supplied in every response to a PUT/POST/DELETE request on the other endpoints. |
 
 ### Return type
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 getProcessStatusBulk($body): \BolApi\Client\Model\ProcessStatusResponse
 ```
 
-Gets the status of multiple asynchronous processes by an array of process status id's for a retailer
+Gets the status of multiple asynchronous processes by an array of process status ids for a retailer
 
 Retrieve a list of process statuses, which shows information regarding previously executed PUT/POST/DELETE requests. No more than 1000 process status id's can be sent in a single request.Please note: process status instances are only retained for a limited period of time after completion. Outside of this period, deleted process statuses will no longer be returned. Please handle this accordingly, by stopping any active polling for these statuses.
 
@@ -126,8 +126,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v4+json`
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Content-Type**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -141,7 +141,7 @@ getProcessStatusEntityId($entity_id, $event_type, $page): \BolApi\Client\Model\P
 
 Gets the status of an asynchronous process by entity id and event type for a retailer
 
-Retrieve a list of process statuses, which shows information regarding previously executed PUT/POST/DELETE requests in descending order. You need to supply an entity id and event type. Please note: process status instances are only retained for a limited period of time after completion. Outside of this period, deleted process statuses will no longer be returned. Please handle this accordingly, by stopping any active polling for these statuses.
+Retrieve a list of process statuses, which shows information regarding previously executed PUT/POST/DELETE requests in descending order. You need to supply an entity id and event type.Please note: process status instances are only retained for a limited period of time after completion. Outside of this period, deleted process statuses will no longer be returned. Please handle this accordingly, by stopping any active polling for these statuses.
 
 ### Example
 
@@ -193,7 +193,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

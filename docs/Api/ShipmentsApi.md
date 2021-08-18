@@ -37,7 +37,7 @@ $apiInstance = new BolApi\Client\Api\ShipmentsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$shipment_id = 56; // int | The id of the shipment.
+$shipment_id = 'shipment_id_example'; // string | The id of the shipment.
 
 try {
     $result = $apiInstance->getShipment($shipment_id);
@@ -51,7 +51,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **shipment_id** | **int**| The id of the shipment. |
+ **shipment_id** | **string**| The id of the shipment. |
 
 ### Return type
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -130,7 +130,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

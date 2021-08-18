@@ -37,7 +37,7 @@ $apiInstance = new BolApi\Client\Api\InventoryApi(
     $config
 );
 $page = 1; // int | The requested page number with a page size of 50 items.
-$quantity = 0-10,20-30; // string[] | Filter inventory by providing a range of quantity (min-range)-(max-range).
+$quantity = 0-10,20-30; // string[] | Filter inventory by providing a range of quantity (min-range)-(max-range). Note that if no state query is submitted in the same request, then the quantity will be filtered on regularStock by default.
 $stock = SUFFICIENT; // string | Filter inventory by stock level.
 $state = REGULAR; // string | Filter inventory by stock type.
 $query = 0000007740404; // string | Filter inventory by EAN or product title.
@@ -55,7 +55,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| The requested page number with a page size of 50 items. | [optional] [default to 1]
- **quantity** | [**string[]**](../Model/string.md)| Filter inventory by providing a range of quantity (min-range)-(max-range). | [optional]
+ **quantity** | [**string[]**](../Model/string.md)| Filter inventory by providing a range of quantity (min-range)-(max-range). Note that if no state query is submitted in the same request, then the quantity will be filtered on regularStock by default. | [optional]
  **stock** | **string**| Filter inventory by stock level. | [optional]
  **state** | **string**| Filter inventory by stock type. | [optional]
  **query** | **string**| Filter inventory by EAN or product title. | [optional]
@@ -71,7 +71,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**pick_up_point_name** | **string** | The name of Pick Up Point location this order needs to be shipped to. | [optional]
+**pickup_point_name** | **string** | The name of Pick Up Point location this order needs to be shipped to. | [optional]
 **salutation** | **string** | The salutation of the customer. | [optional]
 **first_name** | **string** | The first name of the customer. | [optional]
 **surname** | **string** | The surname of the customer. | [optional]

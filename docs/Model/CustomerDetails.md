@@ -10,7 +10,6 @@ Name | Type | Description | Notes
 **street_name** | **string** | The street name. | [optional]
 **house_number** | **string** | The house number. | [optional]
 **house_number_extended** | **string** | The extension on the house number. | [optional]
-**address_supplement** | **string** |  | [optional]
 **extra_address_information** | **string** | Additional information related to the address that helps in delivering the package. | [optional]
 **zip_code** | **string** | The ZIP code in &#39;1234AB&#39; format for NL orders and &#39;0000&#39; format for BE orders. | [optional]
 **city** | **string** | The name of the city. | [optional]

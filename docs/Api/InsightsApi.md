@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**getOfferInsights()**](InsightsApi.md#getOfferInsights) | **GET** /retailer/insights/offer | Get offer insights
 [**getPerformanceIndicator()**](InsightsApi.md#getPerformanceIndicator) | **GET** /retailer/insights/performance/indicator | Get performance indicators
 [**getSalesForecast()**](InsightsApi.md#getSalesForecast) | **GET** /retailer/insights/sales-forecast | Get sales forecast
+[**getSearchTerms()**](InsightsApi.md#getSearchTerms) | **GET** /retailer/insights/search-terms | Get search terms
 
 
 ## `getOfferInsights()`
@@ -17,7 +18,7 @@ getOfferInsights($offer_id, $period, $number_of_periods, $name): \BolApi\Client\
 
 Get offer insights
 
-Gets offer insights.
+Get the product visits and the buy box percentage for an offer during a given period.
 
 ### Example
 
@@ -71,7 +72,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -137,7 +138,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -151,7 +152,7 @@ getSalesForecast($offer_id, $weeks_ahead): \BolApi\Client\Model\SalesForecastRes
 
 Get sales forecast
 
-Gets sales forecast.
+Get sales forecast to estimate the sales expectations on the total bol.com platform for the requested number of weeks ahead.
 
 ### Example
 
@@ -201,7 +202,75 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Accept**: `application/vnd.retailer.v5+json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `getSearchTerms()`
+
+```php
+getSearchTerms($search_term, $period, $number_of_periods, $related_search_terms): \BolApi\Client\Model\SearchTerms
+```
+
+Get search terms
+
+Retrieves the search volume for a specified search term and period. The search volume allows you to see what bol.com customers are searching for. Based on the search volume per search term you can optimize your product content, or spot opportunities to extend your assortment, or analyzing trends for inventory management.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+// Configure API key authorization: bearerAuth
+$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
+// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
+
+
+$apiInstance = new BolApi\Client\Api\InsightsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$search_term = 'search_term_example'; // string | The search term for which you want to request the search volume.
+$period = 'period_example'; // string | The time unit in which the offer insights are grouped.
+$number_of_periods = 56; // int | The number of periods for which the offer insights are requested back in time.
+$related_search_terms = false; // bool | Indicates whether or not you want to retrieve the related search terms.
+
+try {
+    $result = $apiInstance->getSearchTerms($search_term, $period, $number_of_periods, $related_search_terms);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling InsightsApi->getSearchTerms: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **search_term** | **string**| The search term for which you want to request the search volume. |
+ **period** | **string**| The time unit in which the offer insights are grouped. |
+ **number_of_periods** | **int**| The number of periods for which the offer insights are requested back in time. |
+ **related_search_terms** | **bool**| Indicates whether or not you want to retrieve the related search terms. | [optional] [default to false]
+
+### Return type
+
+[**\BolApi\Client\Model\SearchTerms**](../Model/SearchTerms.md)
+
+### Authorization
+
+[bearerAuth](../../README.md#bearerAuth)
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

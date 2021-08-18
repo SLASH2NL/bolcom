@@ -36,7 +36,7 @@ $apiInstance = new BolApi\Client\Api\TransportsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$transport_id = 56; // int | The transport id.
+$transport_id = 'transport_id_example'; // string | The transport id.
 $body = new \BolApi\Client\Model\ChangeTransportRequest(); // \BolApi\Client\Model\ChangeTransportRequest | The change transport requested by the user.
 
 try {
@@ -51,7 +51,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **transport_id** | **int**| The transport id. |
+ **transport_id** | **string**| The transport id. |
  **body** | [**\BolApi\Client\Model\ChangeTransportRequest**](../Model/ChangeTransportRequest.md)| The change transport requested by the user. | [optional]
 
 ### Return type
@@ -64,8 +64,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v4+json`
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Content-Type**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

@@ -64,8 +64,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v4+json`
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Content-Type**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -79,7 +79,7 @@ getShippingLabel($shipping_label_id): string[]
 
 Get a shipping label
 
-Gets a shipping label by shipping label id.
+Retrieves a shipping label by shipping label id. Metadata for the shipping label is added as headers in the response. If you are only interested in the metadata, you can do a HEAD request to retrieve only the headers without the label data.
 
 ### Example
 
@@ -127,7 +127,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+pdf`
+- **Accept**: `application/vnd.retailer.v5+pdf`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -188,8 +188,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v4+json`
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Content-Type**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

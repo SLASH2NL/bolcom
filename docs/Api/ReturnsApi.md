@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -101,7 +101,7 @@ $apiInstance = new BolApi\Client\Api\ReturnsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$return_id = 56; // int | Unique identifier for a return.
+$return_id = 'return_id_example'; // string | Unique identifier for a return.
 
 try {
     $result = $apiInstance->getReturn($return_id);
@@ -115,7 +115,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **return_id** | **int**| Unique identifier for a return. |
+ **return_id** | **string**| Unique identifier for a return. |
 
 ### Return type
 
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -142,7 +142,7 @@ getReturns($page, $handled, $fulfilment_method): \BolApi\Client\Model\ReturnsRes
 
 Get returns
 
-Get a paginated list of multi-item returns, which are sorted by date in descending order.
+Get a paginated list of multi-item returns. Handled returns are sorted by date in descending order, while unhandled returns are sorted by date in ascending order.
 
 ### Example
 
@@ -194,7 +194,7 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -257,8 +257,8 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v4+json`
-- **Accept**: `application/vnd.retailer.v4+json`
+- **Content-Type**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v5+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

@@ -10,6 +10,8 @@ Name | Type | Description | Notes
 **offer** | [**\BolApi\Client\Model\OrderOffer**](OrderOffer.md) |  | [optional]
 **product** | [**\BolApi\Client\Model\OrderProduct**](OrderProduct.md) |  | [optional]
 **quantity** | **int** | Amount of ordered products for this order item id. | [optional]
+**quantity_shipped** | **int** | Amount of shipped products for this order item id. | [optional]
+**quantity_cancelled** | **int** | Amount of cancelled products for this order item id. | [optional]
 **unit_price** | **float** | The selling price to the customer of a single unit including VAT. | [optional]
 **commission** | **float** | The commission for all quantities of this order item. | [optional]
 **additional_services** | [**\BolApi\Client\Model\AdditionalService[]**](AdditionalService.md) |  | [optional]

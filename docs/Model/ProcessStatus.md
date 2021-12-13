@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **description** | **string** | Describes the action that is being processed. |
 **status** | **string** | Status of the action being processed. |
 **error_message** | **string** | Shows error message if applicable. | [optional]
-**create_timestamp** | [**\DateTime**](\DateTime.md) | Time of creation of the response. |
+**create_timestamp** | **\DateTime** | Time of creation of the response. |
 **links** | [**\BolApi\Client\Model\Link[]**](Link.md) | Lists available actions applicable to this endpoint. |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

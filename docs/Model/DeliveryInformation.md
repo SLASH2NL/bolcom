@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**expected_delivery_date** | [**\DateTime**](\DateTime.md) | The expected delivery date of the shipment at the bol.com warehouse in ISO 8601 format. |
+**expected_delivery_date** | **\DateTime** | The expected delivery date of the shipment at the bol.com warehouse in ISO 8601 format. |
 **transporter_code** | **string** | The transporter that will pickup this replenishment. |
 **destination_warehouse** | [**\BolApi\Client\Model\DestinationWarehouse**](DestinationWarehouse.md) |  |
 

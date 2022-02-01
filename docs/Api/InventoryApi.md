@@ -24,17 +24,11 @@ The inventory endpoint is a specific LVB/FBB endpoint. It provides a paginated l
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\InventoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $page = 1; // int | The requested page number with a page size of 50 items.
 $quantity = 0-10,20-30; // string[] | Filter inventory by providing a range of quantity (min-range)-(max-range). Note that if no state query is submitted in the same request, then the quantity will be filtered on regularStock by default.
@@ -66,12 +60,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v6+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

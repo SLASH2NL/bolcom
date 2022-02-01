@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**order_items** | [**\BolApi\Client\Model\OrderItem[]**](OrderItem.md) | List of order items to ship. Order item id&#39;s must belong to the same order. |
-**shipment_reference** | **string** | A user-defined reference that you can provide to add to the shipment. Can be used for own administration purposes. | [optional]
+**order_items** | [**\BolApi\Client\Model\OrderItem[]**](OrderItem.md) | Single element list with the order item to ship. |
+**shipment_reference** | **string** | A user-defined reference that you can provide to add to the shipment. Can be used for own administration purposes. Only &#39;null&#39; or non-empty strings accepted. | [optional]
 **shipping_label_id** | **string** | The identifier of the purchased shipping label. | [optional]
 **transport** | [**\BolApi\Client\Model\TransportInstruction**](TransportInstruction.md) |  | [optional]
 

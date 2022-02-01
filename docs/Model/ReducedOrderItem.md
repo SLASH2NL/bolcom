@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**order_item_id** | **string** | The id for the order item (1 order can have multiple order items). | [optional]
+**order_item_id** | **string** | The id for the order item. One order can have multiple order items, but the list can only take one item. | [optional]
 **ean** | **string** | The EAN number associated with this product. | [optional]
 **quantity** | **int** | Amount of ordered products for this order item id. | [optional]
 **quantity_shipped** | **int** | Amount of shipped products for this order item id. | [optional]

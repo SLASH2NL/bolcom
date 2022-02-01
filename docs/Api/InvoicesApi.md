@@ -26,17 +26,11 @@ Gets an invoice by invoice id. The available media types differ per invoice and 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\InvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $invoice_id = 'invoice_id_example'; // string | The id of the invoice
 
@@ -60,12 +54,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v5+json`, `application/vnd.retailer.v5+pdf`
+- **Accept**: `application/vnd.retailer.v6+json`, `application/vnd.retailer.v6+pdf`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -88,17 +82,11 @@ Gets an invoice specification for an invoice with a paginated list of its transa
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\InvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $invoice_id = 'invoice_id_example'; // string | The id of the invoice.
 $page = 56; // int | The page to get, defaults to page 1. Each page contains a maximum of 25,000 lines.
@@ -124,12 +112,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v5+json`, `application/vnd.retailer.v5+pdf`, `application/vnd.retailer.v5+openxmlformats-officedocument.spreadsheetml.sheet`
+- **Accept**: `application/vnd.retailer.v6+json`, `application/vnd.retailer.v6+pdf`, `application/vnd.retailer.v6+openxmlformats-officedocument.spreadsheetml.sheet`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -152,17 +140,11 @@ Gets a list of invoices, by default from the past 4 weeks. The optional period-s
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\InvoicesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $period_start_date = 2019-03-01; // string | Period start date in ISO 8601 standard.
 $period_end_date = 2019-03-31; // string | Period end date in ISO 8601 standard.
@@ -188,12 +170,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v6+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

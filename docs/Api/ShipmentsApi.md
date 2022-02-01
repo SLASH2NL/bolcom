@@ -25,17 +25,11 @@ Retrieve a single shipment by its corresponding id.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $shipment_id = 'shipment_id_example'; // string | The id of the shipment.
 
@@ -59,12 +53,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v6+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -87,17 +81,11 @@ A paginated list to retrieve all your shipments up to 3 months old. The shipment
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $page = 1; // int | The page to get with a page size of 50.
 $fulfilment_method = 'FBR'; // string | The fulfilment method. Fulfilled by the retailer (FBR) or fulfilled by bol.com (FBB).
@@ -125,12 +113,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v6+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

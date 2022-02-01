@@ -4,6 +4,7 @@ All URIs are relative to https://api.bol.com.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**getDeliveryDates()**](ReplenishmentsApi.md#getDeliveryDates) | **GET** /retailer/replenishments/delivery-dates | Get delivery dates
 [**getLoadCarrierLabels()**](ReplenishmentsApi.md#getLoadCarrierLabels) | **GET** /retailer/replenishments/{replenishment-id}/load-carrier-labels | Get load carrier labels
 [**getPickList()**](ReplenishmentsApi.md#getPickList) | **GET** /retailer/replenishments/{replenishment-id}/pick-list | Get pick list
 [**getReplenishment()**](ReplenishmentsApi.md#getReplenishment) | **GET** /retailer/replenishments/{replenishment-id} | Get a replenishment by replenishment id
@@ -13,6 +14,59 @@ Method | HTTP request | Description
 [**postReplenishment()**](ReplenishmentsApi.md#postReplenishment) | **POST** /retailer/replenishments | Post replenishment
 [**putReplenishment()**](ReplenishmentsApi.md#putReplenishment) | **PUT** /retailer/replenishments/{replenishment-id} | Update replenishment
 
+
+## `getDeliveryDates()`
+
+```php
+getDeliveryDates(): \BolApi\Client\Model\DeliveryDatesResponse
+```
+
+Get delivery dates
+
+Retrieve a list of available delivery dates for a replenishment.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new BolApi\Client\Api\ReplenishmentsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+
+try {
+    $result = $apiInstance->getDeliveryDates();
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ReplenishmentsApi->getDeliveryDates: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+This endpoint does not need any parameter.
+
+### Return type
+
+[**\BolApi\Client\Model\DeliveryDatesResponse**](../Model/DeliveryDatesResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/vnd.retailer.v6+json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
 
 ## `getLoadCarrierLabels()`
 
@@ -31,17 +85,11 @@ Retrieve the load carrier labels.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\ReplenishmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $replenishment_id = 2312078154; // string | The unique identifier of the replenishment.
 $label_type = WAREHOUSE; // string | The type of label which you want to print.
@@ -59,7 +107,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **replenishment_id** | **string**| The unique identifier of the replenishment. |
- **label_type** | **string**| The type of label which you want to print. | [default to &#39;WAREHOUSE&#39;]
+ **label_type** | **string**| The type of label which you want to print. | [optional] [default to &#39;WAREHOUSE&#39;]
 
 ### Return type
 
@@ -67,12 +115,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v5+pdf`
+- **Accept**: `application/vnd.retailer.v6+pdf`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -95,17 +143,11 @@ Retrieve the pick list.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\ReplenishmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $replenishment_id = 2312078154; // string | The unique identifier of the replenishment.
 
@@ -129,12 +171,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v5+pdf`
+- **Accept**: `application/vnd.retailer.v6+pdf`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -157,17 +199,11 @@ Gets a replenishment by replenishment id.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\ReplenishmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $replenishment_id = 2312078154; // string | The unique identifier of the replenishment.
 
@@ -191,12 +227,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v6+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -219,17 +255,11 @@ Gets a list of replenishments.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\ReplenishmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $reference = REFERENCE1; // string | Custom user defined reference to identify the replenishment.
 $ean = 0000007740404; // string | The EAN number associated with this product.
@@ -263,12 +293,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v6+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -291,17 +321,11 @@ Retrieve pickup time slots.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\ReplenishmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $body = new \BolApi\Client\Model\PickupTimeSlotsRequest(); // \BolApi\Client\Model\PickupTimeSlotsRequest
 
@@ -325,12 +349,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v5+json`
-- **Accept**: `application/vnd.retailer.v5+json`
+- **Content-Type**: `application/vnd.retailer.v6+json`
+- **Accept**: `application/vnd.retailer.v6+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -353,17 +377,11 @@ Retrieve product labels.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\ReplenishmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $body = new \BolApi\Client\Model\ProductLabelsRequest(); // \BolApi\Client\Model\ProductLabelsRequest
 
@@ -387,12 +405,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v5+json`
-- **Accept**: `application/vnd.retailer.v5+pdf`
+- **Content-Type**: `application/vnd.retailer.v6+json`
+- **Accept**: `application/vnd.retailer.v6+pdf`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -415,17 +433,11 @@ Create a replenishment.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\ReplenishmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $body = new \BolApi\Client\Model\CreateReplenishmentRequest(); // \BolApi\Client\Model\CreateReplenishmentRequest
 
@@ -449,12 +461,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v5+json`
-- **Accept**: `application/vnd.retailer.v5+json`
+- **Content-Type**: `application/vnd.retailer.v6+json`
+- **Accept**: `application/vnd.retailer.v6+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -477,17 +489,11 @@ Update a replenishment.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\ReplenishmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $replenishment_id = 2312078154; // string | The unique identifier of the replenishment.
 $body = new \BolApi\Client\Model\UpdateReplenishmentRequest(); // \BolApi\Client\Model\UpdateReplenishmentRequest
@@ -513,12 +519,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v5+json`
-- **Accept**: `application/vnd.retailer.v5+json`
+- **Content-Type**: `application/vnd.retailer.v6+json`
+- **Accept**: `application/vnd.retailer.v6+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

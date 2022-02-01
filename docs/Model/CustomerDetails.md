@@ -4,12 +4,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**salutation_code** | **string** | The salutation of the customer. | [optional]
+**salutation** | **string** | The salutation of the customer. |
 **first_name** | **string** | The first name of the customer. | [optional]
 **surname** | **string** | The surname of the customer. | [optional]
 **street_name** | **string** | The street name. | [optional]
 **house_number** | **string** | The house number. | [optional]
-**house_number_extended** | **string** | The extension on the house number. | [optional]
+**house_number_extension** | **string** | The extension on the house number. | [optional]
 **extra_address_information** | **string** | Additional information related to the address that helps in delivering the package. | [optional]
 **zip_code** | **string** | The ZIP code in &#39;1234AB&#39; format for NL orders and &#39;0000&#39; format for BE orders. | [optional]
 **city** | **string** | The name of the city. | [optional]

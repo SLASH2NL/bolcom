@@ -5,8 +5,8 @@ All URIs are relative to https://api.bol.com.
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**getProcessStatus()**](ProcessStatusApi.md#getProcessStatus) | **GET** /retailer/process-status/{process-status-id} | Get the status of an asynchronous process by process status id
-[**getProcessStatusBulk()**](ProcessStatusApi.md#getProcessStatusBulk) | **POST** /retailer/process-status | Gets the status of multiple asynchronous processes by an array of process status ids for a retailer
-[**getProcessStatusEntityId()**](ProcessStatusApi.md#getProcessStatusEntityId) | **GET** /retailer/process-status | Gets the status of an asynchronous process by entity id and event type for a retailer
+[**getProcessStatusBulk()**](ProcessStatusApi.md#getProcessStatusBulk) | **POST** /retailer/process-status | Get the status of multiple asynchronous processes by an array of process status ids for a retailer
+[**getProcessStatusEntityId()**](ProcessStatusApi.md#getProcessStatusEntityId) | **GET** /retailer/process-status | Get the status of an asynchronous process by entity id and event type for a retailer
 
 
 ## `getProcessStatus()`
@@ -26,17 +26,11 @@ Retrieve a specific process-status, which shows information regarding a previous
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\ProcessStatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $process_status_id = 'process_status_id_example'; // string | The id of the process status being requested. This id is supplied in every response to a PUT/POST/DELETE request on the other endpoints.
 
@@ -60,12 +54,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v6+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -77,7 +71,7 @@ Name | Type | Description  | Notes
 getProcessStatusBulk($body): \BolApi\Client\Model\ProcessStatusResponse
 ```
 
-Gets the status of multiple asynchronous processes by an array of process status ids for a retailer
+Get the status of multiple asynchronous processes by an array of process status ids for a retailer
 
 Retrieve a list of process statuses, which shows information regarding previously executed PUT/POST/DELETE requests. No more than 1000 process status id's can be sent in a single request.Please note: process status instances are only retained for a limited period of time after completion. Outside of this period, deleted process statuses will no longer be returned. Please handle this accordingly, by stopping any active polling for these statuses.
 
@@ -88,17 +82,11 @@ Retrieve a list of process statuses, which shows information regarding previousl
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\ProcessStatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $body = new \BolApi\Client\Model\BulkProcessStatusRequest(); // \BolApi\Client\Model\BulkProcessStatusRequest
 
@@ -122,12 +110,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v5+json`
-- **Accept**: `application/vnd.retailer.v5+json`
+- **Content-Type**: `application/vnd.retailer.v6+json`
+- **Accept**: `application/vnd.retailer.v6+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -139,7 +127,7 @@ Name | Type | Description  | Notes
 getProcessStatusEntityId($entity_id, $event_type, $page): \BolApi\Client\Model\ProcessStatusResponse
 ```
 
-Gets the status of an asynchronous process by entity id and event type for a retailer
+Get the status of an asynchronous process by entity id and event type for a retailer
 
 Retrieve a list of process statuses, which shows information regarding previously executed PUT/POST/DELETE requests in descending order. You need to supply an entity id and event type.Please note: process status instances are only retained for a limited period of time after completion. Outside of this period, deleted process statuses will no longer be returned. Please handle this accordingly, by stopping any active polling for these statuses.
 
@@ -150,17 +138,11 @@ Retrieve a list of process statuses, which shows information regarding previousl
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\ProcessStatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $entity_id = 987654321; // string | The entity id is not unique so you need to provide an event type. The entity id can either be order item id, transport id, return number or inbound reference.
 $event_type = CONFIRM_SHIPMENT; // string | The event type can only be used in combination with the entity id.
@@ -188,12 +170,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v5+json`
+- **Accept**: `application/vnd.retailer.v6+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**order_item_id** | **string** | The id for the order item (1 order can have multiple order items). | [optional]
+**order_item_id** | **string** | The id for the order item. One order can have multiple order items, but the list can only take one item. | [optional]
 **cancellation_request** | **bool** | Indicates whether the order was cancelled on request of the customer before the retailer has shipped it. | [optional]
 **fulfilment** | [**\BolApi\Client\Model\OrderFulfilment**](OrderFulfilment.md) |  | [optional]
 **offer** | [**\BolApi\Client\Model\OrderOffer**](OrderOffer.md) |  | [optional]

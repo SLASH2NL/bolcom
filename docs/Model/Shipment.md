@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**shipment_id** | **int** | A unique identifier for this shipment. | [optional]
+**shipment_id** | **string** | A unique identifier for this shipment. | [optional]
 **shipment_date_time** | [**\DateTime**](\DateTime.md) | The date and time in ISO 8601 format when the order item was shipped. | [optional]
 **shipment_reference** | **string** | Reference supplied by the user when this item was shipped. | [optional]
 **pickup_point** | **bool** | Indicates whether this order is shipped to a Pick Up Point. | [optional]

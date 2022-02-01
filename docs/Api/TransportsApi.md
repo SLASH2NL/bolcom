@@ -24,17 +24,11 @@ Add information to an existing transport. The transport id is part of the shipme
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\TransportsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $transport_id = 'transport_id_example'; // string | The transport id.
 $body = new \BolApi\Client\Model\ChangeTransportRequest(); // \BolApi\Client\Model\ChangeTransportRequest | The change transport requested by the user.
@@ -60,12 +54,12 @@ Name | Type | Description  | Notes
 
 ### Authorization
 
-[bearerAuth](../../README.md#bearerAuth)
+No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v5+json`
-- **Accept**: `application/vnd.retailer.v5+json`
+- **Content-Type**: `application/vnd.retailer.v6+json`
+- **Accept**: `application/vnd.retailer.v6+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

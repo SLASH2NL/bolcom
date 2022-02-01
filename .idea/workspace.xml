@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="600e7611-1b8b-4773-8edc-2acf61198709" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bolcom.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.openapi-generator/FILES" beforeDir="false" afterPath="$PROJECT_DIR$/.openapi-generator/FILES" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Api/CommissionsApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Api/CommissionsApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Api/InsightsApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Api/InsightsApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Api/InventoryApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Api/InventoryApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Api/InvoicesApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Api/InvoicesApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Api/OffersApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Api/OffersApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Api/OrdersApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Api/OrdersApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Api/ProcessStatusApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Api/ProcessStatusApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Api/ProductContentApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Api/ProductContentApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Api/ReplenishmentsApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Api/ReplenishmentsApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Api/ReturnsApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Api/ReturnsApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Api/ShipmentsApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Api/ShipmentsApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Api/ShippingLabelsApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Api/ShippingLabelsApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Api/TransportsApi.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Api/TransportsApi.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Model/CreateReturnRequest.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/CreateReturnRequest.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Model/CustomerDetails.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/CustomerDetails.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Model/DeliveryOption.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/DeliveryOption.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Model/LabelPrice.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/LabelPrice.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Model/OrderItemCancellation.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/OrderItemCancellation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Model/OrderOrderItem.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/OrderOrderItem.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Model/PackageRestrictions.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/PackageRestrictions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Model/ProductContent.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/ProductContent.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Model/ReducedOrderItem.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/ReducedOrderItem.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Model/ReducedShipment.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/ReducedShipment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Model/ReducedTransport.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/ReducedTransport.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Model/Reduction.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/Reduction.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Model/Shipment.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/Shipment.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Model/ShipmentRequest.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/ShipmentRequest.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Model/ShipmentTransport.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/Model/ShipmentTransport.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Api/CommissionsApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api/CommissionsApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Api/InsightsApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api/InsightsApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Api/InventoryApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api/InventoryApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Api/InvoicesApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api/InvoicesApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Api/OffersApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api/OffersApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Api/OrdersApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api/OrdersApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Api/ProcessStatusApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api/ProcessStatusApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Api/ProductContentApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api/ProductContentApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Api/ReplenishmentsApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api/ReplenishmentsApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Api/ReturnsApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api/ReturnsApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Api/ShipmentsApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api/ShipmentsApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Api/ShippingLabelsApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api/ShippingLabelsApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Api/TransportsApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Api/TransportsApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ApiException.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ApiException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Configuration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/HeaderSelector.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/HeaderSelector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/AdditionalService.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/AdditionalService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Address.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Address.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Attribute.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Attribute.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/AttributeValue.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/AttributeValue.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/BillingDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/BillingDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/BulkCommissionQuery.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/BulkCommissionQuery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/BulkCommissionRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/BulkCommissionRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/BulkCommissionResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/BulkCommissionResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/BulkProcessStatusRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/BulkProcessStatusRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/BundlePrice.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/BundlePrice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ChangeTransportRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ChangeTransportRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Commission.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Commission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Condition.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Condition.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ContainerForTheOrderItemsThatHaveToBeCancelled.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ContainerForTheOrderItemsThatHaveToBeCancelled.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Countries.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Countries.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/CountryCode.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/CountryCode.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/CreateAddress.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/CreateAddress.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/CreateDeliveryInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/CreateDeliveryInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/CreateOfferExportRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/CreateOfferExportRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/CreateOfferRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/CreateOfferRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/CreatePickupAppointment.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/CreatePickupAppointment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/CreatePickupTimeSlot.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/CreatePickupTimeSlot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/CreateProductContentRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/CreateProductContentRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/CreateReplenishmentLine.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/CreateReplenishmentLine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/CreateReplenishmentRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/CreateReplenishmentRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/CreateReturnRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/CreateReturnRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/CustomerDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/CustomerDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/DeliveryInformation.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/DeliveryInformation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/DeliveryOption.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/DeliveryOption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/DeliveryOptionsRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/DeliveryOptionsRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/DeliveryOptionsResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/DeliveryOptionsResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/DestinationWarehouse.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/DestinationWarehouse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Details.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Fulfilment.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Fulfilment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/HandoverDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/HandoverDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/InvalidReplenishmentLine.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/InvalidReplenishmentLine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Inventory.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Inventory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/InventoryResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/InventoryResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/LabelPrice.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/LabelPrice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Link.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Link.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/LoadCarrier.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/LoadCarrier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ModelInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ModelInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ModelReturn.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ModelReturn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Norm.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Norm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/NotPublishableReason.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/NotPublishableReason.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/OfferInsight.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/OfferInsight.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/OfferInsights.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/OfferInsights.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/OfferInsightsCountry.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/OfferInsightsCountry.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/OfferInsightsPeriod.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/OfferInsightsPeriod.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/OrderFulfilment.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/OrderFulfilment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/OrderItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/OrderItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/OrderItemCancellation.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/OrderItemCancellation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/OrderOffer.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/OrderOffer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/OrderOrderItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/OrderOrderItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/OrderProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/OrderProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/PackageRestrictions.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/PackageRestrictions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/PerformanceIndicator.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/PerformanceIndicator.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/PerformanceIndicatorPeriod.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/PerformanceIndicatorPeriod.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/PerformanceIndicators.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/PerformanceIndicators.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Periods.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Periods.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/PickupAppointment.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/PickupAppointment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/PickupTimeSlot.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/PickupTimeSlot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/PickupTimeSlotsAddress.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/PickupTimeSlotsAddress.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/PickupTimeSlotsRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/PickupTimeSlotsRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/PickupTimeSlotsResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/PickupTimeSlotsResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Pricing.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Pricing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Problem.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Problem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ProcessStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ProcessStatus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ProcessStatusId.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ProcessStatusId.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ProcessStatusResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ProcessStatusResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ProductContent.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ProductContent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ProductContentResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ProductContentResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ProductLabelsProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ProductLabelsProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ProductLabelsRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ProductLabelsRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReducedInvalidReplenishmentLine.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReducedInvalidReplenishmentLine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReducedOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReducedOrder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReducedOrderItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReducedOrderItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReducedOrders.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReducedOrders.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReducedReplenishment.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReducedReplenishment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReducedReplenishmentLines.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReducedReplenishmentLines.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReducedReturn.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReducedReturn.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReducedReturnItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReducedReturnItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReducedShipment.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReducedShipment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReducedShipmentItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReducedShipmentItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReducedShipmentOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReducedShipmentOrder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReducedTransport.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReducedTransport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Reduction.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Reduction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/RejectedAttributeResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/RejectedAttributeResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/RejectionError.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/RejectionError.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/RelatedSearchTerm.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/RelatedSearchTerm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReplenishmentLine.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReplenishmentLine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReplenishmentPickupTimeSlot.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReplenishmentPickupTimeSlot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReplenishmentResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReplenishmentResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReplenishmentsResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReplenishmentsResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/RetailerOffer.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/RetailerOffer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReturnItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReturnItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReturnProcessingResult.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReturnProcessingResult.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReturnReason.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReturnReason.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReturnRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReturnRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ReturnsResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ReturnsResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/SalesForecastPeriod.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/SalesForecastPeriod.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/SalesForecastResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/SalesForecastResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Score.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Score.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/SearchTerm.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/SearchTerm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/SearchTerms.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/SearchTerms.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/SearchTermsCountry.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/SearchTermsCountry.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/SearchTermsPeriod.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/SearchTermsPeriod.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Shipment.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Shipment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ShipmentDetails.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ShipmentDetails.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ShipmentFulfilment.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ShipmentFulfilment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ShipmentItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ShipmentItem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ShipmentOrder.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ShipmentOrder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ShipmentRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ShipmentRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ShipmentTransport.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ShipmentTransport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ShipmentsResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ShipmentsResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ShippingLabelRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ShippingLabelRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/StateTransition.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/StateTransition.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Stock.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Stock.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/StockCreate.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/StockCreate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Store.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Store.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Total.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Total.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/TotalPeriod.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/TotalPeriod.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/TransportInstruction.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/TransportInstruction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/UpdateDeliveryInfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/UpdateDeliveryInfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/UpdateLoadCarrier.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/UpdateLoadCarrier.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/UpdateOfferPriceRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/UpdateOfferPriceRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/UpdateOfferRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/UpdateOfferRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/UpdateOfferStockRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/UpdateOfferStockRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/UpdateReplenishmentRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/UpdateReplenishmentRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/ValidationReportResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/ValidationReportResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Model/Violation.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Model/Violation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ObjectSerializer.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/ObjectSerializer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v5.json" beforeDir="false" afterPath="$PROJECT_DIR$/v6.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="24VLwP8ZZXVaaUvtu09KIhAXADY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="SwaggerCodegen">
+      <option name="activeConfigurationType" value="FILE" />
+      <option name="configurationPath" value="" />
+      <option name="customJreEnabled" value="false" />
+      <option name="customTemplatesPath" value="" />
+      <option name="enableDebugLogging" value="false" />
+      <option name="generateToPath" value="$PROJECT_DIR$/gen" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorPath" value="https://repo1.maven.org/maven2/org/openapitools/openapi-generator-cli/5.0.0/openapi-generator-cli-5.0.0.jar" />
+      <option name="jdkPath" value="" />
+      <option name="language" value="java" />
+      <option name="specificationPath" value="$PROJECT_DIR$/v5.json" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="600e7611-1b8b-4773-8edc-2acf61198709" name="Changes" comment="" />
+      <created>1643711047429</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1643711047429</updated>
+      <workItem from="1643711049492" duration="288000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

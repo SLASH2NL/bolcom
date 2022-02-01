@@ -49,17 +49,11 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-// Configure API key authorization: bearerAuth
-$config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = BolApi\Client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('Authorization', 'Bearer');
-
 
 $apiInstance = new BolApi\Client\Api\CommissionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
+    new GuzzleHttp\Client()
 );
 $ean = 0000007740404; // string | The EAN number associated with this product.
 $unit_price = 59.0; // float | The price of the product with a period as a decimal separator. The price should always have two decimals precision.
@@ -83,7 +77,7 @@ Class | Method | HTTP request | Description
 *CommissionsApi* | [**getCommission**](docs/Api/CommissionsApi.md#getcommission) | **GET** /retailer/commission/{ean} | Get all commissions and reductions by EAN per single EAN
 *CommissionsApi* | [**getCommissions**](docs/Api/CommissionsApi.md#getcommissions) | **POST** /retailer/commission | Get all commissions and reductions by EAN in bulk
 *InsightsApi* | [**getOfferInsights**](docs/Api/InsightsApi.md#getofferinsights) | **GET** /retailer/insights/offer | Get offer insights
-*InsightsApi* | [**getPerformanceIndicator**](docs/Api/InsightsApi.md#getperformanceindicator) | **GET** /retailer/insights/performance/indicator | Get performance indicators
+*InsightsApi* | [**getPerformanceIndicators**](docs/Api/InsightsApi.md#getperformanceindicators) | **GET** /retailer/insights/performance/indicator | Get performance indicators
 *InsightsApi* | [**getSalesForecast**](docs/Api/InsightsApi.md#getsalesforecast) | **GET** /retailer/insights/sales-forecast | Get sales forecast
 *InsightsApi* | [**getSearchTerms**](docs/Api/InsightsApi.md#getsearchterms) | **GET** /retailer/insights/search-terms | Get search terms
 *InventoryApi* | [**getInventory**](docs/Api/InventoryApi.md#getinventory) | **GET** /retailer/inventory | Get LVB/FBB inventory
@@ -103,10 +97,11 @@ Class | Method | HTTP request | Description
 *OrdersApi* | [**getOrders**](docs/Api/OrdersApi.md#getorders) | **GET** /retailer/orders | Get orders
 *OrdersApi* | [**shipOrderItem**](docs/Api/OrdersApi.md#shiporderitem) | **PUT** /retailer/orders/shipment | Ship order item
 *ProcessStatusApi* | [**getProcessStatus**](docs/Api/ProcessStatusApi.md#getprocessstatus) | **GET** /retailer/process-status/{process-status-id} | Get the status of an asynchronous process by process status id
-*ProcessStatusApi* | [**getProcessStatusBulk**](docs/Api/ProcessStatusApi.md#getprocessstatusbulk) | **POST** /retailer/process-status | Gets the status of multiple asynchronous processes by an array of process status ids for a retailer
-*ProcessStatusApi* | [**getProcessStatusEntityId**](docs/Api/ProcessStatusApi.md#getprocessstatusentityid) | **GET** /retailer/process-status | Gets the status of an asynchronous process by entity id and event type for a retailer
+*ProcessStatusApi* | [**getProcessStatusBulk**](docs/Api/ProcessStatusApi.md#getprocessstatusbulk) | **POST** /retailer/process-status | Get the status of multiple asynchronous processes by an array of process status ids for a retailer
+*ProcessStatusApi* | [**getProcessStatusEntityId**](docs/Api/ProcessStatusApi.md#getprocessstatusentityid) | **GET** /retailer/process-status | Get the status of an asynchronous process by entity id and event type for a retailer
 *ProductContentApi* | [**getValidationReport**](docs/Api/ProductContentApi.md#getvalidationreport) | **GET** /retailer/content/validation-report/{uploadId} | Get validation report
 *ProductContentApi* | [**postProductContent**](docs/Api/ProductContentApi.md#postproductcontent) | **POST** /retailer/content/product | Post product content
+*ReplenishmentsApi* | [**getDeliveryDates**](docs/Api/ReplenishmentsApi.md#getdeliverydates) | **GET** /retailer/replenishments/delivery-dates | Get delivery dates
 *ReplenishmentsApi* | [**getLoadCarrierLabels**](docs/Api/ReplenishmentsApi.md#getloadcarrierlabels) | **GET** /retailer/replenishments/{replenishment-id}/load-carrier-labels | Get load carrier labels
 *ReplenishmentsApi* | [**getPickList**](docs/Api/ReplenishmentsApi.md#getpicklist) | **GET** /retailer/replenishments/{replenishment-id}/pick-list | Get pick list
 *ReplenishmentsApi* | [**getReplenishment**](docs/Api/ReplenishmentsApi.md#getreplenishment) | **GET** /retailer/replenishments/{replenishment-id} | Get a replenishment by replenishment id
@@ -121,15 +116,23 @@ Class | Method | HTTP request | Description
 *ReturnsApi* | [**handleReturn**](docs/Api/ReturnsApi.md#handlereturn) | **PUT** /retailer/returns/{rma-id} | Handle a return
 *ShipmentsApi* | [**getShipment**](docs/Api/ShipmentsApi.md#getshipment) | **GET** /retailer/shipments/{shipment-id} | Get a shipment by shipment id
 *ShipmentsApi* | [**getShipments**](docs/Api/ShipmentsApi.md#getshipments) | **GET** /retailer/shipments | Get shipment list
-*ShippingLabelsApi* | [**getDeliveryOptions**](docs/Api/ShippingLabelsApi.md#getdeliveryoptions) | **POST** /retailer/shipping-labels/delivery-options | Get delivery options for a shippable configuration of a number of order items within an order.
+*ShippingLabelsApi* | [**getDeliveryOptions**](docs/Api/ShippingLabelsApi.md#getdeliveryoptions) | **POST** /retailer/shipping-labels/delivery-options | Get delivery options for a shippable configuration of a number of order items within an order
 *ShippingLabelsApi* | [**getShippingLabel**](docs/Api/ShippingLabelsApi.md#getshippinglabel) | **GET** /retailer/shipping-labels/{shipping-label-id} | Get a shipping label
 *ShippingLabelsApi* | [**postShippingLabel**](docs/Api/ShippingLabelsApi.md#postshippinglabel) | **POST** /retailer/shipping-labels | Create a shipping label
+*SubscriptionsApi* | [**deletePushNotificationSubscription**](docs/Api/SubscriptionsApi.md#deletepushnotificationsubscription) | **DELETE** /retailer/subscriptions/{subscription-id} | Delete push notification subscription
+*SubscriptionsApi* | [**getPushNotificationSubscription**](docs/Api/SubscriptionsApi.md#getpushnotificationsubscription) | **GET** /retailer/subscriptions/{subscription-id} | Get push notification subscription by id
+*SubscriptionsApi* | [**getPushNotificationSubscriptions**](docs/Api/SubscriptionsApi.md#getpushnotificationsubscriptions) | **GET** /retailer/subscriptions | Get push notification subscriptions
+*SubscriptionsApi* | [**getSubscriptionKeys**](docs/Api/SubscriptionsApi.md#getsubscriptionkeys) | **GET** /retailer/subscriptions/signature-keys | Retrieve public keys for push notification signature validation.
+*SubscriptionsApi* | [**postPushNotificationSubscription**](docs/Api/SubscriptionsApi.md#postpushnotificationsubscription) | **POST** /retailer/subscriptions | Create push notification subscription
+*SubscriptionsApi* | [**postTestPushNotification**](docs/Api/SubscriptionsApi.md#posttestpushnotification) | **POST** /retailer/subscriptions/test/{subscription-id} | Send test push notification for subscriptions
+*SubscriptionsApi* | [**putPushNotificationSubscription**](docs/Api/SubscriptionsApi.md#putpushnotificationsubscription) | **PUT** /retailer/subscriptions/{subscription-id} | Update push notification subscription
 *TransportsApi* | [**addTransportInformationByTransportId**](docs/Api/TransportsApi.md#addtransportinformationbytransportid) | **PUT** /retailer/transports/{transport-id} | Add transport information by transport id
 
 ## Models
 
 - [AdditionalService](docs/Model/AdditionalService.md)
 - [Address](docs/Model/Address.md)
+- [Asset](docs/Model/Asset.md)
 - [Attribute](docs/Model/Attribute.md)
 - [AttributeValue](docs/Model/AttributeValue.md)
 - [BillingDetails](docs/Model/BillingDetails.md)
@@ -154,7 +157,9 @@ Class | Method | HTTP request | Description
 - [CreateReplenishmentLine](docs/Model/CreateReplenishmentLine.md)
 - [CreateReplenishmentRequest](docs/Model/CreateReplenishmentRequest.md)
 - [CreateReturnRequest](docs/Model/CreateReturnRequest.md)
+- [CreateSubscriptionRequest](docs/Model/CreateSubscriptionRequest.md)
 - [CustomerDetails](docs/Model/CustomerDetails.md)
+- [DeliveryDatesResponse](docs/Model/DeliveryDatesResponse.md)
 - [DeliveryInformation](docs/Model/DeliveryInformation.md)
 - [DeliveryOption](docs/Model/DeliveryOption.md)
 - [DeliveryOptionsRequest](docs/Model/DeliveryOptionsRequest.md)
@@ -166,6 +171,8 @@ Class | Method | HTTP request | Description
 - [InvalidReplenishmentLine](docs/Model/InvalidReplenishmentLine.md)
 - [Inventory](docs/Model/Inventory.md)
 - [InventoryResponse](docs/Model/InventoryResponse.md)
+- [KeySet](docs/Model/KeySet.md)
+- [KeySetResponse](docs/Model/KeySetResponse.md)
 - [LabelPrice](docs/Model/LabelPrice.md)
 - [Link](docs/Model/Link.md)
 - [LoadCarrier](docs/Model/LoadCarrier.md)
@@ -248,8 +255,11 @@ Class | Method | HTTP request | Description
 - [Stock](docs/Model/Stock.md)
 - [StockCreate](docs/Model/StockCreate.md)
 - [Store](docs/Model/Store.md)
+- [SubscriptionResponse](docs/Model/SubscriptionResponse.md)
+- [SubscriptionsResponse](docs/Model/SubscriptionsResponse.md)
 - [Total](docs/Model/Total.md)
 - [TotalPeriod](docs/Model/TotalPeriod.md)
+- [TransportEvent](docs/Model/TransportEvent.md)
 - [TransportInstruction](docs/Model/TransportInstruction.md)
 - [UpdateDeliveryInfo](docs/Model/UpdateDeliveryInfo.md)
 - [UpdateLoadCarrier](docs/Model/UpdateLoadCarrier.md)
@@ -257,18 +267,12 @@ Class | Method | HTTP request | Description
 - [UpdateOfferRequest](docs/Model/UpdateOfferRequest.md)
 - [UpdateOfferStockRequest](docs/Model/UpdateOfferStockRequest.md)
 - [UpdateReplenishmentRequest](docs/Model/UpdateReplenishmentRequest.md)
+- [UpdateSubscriptionRequest](docs/Model/UpdateSubscriptionRequest.md)
 - [ValidationReportResponse](docs/Model/ValidationReportResponse.md)
 - [Violation](docs/Model/Violation.md)
 
 ## Authorization
-
-### bearerAuth
-
-- **Type**: API key
-- **API key parameter name**: Authorization
-- **Location**: HTTP header
-
-
+All endpoints do not require authorization.
 ## Tests
 
 To run the tests, use:
@@ -286,5 +290,5 @@ vendor/bin/phpunit
 
 This PHP package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: `5.0`
+- API version: `6.0`
 - Build package: `org.openapitools.codegen.languages.PhpClientCodegen`

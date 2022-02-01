@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .php_cs
 .travis.yml
 README.md
@@ -16,9 +15,11 @@ docs/Api/ReplenishmentsApi.md
 docs/Api/ReturnsApi.md
 docs/Api/ShipmentsApi.md
 docs/Api/ShippingLabelsApi.md
+docs/Api/SubscriptionsApi.md
 docs/Api/TransportsApi.md
 docs/Model/AdditionalService.md
 docs/Model/Address.md
+docs/Model/Asset.md
 docs/Model/Attribute.md
 docs/Model/AttributeValue.md
 docs/Model/BillingDetails.md
@@ -43,7 +44,9 @@ docs/Model/CreateProductContentRequest.md
 docs/Model/CreateReplenishmentLine.md
 docs/Model/CreateReplenishmentRequest.md
 docs/Model/CreateReturnRequest.md
+docs/Model/CreateSubscriptionRequest.md
 docs/Model/CustomerDetails.md
+docs/Model/DeliveryDatesResponse.md
 docs/Model/DeliveryInformation.md
 docs/Model/DeliveryOption.md
 docs/Model/DeliveryOptionsRequest.md
@@ -55,6 +58,8 @@ docs/Model/HandoverDetails.md
 docs/Model/InvalidReplenishmentLine.md
 docs/Model/Inventory.md
 docs/Model/InventoryResponse.md
+docs/Model/KeySet.md
+docs/Model/KeySetResponse.md
 docs/Model/LabelPrice.md
 docs/Model/Link.md
 docs/Model/LoadCarrier.md
@@ -137,8 +142,11 @@ docs/Model/StateTransition.md
 docs/Model/Stock.md
 docs/Model/StockCreate.md
 docs/Model/Store.md
+docs/Model/SubscriptionResponse.md
+docs/Model/SubscriptionsResponse.md
 docs/Model/Total.md
 docs/Model/TotalPeriod.md
+docs/Model/TransportEvent.md
 docs/Model/TransportInstruction.md
 docs/Model/UpdateDeliveryInfo.md
 docs/Model/UpdateLoadCarrier.md
@@ -146,6 +154,7 @@ docs/Model/UpdateOfferPriceRequest.md
 docs/Model/UpdateOfferRequest.md
 docs/Model/UpdateOfferStockRequest.md
 docs/Model/UpdateReplenishmentRequest.md
+docs/Model/UpdateSubscriptionRequest.md
 docs/Model/ValidationReportResponse.md
 docs/Model/Violation.md
 git_push.sh
@@ -161,12 +170,14 @@ lib/Api/ReplenishmentsApi.php
 lib/Api/ReturnsApi.php
 lib/Api/ShipmentsApi.php
 lib/Api/ShippingLabelsApi.php
+lib/Api/SubscriptionsApi.php
 lib/Api/TransportsApi.php
 lib/ApiException.php
 lib/Configuration.php
 lib/HeaderSelector.php
 lib/Model/AdditionalService.php
 lib/Model/Address.php
+lib/Model/Asset.php
 lib/Model/Attribute.php
 lib/Model/AttributeValue.php
 lib/Model/BillingDetails.php
@@ -191,7 +202,9 @@ lib/Model/CreateProductContentRequest.php
 lib/Model/CreateReplenishmentLine.php
 lib/Model/CreateReplenishmentRequest.php
 lib/Model/CreateReturnRequest.php
+lib/Model/CreateSubscriptionRequest.php
 lib/Model/CustomerDetails.php
+lib/Model/DeliveryDatesResponse.php
 lib/Model/DeliveryInformation.php
 lib/Model/DeliveryOption.php
 lib/Model/DeliveryOptionsRequest.php
@@ -203,6 +216,8 @@ lib/Model/HandoverDetails.php
 lib/Model/InvalidReplenishmentLine.php
 lib/Model/Inventory.php
 lib/Model/InventoryResponse.php
+lib/Model/KeySet.php
+lib/Model/KeySetResponse.php
 lib/Model/LabelPrice.php
 lib/Model/Link.php
 lib/Model/LoadCarrier.php
@@ -286,8 +301,11 @@ lib/Model/StateTransition.php
 lib/Model/Stock.php
 lib/Model/StockCreate.php
 lib/Model/Store.php
+lib/Model/SubscriptionResponse.php
+lib/Model/SubscriptionsResponse.php
 lib/Model/Total.php
 lib/Model/TotalPeriod.php
+lib/Model/TransportEvent.php
 lib/Model/TransportInstruction.php
 lib/Model/UpdateDeliveryInfo.php
 lib/Model/UpdateLoadCarrier.php
@@ -295,6 +313,7 @@ lib/Model/UpdateOfferPriceRequest.php
 lib/Model/UpdateOfferRequest.php
 lib/Model/UpdateOfferStockRequest.php
 lib/Model/UpdateReplenishmentRequest.php
+lib/Model/UpdateSubscriptionRequest.php
 lib/Model/ValidationReportResponse.php
 lib/Model/Violation.php
 lib/ObjectSerializer.php
@@ -311,9 +330,11 @@ test/Api/ReplenishmentsApiTest.php
 test/Api/ReturnsApiTest.php
 test/Api/ShipmentsApiTest.php
 test/Api/ShippingLabelsApiTest.php
+test/Api/SubscriptionsApiTest.php
 test/Api/TransportsApiTest.php
 test/Model/AdditionalServiceTest.php
 test/Model/AddressTest.php
+test/Model/AssetTest.php
 test/Model/AttributeTest.php
 test/Model/AttributeValueTest.php
 test/Model/BillingDetailsTest.php
@@ -338,7 +359,9 @@ test/Model/CreateProductContentRequestTest.php
 test/Model/CreateReplenishmentLineTest.php
 test/Model/CreateReplenishmentRequestTest.php
 test/Model/CreateReturnRequestTest.php
+test/Model/CreateSubscriptionRequestTest.php
 test/Model/CustomerDetailsTest.php
+test/Model/DeliveryDatesResponseTest.php
 test/Model/DeliveryInformationTest.php
 test/Model/DeliveryOptionTest.php
 test/Model/DeliveryOptionsRequestTest.php
@@ -350,6 +373,8 @@ test/Model/HandoverDetailsTest.php
 test/Model/InvalidReplenishmentLineTest.php
 test/Model/InventoryResponseTest.php
 test/Model/InventoryTest.php
+test/Model/KeySetResponseTest.php
+test/Model/KeySetTest.php
 test/Model/LabelPriceTest.php
 test/Model/LinkTest.php
 test/Model/LoadCarrierTest.php
@@ -432,8 +457,11 @@ test/Model/StateTransitionTest.php
 test/Model/StockCreateTest.php
 test/Model/StockTest.php
 test/Model/StoreTest.php
+test/Model/SubscriptionResponseTest.php
+test/Model/SubscriptionsResponseTest.php
 test/Model/TotalPeriodTest.php
 test/Model/TotalTest.php
+test/Model/TransportEventTest.php
 test/Model/TransportInstructionTest.php
 test/Model/UpdateDeliveryInfoTest.php
 test/Model/UpdateLoadCarrierTest.php
@@ -441,5 +469,6 @@ test/Model/UpdateOfferPriceRequestTest.php
 test/Model/UpdateOfferRequestTest.php
 test/Model/UpdateOfferStockRequestTest.php
 test/Model/UpdateReplenishmentRequestTest.php
+test/Model/UpdateSubscriptionRequestTest.php
 test/Model/ValidationReportResponseTest.php
 test/Model/ViolationTest.php

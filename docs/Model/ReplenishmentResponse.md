@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **replenishment_id** | **string** | The unique identifier of the replenishment. |
-**creation_date_time** | [**\DateTime**](\DateTime.md) | The date and time when this replenishment was created. In ISO 8601 format. |
+**creation_date_time** | **\DateTime** | The date and time when this replenishment was created. In ISO 8601 format. |
 **reference** | **string** | Custom user defined reference to identify the replenishment. |
 **labeling_by_bol** | **bool** | Indicates whether the replenishment will be labeled by bol.com or not. |
 **state** | **string** | Indicates the state of this replenishment order. |

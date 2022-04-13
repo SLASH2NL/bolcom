@@ -10,6 +10,6 @@ Name | Type | Description | Notes
 **detail** | **string** | Detailed error message describing in additional detail what caused the service to return this problem. | [optional]
 **host** | **string** | Host identifier describing the server instance that reported the problem. | [optional]
 **instance** | **string** | Full URI path of the resource that reported the problem. | [optional]
-**violations** | [**\BolApi\Client\Model\Violation[]**](Violation.md) |  | [optional]
+**violations** | [**\BolApi\Client\Model\Violation[]**](Violation.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

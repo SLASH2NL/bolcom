@@ -1,6 +1,6 @@
 {
     "name": "slash2nl/bolcom",
-    "description": "The bol.com API for Retailers.",
+    "description": "The bol.com API for retailers.",
     "keywords": [
         "openapitools",
         "openapi-generator",

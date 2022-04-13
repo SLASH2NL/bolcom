@@ -1,6 +1,6 @@
 # OpenAPIClient-php
 
-The bol.com API for Retailers.
+The bol.com API for retailers.
 
 
 ## Installation & Usage
@@ -93,14 +93,14 @@ Class | Method | HTTP request | Description
 *OffersApi* | [**updateOfferPrice**](docs/Api/OffersApi.md#updateofferprice) | **PUT** /retailer/offers/{offer-id}/price | Update price(s) for offer by id
 *OffersApi* | [**updateOfferStock**](docs/Api/OffersApi.md#updateofferstock) | **PUT** /retailer/offers/{offer-id}/stock | Update stock for offer by id
 *OrdersApi* | [**cancelOrderItem**](docs/Api/OrdersApi.md#cancelorderitem) | **PUT** /retailer/orders/cancellation | Cancel an order item by an order item id
-*OrdersApi* | [**getOrder**](docs/Api/OrdersApi.md#getorder) | **GET** /retailer/orders/{order-id} | Get order
-*OrdersApi* | [**getOrders**](docs/Api/OrdersApi.md#getorders) | **GET** /retailer/orders | Get orders
+*OrdersApi* | [**getOrder**](docs/Api/OrdersApi.md#getorder) | **GET** /retailer/orders/{order-id} | Get an order by order id
+*OrdersApi* | [**getOrders**](docs/Api/OrdersApi.md#getorders) | **GET** /retailer/orders | Get a list of orders
 *OrdersApi* | [**shipOrderItem**](docs/Api/OrdersApi.md#shiporderitem) | **PUT** /retailer/orders/shipment | Ship order item
-*ProcessStatusApi* | [**getProcessStatus**](docs/Api/ProcessStatusApi.md#getprocessstatus) | **GET** /retailer/process-status/{process-status-id} | Get the status of an asynchronous process by process status id
-*ProcessStatusApi* | [**getProcessStatusBulk**](docs/Api/ProcessStatusApi.md#getprocessstatusbulk) | **POST** /retailer/process-status | Get the status of multiple asynchronous processes by an array of process status ids for a retailer
-*ProcessStatusApi* | [**getProcessStatusEntityId**](docs/Api/ProcessStatusApi.md#getprocessstatusentityid) | **GET** /retailer/process-status | Get the status of an asynchronous process by entity id and event type for a retailer
-*ProductContentApi* | [**getValidationReport**](docs/Api/ProductContentApi.md#getvalidationreport) | **GET** /retailer/content/validation-report/{uploadId} | Get validation report
-*ProductContentApi* | [**postProductContent**](docs/Api/ProductContentApi.md#postproductcontent) | **POST** /retailer/content/product | Post product content
+*ProductContentApi* | [**getUploadReport**](docs/Api/ProductContentApi.md#getuploadreport) | **GET** /retailer/content/upload-report/{upload-id} | Get an upload report by upload id
+*ProductContentApi* | [**postProductContent**](docs/Api/ProductContentApi.md#postproductcontent) | **POST** /retailer/content/products | Create content for a product
+*PromotionsApi* | [**getProducts**](docs/Api/PromotionsApi.md#getproducts) | **GET** /retailer/promotions/{promotion-id}/products | Get a list of products
+*PromotionsApi* | [**getPromotion**](docs/Api/PromotionsApi.md#getpromotion) | **GET** /retailer/promotions/{promotion-id} | Get a promotion by promotion id
+*PromotionsApi* | [**getPromotions**](docs/Api/PromotionsApi.md#getpromotions) | **GET** /retailer/promotions | Get a list of promotions
 *ReplenishmentsApi* | [**getDeliveryDates**](docs/Api/ReplenishmentsApi.md#getdeliverydates) | **GET** /retailer/replenishments/delivery-dates | Get delivery dates
 *ReplenishmentsApi* | [**getLoadCarrierLabels**](docs/Api/ReplenishmentsApi.md#getloadcarrierlabels) | **GET** /retailer/replenishments/{replenishment-id}/load-carrier-labels | Get load carrier labels
 *ReplenishmentsApi* | [**getPickList**](docs/Api/ReplenishmentsApi.md#getpicklist) | **GET** /retailer/replenishments/{replenishment-id}/pick-list | Get pick list
@@ -139,8 +139,8 @@ Class | Method | HTTP request | Description
 - [BulkCommissionQuery](docs/Model/BulkCommissionQuery.md)
 - [BulkCommissionRequest](docs/Model/BulkCommissionRequest.md)
 - [BulkCommissionResponse](docs/Model/BulkCommissionResponse.md)
-- [BulkProcessStatusRequest](docs/Model/BulkProcessStatusRequest.md)
 - [BundlePrice](docs/Model/BundlePrice.md)
+- [Campaign](docs/Model/Campaign.md)
 - [ChangeTransportRequest](docs/Model/ChangeTransportRequest.md)
 - [Commission](docs/Model/Commission.md)
 - [Condition](docs/Model/Condition.md)
@@ -153,7 +153,7 @@ Class | Method | HTTP request | Description
 - [CreateOfferRequest](docs/Model/CreateOfferRequest.md)
 - [CreatePickupAppointment](docs/Model/CreatePickupAppointment.md)
 - [CreatePickupTimeSlot](docs/Model/CreatePickupTimeSlot.md)
-- [CreateProductContentRequest](docs/Model/CreateProductContentRequest.md)
+- [CreateProductContentSingleRequest](docs/Model/CreateProductContentSingleRequest.md)
 - [CreateReplenishmentLine](docs/Model/CreateReplenishmentLine.md)
 - [CreateReplenishmentRequest](docs/Model/CreateReplenishmentRequest.md)
 - [CreateReturnRequest](docs/Model/CreateReturnRequest.md)
@@ -203,16 +203,17 @@ Class | Method | HTTP request | Description
 - [Pricing](docs/Model/Pricing.md)
 - [Problem](docs/Model/Problem.md)
 - [ProcessStatus](docs/Model/ProcessStatus.md)
-- [ProcessStatusId](docs/Model/ProcessStatusId.md)
-- [ProcessStatusResponse](docs/Model/ProcessStatusResponse.md)
-- [ProductContent](docs/Model/ProductContent.md)
-- [ProductContentResponse](docs/Model/ProductContentResponse.md)
+- [Product](docs/Model/Product.md)
 - [ProductLabelsProduct](docs/Model/ProductLabelsProduct.md)
 - [ProductLabelsRequest](docs/Model/ProductLabelsRequest.md)
+- [Products](docs/Model/Products.md)
+- [Promotion](docs/Model/Promotion.md)
+- [Promotions](docs/Model/Promotions.md)
 - [ReducedInvalidReplenishmentLine](docs/Model/ReducedInvalidReplenishmentLine.md)
 - [ReducedOrder](docs/Model/ReducedOrder.md)
 - [ReducedOrderItem](docs/Model/ReducedOrderItem.md)
 - [ReducedOrders](docs/Model/ReducedOrders.md)
+- [ReducedPromotion](docs/Model/ReducedPromotion.md)
 - [ReducedReplenishment](docs/Model/ReducedReplenishment.md)
 - [ReducedReplenishmentLines](docs/Model/ReducedReplenishmentLines.md)
 - [ReducedReturn](docs/Model/ReducedReturn.md)
@@ -222,9 +223,8 @@ Class | Method | HTTP request | Description
 - [ReducedShipmentOrder](docs/Model/ReducedShipmentOrder.md)
 - [ReducedTransport](docs/Model/ReducedTransport.md)
 - [Reduction](docs/Model/Reduction.md)
-- [RejectedAttributeResponse](docs/Model/RejectedAttributeResponse.md)
-- [RejectionError](docs/Model/RejectionError.md)
 - [RelatedSearchTerm](docs/Model/RelatedSearchTerm.md)
+- [RelevanceScore](docs/Model/RelevanceScore.md)
 - [ReplenishmentLine](docs/Model/ReplenishmentLine.md)
 - [ReplenishmentPickupTimeSlot](docs/Model/ReplenishmentPickupTimeSlot.md)
 - [ReplenishmentResponse](docs/Model/ReplenishmentResponse.md)
@@ -268,7 +268,10 @@ Class | Method | HTTP request | Description
 - [UpdateOfferStockRequest](docs/Model/UpdateOfferStockRequest.md)
 - [UpdateReplenishmentRequest](docs/Model/UpdateReplenishmentRequest.md)
 - [UpdateSubscriptionRequest](docs/Model/UpdateSubscriptionRequest.md)
-- [ValidationReportResponse](docs/Model/ValidationReportResponse.md)
+- [UploadReportAsset](docs/Model/UploadReportAsset.md)
+- [UploadReportAttribute](docs/Model/UploadReportAttribute.md)
+- [UploadReportResponse](docs/Model/UploadReportResponse.md)
+- [UploadReportValue](docs/Model/UploadReportValue.md)
 - [Violation](docs/Model/Violation.md)
 
 ## Authorization
@@ -290,5 +293,5 @@ vendor/bin/phpunit
 
 This PHP package is automatically generated by the [OpenAPI Generator](https://openapi-generator.tech) project:
 
-- API version: `6.0`
+- API version: `7.x`
 - Build package: `org.openapitools.codegen.languages.PhpClientCodegen`

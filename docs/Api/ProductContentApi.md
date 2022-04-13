@@ -4,19 +4,19 @@ All URIs are relative to https://api.bol.com.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getValidationReport()**](ProductContentApi.md#getValidationReport) | **GET** /retailer/content/validation-report/{uploadId} | Get validation report
-[**postProductContent()**](ProductContentApi.md#postProductContent) | **POST** /retailer/content/product | Post product content
+[**getUploadReport()**](ProductContentApi.md#getUploadReport) | **GET** /retailer/content/upload-report/{upload-id} | Get an upload report by upload id
+[**postProductContent()**](ProductContentApi.md#postProductContent) | **POST** /retailer/content/products | Create content for a product
 
 
-## `getValidationReport()`
+## `getUploadReport()`
 
 ```php
-getValidationReport($upload_id): \BolApi\Client\Model\ValidationReportResponse
+getUploadReport($upload_id): \BolApi\Client\Model\UploadReportResponse
 ```
 
-Get validation report
+Get an upload report by upload id
 
-Retrieve a validation report of the product content upload based on the upload id.
+Gets the upload report of the product content submitted by upload id.
 
 ### Example
 
@@ -31,13 +31,13 @@ $apiInstance = new BolApi\Client\Api\ProductContentApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$upload_id = 'upload_id_example'; // string | The identifier of the product content upload.
+$upload_id = 'upload_id_example'; // string | The identifier of the upload report.
 
 try {
-    $result = $apiInstance->getValidationReport($upload_id);
+    $result = $apiInstance->getUploadReport($upload_id);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling ProductContentApi->getValidationReport: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling ProductContentApi->getUploadReport: ', $e->getMessage(), PHP_EOL;
 }
 ```
 
@@ -45,11 +45,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **upload_id** | **string**| The identifier of the product content upload. |
+ **upload_id** | **string**| The identifier of the upload report. |
 
 ### Return type
 
-[**\BolApi\Client\Model\ValidationReportResponse**](../Model/ValidationReportResponse.md)
+[**\BolApi\Client\Model\UploadReportResponse**](../Model/UploadReportResponse.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v6+json`
+- **Accept**: `application/vnd.retailer.v7+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -70,9 +70,9 @@ No authorization required
 postProductContent($body): \BolApi\Client\Model\ProcessStatus
 ```
 
-Post product content
+Create content for a product
 
-Create content for existing products or new products.
+Create content for an existing product.
 
 ### Example
 
@@ -87,7 +87,7 @@ $apiInstance = new BolApi\Client\Api\ProductContentApi(
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \BolApi\Client\Model\CreateProductContentRequest(); // \BolApi\Client\Model\CreateProductContentRequest
+$body = new \BolApi\Client\Model\CreateProductContentSingleRequest(); // \BolApi\Client\Model\CreateProductContentSingleRequest
 
 try {
     $result = $apiInstance->postProductContent($body);
@@ -101,7 +101,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\BolApi\Client\Model\CreateProductContentRequest**](../Model/CreateProductContentRequest.md)|  | [optional]
+ **body** | [**\BolApi\Client\Model\CreateProductContentSingleRequest**](../Model/CreateProductContentSingleRequest.md)|  | [optional]
 
 ### Return type
 
@@ -113,8 +113,8 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v6+json`
-- **Accept**: `application/vnd.retailer.v6+json`
+- **Content-Type**: `application/vnd.retailer.v7+json`
+- **Accept**: `application/vnd.retailer.v7+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

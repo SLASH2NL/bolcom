@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**order_id** | **string** | The order id. | [optional]
+**order_id** | **string** | The identifier of the order. | [optional]
 **pickup_point** | **bool** | Indicates whether this order is shipped to a Pick Up Point. | [optional]
 **order_placed_date_time** | **\DateTime** | The date and time in ISO 8601 format when the order was placed. | [optional]
 **shipment_details** | [**\BolApi\Client\Model\ShipmentDetails**](ShipmentDetails.md) |  |

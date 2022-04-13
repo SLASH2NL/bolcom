@@ -58,8 +58,8 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v6+json`
-- **Accept**: `application/vnd.retailer.v6+json`
+- **Content-Type**: `application/vnd.retailer.v7+json`
+- **Accept**: `application/vnd.retailer.v7+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

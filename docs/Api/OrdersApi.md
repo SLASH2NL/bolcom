@@ -5,8 +5,8 @@ All URIs are relative to https://api.bol.com.
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**cancelOrderItem()**](OrdersApi.md#cancelOrderItem) | **PUT** /retailer/orders/cancellation | Cancel an order item by an order item id
-[**getOrder()**](OrdersApi.md#getOrder) | **GET** /retailer/orders/{order-id} | Get order
-[**getOrders()**](OrdersApi.md#getOrders) | **GET** /retailer/orders | Get orders
+[**getOrder()**](OrdersApi.md#getOrder) | **GET** /retailer/orders/{order-id} | Get an order by order id
+[**getOrders()**](OrdersApi.md#getOrders) | **GET** /retailer/orders | Get a list of orders
 [**shipOrderItem()**](OrdersApi.md#shipOrderItem) | **PUT** /retailer/orders/shipment | Ship order item
 
 
@@ -59,8 +59,8 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v6+json`
-- **Accept**: `application/vnd.retailer.v6+json`
+- **Content-Type**: `application/vnd.retailer.v7+json`
+- **Accept**: `application/vnd.retailer.v7+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -72,7 +72,7 @@ No authorization required
 getOrder($order_id): \BolApi\Client\Model\Order
 ```
 
-Get order
+Get an order by order id
 
 Gets an order by order id. The order can be partially shipped or cancelled, and the message contains the quantity shipped or cancelled items. The unitPrice takes account of volume discounts.
 
@@ -116,7 +116,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v6+json`
+- **Accept**: `application/vnd.retailer.v7+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -128,9 +128,9 @@ No authorization required
 getOrders($page, $fulfilment_method, $status): \BolApi\Client\Model\ReducedOrders
 ```
 
-Get orders
+Get a list of orders
 
-Gets a paginated list of all orders sorted by date in descending order. To create a pick list you can set state to open.
+Gets a paginated list of all orders for a retailer.
 
 ### Example
 
@@ -176,7 +176,7 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: `application/vnd.retailer.v6+json`
+- **Accept**: `application/vnd.retailer.v7+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)
@@ -231,8 +231,8 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: `application/vnd.retailer.v6+json`
-- **Accept**: `application/vnd.retailer.v6+json`
+- **Content-Type**: `application/vnd.retailer.v7+json`
+- **Accept**: `application/vnd.retailer.v7+json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
 [[Back to Model list]](../../README.md#models)

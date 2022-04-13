@@ -1,6 +1,6 @@
 <?php
 /**
- * ViolationTest
+ * ProcessStatusResponseTest
  *
  * PHP version 7.3
  *
@@ -31,15 +31,15 @@ namespace BolApi\Client\Test\Model;
 use PHPUnit\Framework\TestCase;
 
 /**
- * ViolationTest Class Doc Comment
+ * ProcessStatusResponseTest Class Doc Comment
  *
  * @category    Class
- * @description Describes a violation that occurred interacting with the API.
+ * @description ProcessStatusResponse
  * @package     BolApi\Client
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
-class ViolationTest extends TestCase
+class ProcessStatusResponseTest extends TestCase
 {
 
     /**
@@ -71,27 +71,18 @@ class ViolationTest extends TestCase
     }
 
     /**
-     * Test "Violation"
+     * Test "ProcessStatusResponse"
      */
-    public function testViolation()
+    public function testProcessStatusResponse()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "name"
+     * Test attribute "process_statuses"
      */
-    public function testPropertyName()
-    {
-        // TODO: implement
-        $this->markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "reason"
-     */
-    public function testPropertyReason()
+    public function testPropertyProcessStatuses()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');

@@ -1,6 +1,6 @@
 <?php
 /**
- * ProcessStatusTest
+ * ProcessStatusIdTest
  *
  * PHP version 7.3
  *
@@ -31,15 +31,15 @@ namespace BolApi\Client\Test\Model;
 use PHPUnit\Framework\TestCase;
 
 /**
- * ProcessStatusTest Class Doc Comment
+ * ProcessStatusIdTest Class Doc Comment
  *
  * @category    Class
- * @description ProcessStatus
+ * @description ProcessStatusId
  * @package     BolApi\Client
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
-class ProcessStatusTest extends TestCase
+class ProcessStatusIdTest extends TestCase
 {
 
     /**
@@ -71,9 +71,9 @@ class ProcessStatusTest extends TestCase
     }
 
     /**
-     * Test "ProcessStatus"
+     * Test "ProcessStatusId"
      */
-    public function testProcessStatus()
+    public function testProcessStatusId()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');
@@ -83,69 +83,6 @@ class ProcessStatusTest extends TestCase
      * Test attribute "process_status_id"
      */
     public function testPropertyProcessStatusId()
-    {
-        // TODO: implement
-        $this->markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "entity_id"
-     */
-    public function testPropertyEntityId()
-    {
-        // TODO: implement
-        $this->markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "event_type"
-     */
-    public function testPropertyEventType()
-    {
-        // TODO: implement
-        $this->markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "description"
-     */
-    public function testPropertyDescription()
-    {
-        // TODO: implement
-        $this->markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "status"
-     */
-    public function testPropertyStatus()
-    {
-        // TODO: implement
-        $this->markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "error_message"
-     */
-    public function testPropertyErrorMessage()
-    {
-        // TODO: implement
-        $this->markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "create_timestamp"
-     */
-    public function testPropertyCreateTimestamp()
-    {
-        // TODO: implement
-        $this->markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "links"
-     */
-    public function testPropertyLinks()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');

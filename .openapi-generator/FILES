@@ -382,7 +382,6 @@ test/Model/InventoryTest.php
 test/Model/KeySetResponseTest.php
 test/Model/KeySetTest.php
 test/Model/LabelPriceTest.php
-test/Model/LinkTest.php
 test/Model/LoadCarrierTest.php
 test/Model/ModelReturnTest.php
 test/Model/NormTest.php
@@ -409,8 +408,6 @@ test/Model/PickupTimeSlotsAddressTest.php
 test/Model/PickupTimeSlotsRequestTest.php
 test/Model/PickupTimeSlotsResponseTest.php
 test/Model/PricingTest.php
-test/Model/ProblemTest.php
-test/Model/ProcessStatusTest.php
 test/Model/ProductLabelsProductTest.php
 test/Model/ProductLabelsRequestTest.php
 test/Model/ProductTest.php
@@ -480,4 +477,3 @@ test/Model/UploadReportAssetTest.php
 test/Model/UploadReportAttributeTest.php
 test/Model/UploadReportResponseTest.php
 test/Model/UploadReportValueTest.php
-test/Model/ViolationTest.php

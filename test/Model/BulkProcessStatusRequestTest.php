@@ -1,6 +1,6 @@
 <?php
 /**
- * ViolationTest
+ * BulkProcessStatusRequestTest
  *
  * PHP version 7.3
  *
@@ -31,15 +31,15 @@ namespace BolApi\Client\Test\Model;
 use PHPUnit\Framework\TestCase;
 
 /**
- * ViolationTest Class Doc Comment
+ * BulkProcessStatusRequestTest Class Doc Comment
  *
  * @category    Class
- * @description Describes a violation that occurred interacting with the API.
+ * @description BulkProcessStatusRequest
  * @package     BolApi\Client
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
-class ViolationTest extends TestCase
+class BulkProcessStatusRequestTest extends TestCase
 {
 
     /**
@@ -71,27 +71,18 @@ class ViolationTest extends TestCase
     }
 
     /**
-     * Test "Violation"
+     * Test "BulkProcessStatusRequest"
      */
-    public function testViolation()
+    public function testBulkProcessStatusRequest()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "name"
+     * Test attribute "process_status_queries"
      */
-    public function testPropertyName()
-    {
-        // TODO: implement
-        $this->markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "reason"
-     */
-    public function testPropertyReason()
+    public function testPropertyProcessStatusQueries()
     {
         // TODO: implement
         $this->markTestIncomplete('Not implemented');
